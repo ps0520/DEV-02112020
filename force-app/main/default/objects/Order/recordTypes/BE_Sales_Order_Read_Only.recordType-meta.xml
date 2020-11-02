@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BE_Sales_Order_Read_Only</fullName>
+    <active>true</active>
+    <label>BE Sales Order Read Only</label>
+    <picklistValues>
+        <picklist>Delivery_Note_Reminder__c</picklist>
+        <values>
+            <fullName>Delivery Stop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reminder 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reminder 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reminder 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_Term__c</picklist>
+        <values>
+            <fullName>CFR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DDP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Email_Status__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Rejection_Reasons__c</picklist>
+        <values>
+            <fullName>Goods Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Entity Billed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Patient ID%2FNHS number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect VAT Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid PO Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order items do not match PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Overspend</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Status__c</picklist>
+        <values>
+            <fullName>Invoice Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Need_To_Calculate_Tax__c</picklist>
+        <values>
+            <fullName>False</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OMS_Action__c</picklist>
+        <values>
+            <fullName>applyRefund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>placeInvoiceHold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>releaseInvoiceHold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Cancellation_Reason__c</picklist>
+        <values>
+            <fullName>Cancelled in Fusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compatibility - Mobile Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compatibility - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid Contact Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Docs - Unable to Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Type 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Created in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Duplicated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Entry Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - Cash Price Too High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - No INS Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - OOP Too High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Design or Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request From ISR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request From Tech Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resides Outside Country</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Sub_Type__c</picklist>
+        <values>
+            <fullName>Online Store</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Method__c</picklist>
+        <values>
+            <fullName>bankTransfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>creditCard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>directDebit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Terms__c</picklist>
+        <values>
+            <fullName>Check%28Net 10%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QA_Failure_Reason__c</picklist>
+        <values>
+            <fullName>Bundle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GKK Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holding Pattern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Additional Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O-VO Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Note Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receipt Confirmation Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Costs Instead of Additional Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shortage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TechEW Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Additional Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Prices</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons_For_Sample_Orders__c</picklist>
+        <values>
+            <fullName>%24G6 Transition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Service Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Margin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Note Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Systems</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Hold_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Method__c</picklist>
+        <values>
+            <fullName>Any%7CGround%7C0%7CBSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any%7CGround%7C0%7CBSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any%7CGround%7C0%7CSTN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any%7CGround%7C154%7CSTN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any%7CGround%7C47%7CBSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any%7CGround%7C81%7CBSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHL Express%7CGround%7C0%7CBS1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHL Express%7CGround%7C2250%7CBS1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPD%7CGround%7C0%7CBS2</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>DPD%7CGround%7C1487%7CBS2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Provider__c</picklist>
+        <values>
+            <fullName>canadaPost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dhl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fedex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>purolator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLOSED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tech_Support_Order_Type__c</picklist>
+        <values>
+            <fullName>TECH REPLACE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TECH RET %26 REP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TECH RETURN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>AT RETURN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT RETURN %26 CREDIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT SALES SAMPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT STANDARD</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Warehouse__c</picklist>
+        <values>
+            <fullName>HLNL</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Web_Order_Confirmation_Status__c</picklist>
+        <values>
+            <fullName>Initiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

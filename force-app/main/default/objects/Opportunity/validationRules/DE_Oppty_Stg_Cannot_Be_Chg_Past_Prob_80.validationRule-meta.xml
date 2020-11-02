@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Oppty_Stg_Cannot_Be_Chg_Past_Prob_80</fullName>
+    <active>true</active>
+    <description>Rule to not let the users to change the stage on Oppty past Training Letter stage.</description>
+    <errorConditionFormula>AND (
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+PRIORVALUE(Probability) &gt;= 0.80,
+PRIORVALUE(Probability) &lt; 0.95,
+Probability &lt; 0.80,
+NOT(CONTAINS(TEXT(StageName), &apos;Cancel&apos;)),
+NOT(OR(
+$Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;Data Integrator&quot;,
+$Profile.Name = &quot;DE Salesforce Admin&quot;))
+)</errorConditionFormula>
+    <errorMessage>This operation cannot be perfomed as Opportunity has passed &apos;Training Letter&apos; stage.</errorMessage>
+</ValidationRule>

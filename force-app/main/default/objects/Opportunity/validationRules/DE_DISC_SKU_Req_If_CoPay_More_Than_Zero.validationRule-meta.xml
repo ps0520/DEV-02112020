@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_DISC_SKU_Req_If_CoPay_More_Than_Zero</fullName>
+    <active>true</active>
+    <description>Discount sku needs to be added to opportunity product if benefit copay is greater than zero</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+     ISPICKVAL(StageName, &apos;Order Fulfillment&apos;),
+				 Discount_SKU_Count__c &lt; 1,
+				 NOT(ISBLANK(Benefit__r.Co_Pay__c)) ,
+				 Benefit__r.Co_Pay__c &gt; 0 ,
+				 Cash_Pay__c = false,
+				 NOT($Profile.Name = &apos;Data Integrator&apos;), 
+     NOT($Profile.Name = &quot;System Administrator&quot;) 
+)</errorConditionFormula>
+    <errorMessage>Please add Marketing Discount to the Opportunity before proceeding to the next stage.</errorMessage>
+</ValidationRule>

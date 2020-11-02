@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GB_IE_Customer_Efficacy_Check</fullName>
+    <active>true</active>
+    <description>Do not allow creation or activation of Orders for Consumers whose Efficacy Status is &apos;Training Hold&apos;.</description>
+    <errorConditionFormula>AND(
+OR(BEGINS(RecordType.DeveloperName,&apos;GB&apos;),BEGINS(RecordType.DeveloperName,&apos;IE&apos;)),
+ISPICKVAL(Account.Efficacy_Status__c, &apos;Training Hold&apos;),
+OR((AND(ISPICKVAL(Status,&apos;Draft&apos;), ISNEW() )),
+   (AND(ISPICKVAL(Status,&apos;Activated&apos;),  ISCHANGED(Status))))
+)</errorConditionFormula>
+    <errorMessage>The customer&apos;s Efficacy Status is &apos;Training Hold&apos; and no Order can be created or Activated.</errorMessage>
+</ValidationRule>

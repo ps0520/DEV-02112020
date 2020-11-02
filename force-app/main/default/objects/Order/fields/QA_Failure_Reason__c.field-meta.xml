@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QA_Failure_Reason__c</fullName>
+    <description>This field stores QA failure reasons. This field is moved from Opportunity object.</description>
+    <externalId>false</externalId>
+    <label>QA Failure Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bundle</fullName>
+                <default>false</default>
+                <label>Bundle</label>
+            </value>
+            <value>
+                <fullName>Double Delivery</fullName>
+                <default>false</default>
+                <label>Double Delivery</label>
+            </value>
+            <value>
+                <fullName>GKK Missing</fullName>
+                <default>false</default>
+                <label>GKK Missing</label>
+            </value>
+            <value>
+                <fullName>Holding Pattern</fullName>
+                <default>false</default>
+                <label>Holding Pattern</label>
+            </value>
+            <value>
+                <fullName>Missing Additional Payment</fullName>
+                <default>false</default>
+                <label>Missing Additional Payment</label>
+            </value>
+            <value>
+                <fullName>Other (Note Required)</fullName>
+                <default>false</default>
+                <label>Other (Note Required)</label>
+            </value>
+            <value>
+                <fullName>O-VO Missing</fullName>
+                <default>false</default>
+                <label>O-VO Missing</label>
+            </value>
+            <value>
+                <fullName>Receipt Confirmation Missing</fullName>
+                <default>false</default>
+                <label>Receipt Confirmation Missing</label>
+            </value>
+            <value>
+                <fullName>Shipping Costs Instead of Additional Payment</fullName>
+                <default>false</default>
+                <label>Shipping Costs Instead of Additional Payment</label>
+            </value>
+            <value>
+                <fullName>Shortage</fullName>
+                <default>false</default>
+                <label>Shortage</label>
+            </value>
+            <value>
+                <fullName>TechEW Missing</fullName>
+                <default>false</default>
+                <label>TechEW Missing</label>
+            </value>
+            <value>
+                <fullName>Wrong Additional Payment</fullName>
+                <default>false</default>
+                <label>Wrong Additional Payment</label>
+            </value>
+            <value>
+                <fullName>Wrong Prices</fullName>
+                <default>false</default>
+                <label>Wrong Prices</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

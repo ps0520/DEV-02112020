@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_OrderFulfil_Stage_Order_Cancelled</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+ISCHANGED(StageName),
+ISPICKVAL(StageName, &apos;Cancelled&apos;),
+ISPICKVAL(PRIORVALUE(StageName), &apos;Order Fulfillment&apos;),
+!ISPICKVAL(Associated_Order__r.Status,&apos;Cancelled&apos;)
+)</errorConditionFormula>
+    <errorMessage>Opportunity may only proceed to &apos;Cancelled&apos; stage if Associated Order is in &apos;Cancelled&apos; stage also.</errorMessage>
+</ValidationRule>

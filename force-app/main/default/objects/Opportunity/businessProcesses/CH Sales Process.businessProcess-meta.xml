@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CH Sales Process</fullName>
+    <description>Sales process for Switzerland</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Complete</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New Opportunity</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Order Fulfillment</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

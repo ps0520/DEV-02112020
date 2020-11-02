@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Invoice_Rejection_Reason_Validation</fullName>
+    <active>true</active>
+    <description>to enforce Invoice Rejection Reason when Invoice Rejection is checked.</description>
+    <errorConditionFormula>AND (
+Invoice_Rejection__c,
+ISBLANK(TEXT(Invoice_Rejection_Reasons__c))
+)</errorConditionFormula>
+    <errorDisplayField>Invoice_Rejection_Reasons__c</errorDisplayField>
+    <errorMessage>Please select a invoice rejection reason.</errorMessage>
+</ValidationRule>

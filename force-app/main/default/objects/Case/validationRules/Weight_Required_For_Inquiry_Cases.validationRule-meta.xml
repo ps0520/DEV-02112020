@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight_Required_For_Inquiry_Cases</fullName>
+    <active>true</active>
+    <description>Weight field is required before saving an inquiry case</description>
+    <errorConditionFormula>AND( 
+Account.RecordType.DeveloperName = &apos;DE_Consumer&apos;, 
+RecordType.DeveloperName = &apos;DE_Case_Inquiry&apos;, 
+ISBLANK(Weight__c ) 
+)</errorConditionFormula>
+    <errorMessage>Please update the Weight on Account before saving the case.</errorMessage>
+</ValidationRule>

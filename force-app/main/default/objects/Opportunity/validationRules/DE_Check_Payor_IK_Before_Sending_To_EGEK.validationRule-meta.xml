@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Payor_IK_Before_Sending_To_EGEK</fullName>
+    <active>true</active>
+    <description>&apos;Insurance Company IK Number&apos; is required before sending the cost estimate to EGEKO.</description>
+    <errorConditionFormula>AND ( 
+	RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+	NOT($Profile.Name = &quot;System Administrator&quot;), 
+				NOT($Profile.Name = &quot;Data Integrator&quot;),
+	Probability &gt; 0.20, 
+	ISCHANGED(EGEKO_Out__c), 
+	EGEKO_Out__c = TRUE, 
+	Hard_Copy_Out__c = FALSE, 
+	ISBLANK(Payor__r.Insurance_Company_Identification_Number__c) 
+)</errorConditionFormula>
+    <errorMessage>&apos;Insurance Company Identification Number&apos; is required before sending the cost estimate to EGEKO.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cant_Del_Prd_Added_By_Admin</fullName>
+    <active>true</active>
+    <description>Cannot delete the products added by Admin.</description>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($User.Alias = &quot;autoproc&quot;),
+PRIORVALUE(Count_Of_Admin_Products__c) &gt; Count_Of_Admin_Products__c
+)</errorConditionFormula>
+    <errorMessage>Product cannot be deleted.</errorMessage>
+</ValidationRule>

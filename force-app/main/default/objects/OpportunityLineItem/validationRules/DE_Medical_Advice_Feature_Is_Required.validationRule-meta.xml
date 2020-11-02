@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Medical_Advice_Feature_Is_Required</fullName>
+    <active>true</active>
+    <description>&apos;Medical Advice Feature&apos; is required for a Medical Advice Numbered product.</description>
+    <errorConditionFormula>AND ( 
+Opportunity.RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+Is_Medical_Advice_Numbered_Product__c = TRUE, 
+ISBLANK(TEXT(Medical_Advice_Feature__c)) 
+)</errorConditionFormula>
+    <errorMessage>&apos;Medical Advice Feature&apos; is required, please select a value.</errorMessage>
+</ValidationRule>

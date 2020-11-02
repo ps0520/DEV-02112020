@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complaints_Fields_Req_Before_Send_To_QA</fullName>
+    <active>true</active>
+    <description>Following fields will be required to be filled in before status is updated to Send To QA</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Status , &apos;Send To QA&apos;) ,
+ RecordType.DeveloperName = &apos;DE_Case_Complaint&apos;,
+OR(
+ ISNULL( Date_Of_Issue__c ) ,
+  ISBLANK( TEXT( Severity_Level__c ) ) ,
+ ISBLANK( Problem_Code_And_Summary__c ) ,
+ISBLANK( TEXT(  Product_Line__c  ) ) ,
+ISBLANK(  Answers_Troubleshooting_Questions__c  ) ,
+ISBLANK( TEXT(  RGA_Created__c  ) ) ,
+ISBLANK( TEXT(  Medical_Caregiver_Intervention__c  ) ) ,
+ISBLANK(   Description   ) ,
+ISBLANK( TEXT(Transmitter_Sub_Component_Part_Number__c )),
+ISBLANK( Download_Identifier__c ), 
+ISBLANK( TEXT(  Relationship_To_Patient_User__c  ) ) 
+)
+)</errorConditionFormula>
+    <errorMessage>Following fields are required
+Answers Questions
+Discussion/Resolution
+Download Identifier
+Date of Issue
+Medical/Caregiver Intervention
+Problem Code and Summary
+Product Line
+Relationship To Patient/User
+RGA Created
+Severity Level
+Tx SubComponent</errorMessage>
+</ValidationRule>

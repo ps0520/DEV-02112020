@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Copay_When_EgekoIn_Or_Hard_Copy</fullName>
+    <active>true</active>
+    <description>Benefit copay cannot be empty when Egeko In or Hard Copy In is selected.</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+				OR(
+				    EGEKO_In__c = true,
+								 Hard_Copy_In__c = true
+				),
+				Cash_Pay__c = false,
+				ISBLANK(Benefit_Co_Pay__c),
+				NOT($Profile.Name = &apos;Data Integrator&apos;),
+    NOT($Profile.Name = &quot;System Administrator&quot;)
+)</errorConditionFormula>
+    <errorMessage>Co-Pay must be entered before selecting EGEKO In Or Hard Copy In</errorMessage>
+</ValidationRule>

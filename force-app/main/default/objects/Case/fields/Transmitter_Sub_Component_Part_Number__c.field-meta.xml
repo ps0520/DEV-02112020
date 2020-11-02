@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transmitter_Sub_Component_Part_Number__c</fullName>
+    <description>Stores the part number for selected product line</description>
+    <externalId>false</externalId>
+    <label>Transmitter Sub-Component Part Number</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>G4 Transmitter Double Board: 9438-01</fullName>
+                <default>false</default>
+                <label>G4 Transmitter Double Board: 9438-01</label>
+            </value>
+            <value>
+                <fullName>G4 Transmitter Single Board: 9438-05</fullName>
+                <default>false</default>
+                <label>G4 Transmitter Single Board: 9438-05</label>
+            </value>
+            <value>
+                <fullName>G4 Transmitter: Model Unknown</fullName>
+                <default>false</default>
+                <label>G4 Transmitter: Model Unknown</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter 1.2 (MT10103 Rev 009)</fullName>
+                <default>false</default>
+                <label>G5 Transmitter 1.2 (MT10103 Rev 009)</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter 1.2 (MT10103 Rev 010)</fullName>
+                <default>false</default>
+                <label>G5 Transmitter 1.2 (MT10103 Rev 010)</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter 1.2 (MT10103 Rev 011)</fullName>
+                <default>false</default>
+                <label>G5 Transmitter 1.2 (MT10103 Rev 011)</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter 1.2 (MT10103 Rev 012)</fullName>
+                <default>false</default>
+                <label>G5 Transmitter 1.2 (MT10103 Rev 012)</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter 1.2 (MT10103 Rev 013)</fullName>
+                <default>false</default>
+                <label>G5 Transmitter 1.2 (MT10103 Rev 013)</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter 1.2 (MT10103 Rev 014)</fullName>
+                <default>false</default>
+                <label>G5 Transmitter 1.2 (MT10103 Rev 014)</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter Double Board: 9438-06</fullName>
+                <default>false</default>
+                <label>G5 Transmitter Double Board: 9438-06</label>
+            </value>
+            <value>
+                <fullName>G5 Transmitter: Model Unknown</fullName>
+                <default>false</default>
+                <label>G5 Transmitter: Model Unknown</label>
+            </value>
+            <value>
+                <fullName>G6 Transmitter: 9445-02</fullName>
+                <default>false</default>
+                <label>G6 Transmitter: 9445-02</label>
+            </value>
+            <value>
+                <fullName>G6 Transmitter: Model Unknown</fullName>
+                <default>false</default>
+                <label>G6 Transmitter: Model Unknown</label>
+            </value>
+            <value>
+                <fullName>Unable / Unwilling to Answer</fullName>
+                <default>false</default>
+                <label>Unable / Unwilling to Answer</label>
+            </value>
+            <value>
+                <fullName>NI</fullName>
+                <default>false</default>
+                <label>NI</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

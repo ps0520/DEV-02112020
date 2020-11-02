@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight_Required_Before_Send_To_QA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+Account.RecordType.DeveloperName = &apos;DE_Consumer&apos;, 
+ISPICKVAL( Status , &apos;Send To QA&apos;) , 
+RecordType.DeveloperName = &apos;DE_Case_Complaint&apos;, 
+ISBLANK(Weight__c ) 
+)</errorConditionFormula>
+    <errorMessage>Please update the Weight on Account before updating Status to &quot;Send To QA&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AT_Doc_Health_Approval_B4_Order_Fulfill</fullName>
+    <active>true</active>
+    <description>For Austria, before moving to the stage of Cost Estimate, Docs should be collected or not needed from Customers.</description>
+    <errorConditionFormula>And(
+BEGINS(RecordType.DeveloperName, &apos;AT_&apos;),
+NOT(OR(ISPICKVAL(Health_Insurance_Approval__c, &apos;Approved&apos;), 
+ISPICKVAL(Health_Insurance_Approval__c, &apos;Not Required&apos;))), 
+ISPICKVAL(StageName, &apos;Order Fulfillment&apos;)
+)</errorConditionFormula>
+    <errorMessage>Before completing Doc Collection Stage, Health Approval Status field should have &apos;Approved&apos; or &apos;Not Required&apos; value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Only_Admins_Can_Reopen_Cancelled_Oppt</fullName>
+    <active>true</active>
+    <description>Only admins can re-open the cancelled Opportunity.</description>
+    <errorConditionFormula>AND 
+( 
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+PRIORVALUE( IsClosed ) = True, 
+PRIORVALUE(Probability) = 0,
+NOT(OR( 
+$Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;Data Integrator&quot;, 
+$Profile.Name = &quot;DE Salesforce Admin&quot;)) 
+)</errorConditionFormula>
+    <errorMessage>You cannot perform this operation. Please contact your admin.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Canadian_Orders</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>Order_Tracking_URL__c</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>System_Of_Origin__c</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>ORDERS.CREATED_DATE</columns>
+    <columns>ORDERS.LAST_UPDATE</columns>
+    <columns>System_Of_Origin_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.CA_Sales_Order,Order.CA_Tech_Support_Order</value>
+    </filters>
+    <label>All Canadian Orders</label>
+    <language>en_US</language>
+</ListView>

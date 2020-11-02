@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Chk_If_Ret_Kit_Selecte_For_Tech_Retn</fullName>
+    <active>true</active>
+    <description>Return kit is required for Tech Return Order</description>
+    <errorConditionFormula>AND( 
+	CONTAINS(TEXT(Type), &apos;TECH RETURN&apos;),
+	ISPICKVAL(Status, &apos;Activated&apos;),
+	Num_Of_Return_Products__c = 0
+)</errorConditionFormula>
+    <errorMessage>&apos;Return Kit&apos; is required for this Order. Please add &apos;Return Kit&apos;.</errorMessage>
+</ValidationRule>

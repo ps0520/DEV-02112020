@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Have_More_Than_One_Approved_Quote</fullName>
+    <active>false</active>
+    <description>Rule checks to see if there are more than one Approved Quote for this Opportunity</description>
+    <errorConditionFormula>AND
+(
+ISNEW(),
+TEXT(Status) = &apos;Approved&apos;, 
+Opportunity.Count_of_Approved_Quotes__c &gt; 0
+)</errorConditionFormula>
+    <errorMessage>There is already an approved Quote for this Opportunity.</errorMessage>
+</ValidationRule>

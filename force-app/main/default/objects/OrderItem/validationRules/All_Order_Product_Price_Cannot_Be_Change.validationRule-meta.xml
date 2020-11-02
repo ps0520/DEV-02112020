@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Order_Product_Price_Cannot_Be_Change</fullName>
+    <active>true</active>
+    <description>Jagan 06/25/2017 - Rule to check if the price is changed and we should not let the user to change the price.
+Vijay 10/15/2019 - Removed OR( 
+	ISNEW(), 
+	ISCHANGED(UnitPrice)),</description>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;System Administrator&quot;),NOT($User.Alias = &quot;autoproc&quot;),
+OR( 
+ISNEW(), 
+ISCHANGED(UnitPrice)), Discount__c != 0)</errorConditionFormula>
+    <errorMessage>Unit Price cannot be altered</errorMessage>
+</ValidationRule>

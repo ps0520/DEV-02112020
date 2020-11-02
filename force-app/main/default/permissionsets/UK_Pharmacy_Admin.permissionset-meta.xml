@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>UK_Pharmacy_Admin</name>
+    </customPermissions>
+    <description>Permission will give access to GB/IE Pharmacy alone.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>UK Pharmacy Admin</label>
+    <recordTypeVisibilities>
+        <recordType>Account.GB_Pharmacy</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Account.IE_Pharmacy</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

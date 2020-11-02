@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Chk_G6_Products_For_Payor</fullName>
+    <active>true</active>
+    <description>Rule checks if G6 products can be added based on the Payor association with the Order.</description>
+    <errorConditionFormula>AND(
+	BEGINS( Order.RecordType.DeveloperName, &apos;DE&apos;),
+        ISPICKVAL(PricebookEntry.Product2.Family, &apos;G6&apos;),
+	NOT(Order.Payor__r.G6_Eligible__c)
+)</errorConditionFormula>
+    <errorMessage>G6 Products cannot be added for the Payor as the Payor is not G6 eligible.</errorMessage>
+</ValidationRule>

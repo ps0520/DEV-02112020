@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Chk_For_MT26095_In_G4_G5_Sensor_Order</fullName>
+    <active>true</active>
+    <description>Check to see if SKU MT26095 is added in all G4/G5 order. This is required for compliance reasons. Part of JIRA#CRMSF-4023</description>
+    <errorConditionFormula>AND( 
+	NOT($Profile.Name = &quot;System Administrator&quot;), 
+	NOT($Profile.Name = &quot;Data Integrator&quot;), 
+	ISPICKVAL(Type, &apos;DE STANDARD&apos;), 
+	ISCHANGED(Status), 
+	ISPICKVAL(PRIORVALUE(Status),&quot;Draft&quot;), 
+	NOT(ISPICKVAL(Status, &quot;Canceled&quot;)), 
+	G4_G5_Sensor_SKU_Count__c &gt; 0, 
+	DE_Customer_Letter_SKU_Count__c = 0 
+)</errorConditionFormula>
+    <errorMessage>Customer Letter (MT26095) should be added for all G4/G5 Sensor Orders.</errorMessage>
+</ValidationRule>

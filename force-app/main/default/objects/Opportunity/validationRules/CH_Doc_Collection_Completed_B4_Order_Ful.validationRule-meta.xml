@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CH_Doc_Collection_Completed_B4_Order_Ful</fullName>
+    <active>true</active>
+    <description>For Switzerland, before moving to the stage of Order Fulfillment, Docs should be collected or not needed and Health Approval Not Needed or Approved</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CH_Opportunity&apos;,
+OR(NOT(OR(ISPICKVAL(CA_Customer_Docs_Collection_Status__c, &apos;All Docs Received&apos;), ISPICKVAL(CA_Customer_Docs_Collection_Status__c, &apos;Not Required&apos;))),
+NOT(OR(ISPICKVAL( Health_Insurance_Approval__c, &apos;Approved&apos;), ISPICKVAL( Health_Insurance_Approval__c, &apos;Not Required&apos;)))), 
+ISPICKVAL(StageName, &apos;Order Fulfillment&apos;))</errorConditionFormula>
+    <errorMessage>Before moving to the stage of Order Fulfillment, All Docs should have been collected or not needed. Also HI Approval should be &apos;Approved&apos; or &apos;Not Needed&apos;.</errorMessage>
+</ValidationRule>

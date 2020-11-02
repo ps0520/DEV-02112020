@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Approved_Flg_Req_For_Ret_Cred_Orders</fullName>
+    <active>true</active>
+    <description>Approved flag should be set for Return and Credit Order Types.</description>
+    <errorConditionFormula>AND(    CONTAINS(TEXT(Type), &apos;DE RET&apos;), 
+	ISCHANGED(Status),
+	ISPICKVAL(Status, &apos;Activated&apos;),
+	Approved__c = FALSE, 
+	NOT(OR( 
+	$Profile.Name = &quot;System Administrator&quot;, 
+	$Profile.Name = &quot;Data Integrator&quot;)) 
+)</errorConditionFormula>
+    <errorMessage>&apos;Approved Flag&apos; should be selected before Return &amp; Credit Order can be activated.</errorMessage>
+</ValidationRule>

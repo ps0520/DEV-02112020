@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Order_Date_Cannot_Be_Altered</fullName>
+    <active>true</active>
+    <description>Jagan 07/03/2017 - Order date cannot be altered by end users.
+Jagan 01/05/2018 - Added logic for the rule to fire only for Draft orders</description>
+    <errorConditionFormula>AND(
+ 
+	ISCHANGED(EffectiveDate),
+	ISPICKVAL(Status, &apos;Activated&apos;),
+	NOT(OR(
+	$Profile.Name = &quot;System Administrator&quot;,
+	$Profile.Name = &quot;Data Integrator&quot;
+	))
+)</errorConditionFormula>
+    <errorDisplayField>EffectiveDate</errorDisplayField>
+    <errorMessage>Date cannot be altered.</errorMessage>
+</ValidationRule>

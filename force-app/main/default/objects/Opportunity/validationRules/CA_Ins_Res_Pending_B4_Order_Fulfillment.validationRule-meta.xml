@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Ins_Res_Pending_B4_Order_Fulfillment</fullName>
+    <active>false</active>
+    <description>CA_Ins_Res_Pending_B4_Order_Fulfillment</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+NOT(
+OR(ISPICKVAL(Benefit_Prior_Auth_Denied_or_Approved__c,&apos;APPROVED&apos;),
+ISPICKVAL(Benefit_Prior_Auth_Denied_or_Approved__c, &apos;Not Required&apos;))
+),
+
+OR(OR(ISNULL(Benefit_Auth_Start_Date__c ),ISNULL(Benefit_Auth_End_Date__c)), 
+ Benefit_Auth_Start_Date__c &gt; Benefit_Auth_End_Date__c),
+
+/*ISPICKVAL(StageName, &apos;Order Fulfillment&apos;),*/
+NOT(ISPICKVAL(StageName, &apos;Cancelled&apos;)),
+NOT(ISPICKVAL(StageName,&apos;Ins Response Pending&apos;)),
+ISPICKVAL( PRIORVALUE( StageName ) , &quot;Ins Response Pending&quot; )
+)</errorConditionFormula>
+    <errorMessage>Before changing the Stage, Docs should be collected or not needed from Customers. You can also Cancel the Opportunity if needed.</errorMessage>
+</ValidationRule>

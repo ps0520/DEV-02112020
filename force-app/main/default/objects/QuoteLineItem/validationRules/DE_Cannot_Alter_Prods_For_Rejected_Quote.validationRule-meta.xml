@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Cannot_Alter_Prods_For_Rejected_Quote</fullName>
+    <active>true</active>
+    <description>If the Quote is not in Draft or Approved status then the Products cannot be altered</description>
+    <errorConditionFormula>AND (	
+Quote.RecordType.DeveloperName = &apos;DE_Quote&apos;,	
+	NOT(OR( 
+		$Profile.Name = &quot;System Administrator&quot;, 
+		$Profile.Name = &quot;Data Integrator&quot;
+	)),
+	ISPICKVAL(Quote.Status, &apos;Rejected&apos;),
+	OR(
+		ISCHANGED(UnitPrice),
+		ISCHANGED(Quantity)
+	)
+)</errorConditionFormula>
+    <errorMessage>Products cannot be altered.</errorMessage>
+</ValidationRule>

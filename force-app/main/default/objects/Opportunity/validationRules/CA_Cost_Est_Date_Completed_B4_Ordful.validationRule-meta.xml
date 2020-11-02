@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Cost_Est_Date_Completed_B4_Ordful</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+OR(AND(NOT(ISPICKVAL(Estimate_Status__c, &apos;Not Required&apos;)),
+ISBLANK(Estimate_Sent_Date__c)),
+AND(NOT(ISPICKVAL(Determination_Status__c, &apos;Not Required&apos;)),
+ISBLANK(Determination_Received_Date__c))), 
+ISPICKVAL(StageName, &apos;Order Fulfillment&apos;))</errorConditionFormula>
+    <errorMessage>Please fill Estimate Sent Date and Determination Received Date.</errorMessage>
+</ValidationRule>

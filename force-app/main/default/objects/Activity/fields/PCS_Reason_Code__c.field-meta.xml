@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PCS_Reason_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>PCS Reason Code</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accuracy and Calibration training</fullName>
+                <default>false</default>
+                <label>Accuracy and Calibration training</label>
+            </value>
+            <value>
+                <fullName>Advanced Education for Retention</fullName>
+                <default>false</default>
+                <label>Advanced Education for Retention</label>
+            </value>
+            <value>
+                <fullName>Auth Code Update</fullName>
+                <default>false</default>
+                <label>Auth Code Update</label>
+            </value>
+            <value>
+                <fullName>Clarity Full Training</fullName>
+                <default>false</default>
+                <label>Clarity Full Training</label>
+            </value>
+            <value>
+                <fullName>Connectivity</fullName>
+                <default>false</default>
+                <label>Connectivity</label>
+            </value>
+            <value>
+                <fullName>Contraindications</fullName>
+                <default>false</default>
+                <label>Contraindications</label>
+            </value>
+            <value>
+                <fullName>Feature Training- Getting Started Education</fullName>
+                <default>false</default>
+                <label>Feature Training- Getting Started Education</label>
+            </value>
+            <value>
+                <fullName>G5 to G6 Feature Training</fullName>
+                <default>false</default>
+                <label>G5 to G6 Feature Training</label>
+            </value>
+            <value>
+                <fullName>Intro to Dexcom Care</fullName>
+                <default>false</default>
+                <label>Intro to Dexcom Care</label>
+            </value>
+            <value>
+                <fullName>Patient Care outreach, left voicemail</fullName>
+                <default>false</default>
+                <label>Patient Care outreach, left voicemail</label>
+            </value>
+            <value>
+                <fullName>Receiver/ phone set up</fullName>
+                <default>false</default>
+                <label>Receiver/ phone set up</label>
+            </value>
+            <value>
+                <fullName>Ref to other department, non- education</fullName>
+                <default>false</default>
+                <label>Ref to other department, non- education</label>
+            </value>
+            <value>
+                <fullName>Refer to TS, non-education</fullName>
+                <default>false</default>
+                <label>Refer to TS, non-education</label>
+            </value>
+            <value>
+                <fullName>Refer to CS, non-education</fullName>
+                <default>false</default>
+                <label>Refer to CS, non-education</label>
+            </value>
+            <value>
+                <fullName>Transferred to PCS, non-education</fullName>
+                <default>false</default>
+                <label>Transferred to PCS, non-education</label>
+            </value>
+            <value>
+                <fullName>Transferred to PCS, education</fullName>
+                <default>false</default>
+                <label>Transferred to PCS, education</label>
+            </value>
+            <value>
+                <fullName>Sensor Insertion, transmitter &amp; Starting session</fullName>
+                <default>false</default>
+                <label>Sensor Insertion, transmitter &amp; Starting session</label>
+            </value>
+            <value>
+                <fullName>Software Training</fullName>
+                <default>false</default>
+                <label>Software Training</label>
+            </value>
+            <value>
+                <fullName>Skin prep &amp; adhesive tape training</fullName>
+                <default>false</default>
+                <label>Skin prep &amp; adhesive tape training</label>
+            </value>
+            <value>
+                <fullName>Stop sensor training</fullName>
+                <default>false</default>
+                <label>Stop sensor training</label>
+            </value>
+            <value>
+                <fullName>System component training</fullName>
+                <default>false</default>
+                <label>System component training</label>
+            </value>
+            <value>
+                <fullName>Technology and apps</fullName>
+                <default>false</default>
+                <label>Technology and apps</label>
+            </value>
+            <value>
+                <fullName>Training on treatment decisions</fullName>
+                <default>false</default>
+                <label>Training on treatment decisions</label>
+            </value>
+            <value>
+                <fullName>Travel info</fullName>
+                <default>false</default>
+                <label>Travel info</label>
+            </value>
+            <value>
+                <fullName>Value of CGM and what to expect</fullName>
+                <default>false</default>
+                <label>Value of CGM and what to expect</label>
+            </value>
+            <value>
+                <fullName>Water resistance</fullName>
+                <default>false</default>
+                <label>Water resistance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

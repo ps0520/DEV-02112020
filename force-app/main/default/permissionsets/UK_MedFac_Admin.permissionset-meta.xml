@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>UK_MedFac_Admin</name>
+    </customPermissions>
+    <description>Permission will give access to GB/IE Med Fac alone.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>UK MedFac Admin</label>
+    <recordTypeVisibilities>
+        <recordType>Account.GB_Medical_Facility</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Account.IE_Medical_Facility</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

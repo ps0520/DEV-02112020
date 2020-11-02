@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Stage_Cannot_Moved_Back</fullName>
+    <active>true</active>
+    <description>CA-Once Opportunity is Cancelled or Closed- Complete , Cannot be moved to back except admin</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+    OR(ISPICKVAL( PRIORVALUE (StageName), &quot;Cancelled&quot;),
+       ISPICKVAL( PRIORVALUE (StageName), &quot;Closed - Complete&quot;)
+      ),
+    ISCHANGED(StageName),
+    NOT(CONTAINS($Profile.Name, &quot;Admin&quot;))
+   )</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Stage cannot be changed</errorMessage>
+</ValidationRule>

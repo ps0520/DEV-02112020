@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copay_Product_Quantity__c</fullName>
+    <description>Rollup will pull the product quantity, which is having the copay amount</description>
+    <externalId>false</externalId>
+    <label>Copay Product Quantity</label>
+    <summarizedField>OrderItem.Quantity</summarizedField>
+    <summaryFilterItems>
+        <field>OrderItem.UnitPrice</field>
+        <operation>lessThan</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

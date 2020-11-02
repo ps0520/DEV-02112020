@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Of_Issue_Cannot_Be_Future_Date</fullName>
+    <active>true</active>
+    <description>Date of issue 
+- Cannot be in the future
+- cannot be after the awareness date</description>
+    <errorConditionFormula>OR
+(
+ Date_Of_Issue__c &gt;  TODAY() ,
+Date_Of_Issue__c &gt;  Awareness_Date__c 
+)</errorConditionFormula>
+    <errorDisplayField>Date_Of_Issue__c</errorDisplayField>
+    <errorMessage>Date Of Issue cannot be future date or later than Awareness Date.</errorMessage>
+</ValidationRule>

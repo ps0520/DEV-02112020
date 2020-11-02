@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Opportunity</fullName>
+    <active>true</active>
+    <businessProcess>DE Sales Process</businessProcess>
+    <compactLayoutAssignment>DE_Opportunity_Compact_Layout</compactLayoutAssignment>
+    <description>Tracks opportunities for Germany.</description>
+    <label>DE Opportunity</label>
+    <picklistValues>
+        <picklist>Benefit_Prior_Auth_Denied_or_Approved__c</picklist>
+        <values>
+            <fullName>APPROVED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DENIED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Benefit_Plan_Year_Type__c</picklist>
+        <values>
+            <fullName>Benefit Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plan Year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Cancelled_Reason__c</picklist>
+        <values>
+            <fullName>Compatibility - Mobile Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compatibility - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid Contact Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Type 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Created in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - Cash Price Too High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - No INS Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing - OOP Too High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Design or Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resides Outside Country</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Closed_Reason__c</picklist>
+        <values>
+            <fullName>Manual Order Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Yet Closed</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>eCom Order Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eCom Order pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Customer_Docs_Collection_Status__c</picklist>
+        <values>
+            <fullName>All Docs Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Docs Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not yet started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending Doc Collection on other Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Docs Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Docs Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Docs_Received__c</picklist>
+        <values>
+            <fullName>A1C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BG Logs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CGM Quest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narrative Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pregnancy RX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prior-Auth Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1D Note</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Docs_Sent_Out__c</picklist>
+        <values>
+            <fullName>A1C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BG Logs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CGM Quest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narrative Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pregnancy RX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prior-Auth Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1D Note</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Documents_Collected__c</picklist>
+        <values>
+            <fullName>A1C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BG Logs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CGM Quest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narrative Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pregnancy RX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prior-Auth Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1D Note</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Estimate_to_Patient_Status__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Prescriber_Docs_Collection_Status__c</picklist>
+        <values>
+            <fullName>Docs Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docs Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CA_Prescriber_Docs_Pending__c</picklist>
+        <values>
+            <fullName>CMN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narrative Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pregnancy RX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cancel_Reason__c</picklist>
+        <values>
+            <fullName>Ablehnung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angebot nicht angenommen %28PKV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Process %28Note Required%29%3A Processing Error KK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KK Application denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Patient Contact Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil Device Incompatible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operation Faulty %28Note Required%29%3A Processing Error Dexcom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operation Incorrect %28Note Required%29%3A System Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opp Created Only for Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Created in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Note Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescription Foreign Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescription Issued Incorrectly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescription Not Necessary %28long-term VZ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescription too Early</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing %E2%80%93 Cash Price too High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produkt nicht mehr benötigt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resides Outside Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vorgang doppelt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vorgang fehlerhaft - Bearbeitungsfehler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vorgang fehlerhaft - Systemänderung</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Close_Reason__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor__c</picklist>
+        <values>
+            <fullName>Abbott</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DiaExpert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DiaLog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DiaShop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medtronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senseonics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cost_Estimate_Status__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Germany</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Determination_Status__c</picklist>
+        <values>
+            <fullName>Not Received</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received via Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received via Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received via Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received via Online account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received via Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DexTracker_Email__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doc_Collection_Status__c</picklist>
+        <values>
+            <fullName>All Documents Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Deposit Letter Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docs On File - Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Docs To Bill</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estimate_Status__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Sent</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Sent by Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent by Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent by Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent by Online account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent by Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estimate_To_Payor_Status__c</picklist>
+        <values>
+            <fullName>Appeal Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appeal Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Sent</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Health_Insurance_Approval__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook Lead Ads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website%2FLanding Page</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Missing_HI_Information__c</picklist>
+        <values>
+            <fullName>Funding approval letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial delivery address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Patient Details %E2%80%93 NHS number%2Fpatient identifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up form</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ordering_Process__c</picklist>
+        <values>
+            <fullName>ECOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Terms__c</picklist>
+        <values>
+            <fullName>Check%28Net 10%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>net90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Processing_Planning__c</picklist>
+        <values>
+            <fullName>G6 Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GKK Stop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KV Stop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QA_Failure_Reason__c</picklist>
+        <values>
+            <fullName>Bundle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doppellieferung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empfangsbestätigung fehlt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GKK fehlt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O-VO fehlt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonstige %28Notiz erforderlich%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TechEW fehlt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Versandkosten statt Zuzahlung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>falsche Preise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>falsche Zuzahlung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fehlende Zuzahlung</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_For_Rejection__c</picklist>
+        <values>
+            <fullName>Anderer Leistungserbringer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doppelversorgung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empfängertasche %2F Zubehör</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ersatzkomponente %28Defekt%2FVerlust%2Fkeine Garantie%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fehlende Indikation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler%3A Falsches Produkt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler%3A Versichertennummer existiert nicht</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler%3A Versorgungszeitraum fehlt%2Ffalsch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indikation nicht mehr gegeben</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kassenwechsel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDK Prüfung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDK Prüfung dauert an</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDK-Prüfung negativ%3A Fehlende Indikation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDK-Prüfung negativ%3A Fehlende Mitwirkungspflicht Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDK-Prüfung negativ%3A Gutachten fehlt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mehrbedarf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mitwirkungspflicht des Versicherten nicht erfolgt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neue Anforderungen der Kasse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonstige %28Notiz erforderlich%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systemwechsel G4 oder G5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systemwechsel Upgrade G6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Therapieänderung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unterlagen fehlen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Versorgungswunsch zurückgenommen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ohne Begründung</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_For_Return_For_Adjustment__c</picklist>
+        <values>
+            <fullName>Beantragung zu früh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beantragung zu spät</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doppelversorgung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler Arzt-%2FBetriebsstättennummer existiert nicht</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler Falsches Produkt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler LKZ falsch%2Ffehlt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler Versichertennummer existiert nicht bei Kasse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formfehler Versorgungszeitraum fehlt%2Ffalsch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gründe für Rückläufer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neue Anforderungen der Kasse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonstiges %28Notiz erforderlich%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Carrier__c</picklist>
+        <values>
+            <fullName>DHL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Training_Confirmation_Channel__c</picklist>
+        <values>
+            <fullName>Doctor%27s Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reorder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

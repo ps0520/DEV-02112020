@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_Consumers_to_invoice</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7 OR 8) AND 9</booleanFilter>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>SALES.ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>PRICEBOOK2.NAME</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Payment_Terms__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDERS.TYPE</field>
+        <operation>equals</operation>
+        <value>GB STANDARD</value>
+    </filters>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>OPEN,Shipped,PARTIAL_CLOSE,CLOSED</value>
+    </filters>
+    <filters>
+        <field>PRICEBOOK2.NAME</field>
+        <operation>equals</operation>
+        <value>UK Cash List Price</value>
+    </filters>
+    <filters>
+        <field>PRICEBOOK2.NAME</field>
+        <operation>equals</operation>
+        <value>UK G6 SUBSCRIPTION 12MOS</value>
+    </filters>
+    <filters>
+        <field>PRICEBOOK2.NAME</field>
+        <operation>equals</operation>
+        <value>UK G6 SUBSCRIPTION 12MOS</value>
+    </filters>
+    <filters>
+        <field>PRICEBOOK2.NAME</field>
+        <operation>equals</operation>
+        <value>UK G6 Starter Kit</value>
+    </filters>
+    <filters>
+        <field>PRICEBOOK2.NAME</field>
+        <operation>equals</operation>
+        <value>UK G6 PPD 11MOS</value>
+    </filters>
+    <filters>
+        <field>PRICEBOOK2.NAME</field>
+        <operation>equals</operation>
+        <value>UK G6 PPD 12 MOS</value>
+    </filters>
+    <filters>
+        <field>Invoice_Number__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </filters>
+    <label>UK Consumers to invoice</label>
+</ListView>

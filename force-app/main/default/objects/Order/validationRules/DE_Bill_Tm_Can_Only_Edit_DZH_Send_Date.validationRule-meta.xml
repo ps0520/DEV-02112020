@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Bill_Tm_Can_Only_Edit_DZH_Send_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ BEGINS(RecordType.DeveloperName, &apos;DE_&apos;), 
+ NOT($Profile.Name = &quot;System Administrator&quot;), 
+ NOT($Permission.All_Cannot_Activate_Orders), 
+ ISCHANGED( DZH_Send_Date__c )
+)</errorConditionFormula>
+    <errorMessage>You Cannot Perform this Action.</errorMessage>
+</ValidationRule>

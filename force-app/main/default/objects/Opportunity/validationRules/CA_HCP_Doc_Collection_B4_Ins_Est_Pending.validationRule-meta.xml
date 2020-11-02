@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_HCP_Doc_Collection_B4_Ins_Est_Pending</fullName>
+    <active>false</active>
+    <description>CA_HCP_Doc_Collection_B4_Ins_Est_Pending</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+OR(NOT(OR(ISPICKVAL(CA_Customer_Docs_Collection_Status__c, &apos;All Docs Received&apos;), ISPICKVAL(CA_Customer_Docs_Collection_Status__c, &apos;Not Required&apos;))),
+NOT(OR(ISPICKVAL(CA_Prescriber_Docs_Collection_Status__c, &apos;Docs Received&apos;), ISPICKVAL( CA_Prescriber_Docs_Collection_Status__c, &apos;Not Required&apos;)))),
+
+/*ISPICKVAL(StageName, &apos;Ins Estimate Pending&apos;),*/
+
+NOT(ISPICKVAL(StageName, &apos;Cancelled&apos;)),
+NOT(ISPICKVAL(StageName,&apos;HCP Doc Collection&apos;)),
+ISPICKVAL( PRIORVALUE( StageName ) , &quot;HCP Doc Collection&quot; )
+
+)</errorConditionFormula>
+    <errorMessage>Before changing the Stage, Docs should be collected or not needed from Customers. You can also Cancel the Opportunity if needed.</errorMessage>
+</ValidationRule>

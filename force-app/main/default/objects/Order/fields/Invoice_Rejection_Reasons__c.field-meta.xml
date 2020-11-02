@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Rejection_Reasons__c</fullName>
+    <description>NS-1189 All Markets- Invoice Rejection/Invoice Rejection Reasons on Order Level</description>
+    <externalId>false</externalId>
+    <label>Invoice Rejection Reasons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Invalid PO Number</fullName>
+                <default>false</default>
+                <label>Invalid PO Number</label>
+            </value>
+            <value>
+                <fullName>Incorrect Entity Billed</fullName>
+                <default>false</default>
+                <label>Incorrect Entity Billed</label>
+            </value>
+            <value>
+                <fullName>Incorrect VAT Treatment</fullName>
+                <default>false</default>
+                <label>Incorrect VAT Treatment</label>
+            </value>
+            <value>
+                <fullName>Incorrect Patient ID/NHS number</fullName>
+                <default>false</default>
+                <label>Incorrect Patient ID/NHS number</label>
+            </value>
+            <value>
+                <fullName>PO Overspend</fullName>
+                <default>false</default>
+                <label>PO Overspend</label>
+            </value>
+            <value>
+                <fullName>Goods Not Received</fullName>
+                <default>false</default>
+                <label>Goods Not Received</label>
+            </value>
+            <value>
+                <fullName>Order items do not match PO</fullName>
+                <default>false</default>
+                <label>Order items do not match PO</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

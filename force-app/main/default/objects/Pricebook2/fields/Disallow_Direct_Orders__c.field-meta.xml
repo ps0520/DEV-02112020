@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_Direct_Orders__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field indicates whether Order should *NOT* be allowed to be created using this price list. Opportunity Process should be used instead so that SSIP Rules can be added.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set this field to true if no Order should be created using this price book.</inlineHelpText>
+    <label>Disallow Direct Orders</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

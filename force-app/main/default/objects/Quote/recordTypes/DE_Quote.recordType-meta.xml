@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Quote</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>DE_Quote_Compact_Layout</compactLayoutAssignment>
+    <description>Quote record type for Germany</description>
+    <label>DE Quote</label>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Germany</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Cost Estimate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

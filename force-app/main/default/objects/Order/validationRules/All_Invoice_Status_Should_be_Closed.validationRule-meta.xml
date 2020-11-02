@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Invoice_Status_Should_be_Closed</fullName>
+    <active>true</active>
+    <description>If the Insurance Order is On-Hold and changed to Closed then we need to make sure the Invoice Status should be Invoice Closed.</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Status ),ISPICKVAL( Status , &quot;Closed&quot;), 
+ ISPICKVAL(PRIORVALUE(Status),&quot;On-Hold&quot;), 
+ NOT(ISBLANK(OpportunityId )), NOT( Is_Cash_Order__c ), 
+ NOT(ISPICKVAL( Invoice_Status__c , &quot;Invoice Closed&quot;)))</errorConditionFormula>
+    <errorMessage>Invoice Status Should be in Invoice Closed to set Order status to Closed.</errorMessage>
+</ValidationRule>

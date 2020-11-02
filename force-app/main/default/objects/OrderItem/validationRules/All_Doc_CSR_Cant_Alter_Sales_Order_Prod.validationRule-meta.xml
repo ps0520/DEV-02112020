@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Doc_CSR_Cant_Alter_Sales_Order_Prod</fullName>
+    <active>true</active>
+    <description>Document admin and CSR Users cannot alter any fields on the Sales Order Products for activated orders.</description>
+    <errorConditionFormula>AND( 
+	$Permission.DE_Update_Activated_Order_For_Documents, 
+	NOT(TEXT(Order.Status) =  &apos;Draft&apos;), 
+	OR(ISCHANGED(Quantity), ISCHANGED(UnitPrice), ISCHANGED(Medical_Advice_Feature__c), ISCHANGED(Return_Reason__c), ISCHANGED(Description)) 
+)</errorConditionFormula>
+    <errorMessage>You cannot perform this operation. Please contact admin.</errorMessage>
+</ValidationRule>

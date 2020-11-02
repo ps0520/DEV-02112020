@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_MedFac_Prescriber_Req_For_Lead_Conv</fullName>
+    <active>true</active>
+    <description>For converting the GB/IE Lead the Birthdate or any one of the communication field is required.</description>
+    <errorConditionFormula>AND(
+	NOT($Profile.Name = &quot;System Administrator&quot;),NOT($Profile.Name = &quot;Data Integrator&quot;), NOT($User.Alias = &quot;autoproc&quot;), 
+	IsConverted,
+	OR(BEGINS(RecordType.DeveloperName, &apos;GB&apos;),BEGINS(RecordType.DeveloperName, &apos;IE&apos;)),
+	OR(
+		ISBLANK( Birth_Date__c ),
+		AND(
+			ISBLANK( Email ),
+			ISBLANK(Phone),
+			ISBLANK( Home_Phone__c ),
+			ISBLANK( MobilePhone )
+		)
+	)
+)</errorConditionFormula>
+    <errorMessage>Birth Date and any one of the contact information are required before converting the Lead.</errorMessage>
+</ValidationRule>

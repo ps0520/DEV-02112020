@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_Of_Starter_Kit__c</fullName>
+    <description>Stores the number of starter kit SKU tied to the Order</description>
+    <externalId>false</externalId>
+    <label>Count Of Starter Kit</label>
+    <summaryFilterItems>
+        <field>OrderItem.Product_Name__c</field>
+        <operation>equals</operation>
+        <value>CASTARTERKITG6, GBSTARTERKITG6</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CH_Customer_Doc_Rcvd_Date_Not_In_Future</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CH_Opportunity&apos;,
+NOT(ISBLANK( Customer_Docs_Received_Date__c )),
+Customer_Docs_Received_Date__c  &gt; Today()
+)</errorConditionFormula>
+    <errorMessage>Customer Docs Receive date should NOT be a future date.</errorMessage>
+</ValidationRule>

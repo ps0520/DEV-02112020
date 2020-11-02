@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_InActiveAc_Order_Cannot_Be_Activated</fullName>
+    <active>true</active>
+    <description>Order can&apos;t be activated of inactive account</description>
+    <errorConditionFormula>AND(
+NOT(BEGINS(TEXT(Type), &apos;DE&apos;)),
+Account.Inactive__c, 
+ISCHANGED(Status)
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t process the order for inactive Account.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_Of_G6_Transmitters__c</fullName>
+    <description>Rollup field will cover the G6 Transmitters included in the Order</description>
+    <externalId>false</externalId>
+    <label>Count Of G6 Transmitters</label>
+    <summaryFilterItems>
+        <field>OrderItem.Product_Name__c</field>
+        <operation>equals</operation>
+        <value>STT-GS-003, STT-GS-006</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

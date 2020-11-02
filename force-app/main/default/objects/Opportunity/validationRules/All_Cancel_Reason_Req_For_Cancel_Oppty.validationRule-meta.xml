@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cancel_Reason_Req_For_Cancel_Oppty</fullName>
+    <active>true</active>
+    <description>Cancel reason is required for cancelling an Opportunity</description>
+    <errorConditionFormula>AND (
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ /* NOT(RecordType.DeveloperName = &apos;CA_Opportunity&apos;), */
+ CONTAINS(TEXT(StageName), &apos;Cancelled&apos;),
+ PRIORVALUE(Probability) &lt;= 0.60,
+ ISBLANK(TEXT(Cancel_Reason__c)), 
+ ISBLANK(TEXT( CA_Cancelled_Reason__c ))
+)</errorConditionFormula>
+    <errorMessage>&apos;Cancel Reason&apos; is required for cancelling an Opportunity.</errorMessage>
+</ValidationRule>

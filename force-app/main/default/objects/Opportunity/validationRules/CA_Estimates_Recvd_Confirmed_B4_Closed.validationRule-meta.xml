@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Estimates_Recvd_Confirmed_B4_Closed</fullName>
+    <active>false</active>
+    <description>For Canada, Estimates should be Received or Not Required from Consumer and Payor and Decision should be updated.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;, 
+ISPICKVAL(StageName, &apos;Closed - Complete&apos;), 
+OR(NOT(OR(ISPICKVAL(Estimate_To_Payor_Status__c,&quot;Received&quot;), ISPICKVAL(Estimate_To_Payor_Status__c,&quot;Appeal Received&quot;),
+ISPICKVAL(Estimate_To_Payor_Status__c,&quot;Not Required&quot;))),
+NOT(OR(ISPICKVAL(CA_Estimate_to_Patient_Status__c,&quot;Received&quot;),ISPICKVAL(CA_Estimate_to_Patient_Status__c,&quot;Not Required&quot;))),
+NOT(OR(ISPICKVAL(Benefit_Prior_Auth_Denied_or_Approved__c,&quot;APPROVED&quot;),ISPICKVAL(Benefit_Prior_Auth_Denied_or_Approved__c,&quot;DENIED&quot;),ISPICKVAL(Benefit_Prior_Auth_Denied_or_Approved__c,&quot;Not Applicable&quot;))))
+)</errorConditionFormula>
+    <errorMessage>Estimates should be Received or Not Required from Consumer; and Benefit Information should be updated.</errorMessage>
+</ValidationRule>

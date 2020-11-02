@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Sub_Type__c</fullName>
+    <description>This field is used for online webstore</description>
+    <externalId>false</externalId>
+    <label>Order Sub Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Online Store</fullName>
+                <default>false</default>
+                <label>Online Store</label>
+            </value>
+            <value>
+                <fullName>Cash</fullName>
+                <default>false</default>
+                <label>Cash</label>
+            </value>
+            <value>
+                <fullName>Cash - Prepaid</fullName>
+                <default>false</default>
+                <label>Cash - Prepaid</label>
+            </value>
+            <value>
+                <fullName>Funded - Single</fullName>
+                <default>false</default>
+                <label>Funded - Single</label>
+            </value>
+            <value>
+                <fullName>Funded - Multiple</fullName>
+                <default>false</default>
+                <label>Funded - Multiple</label>
+            </value>
+            <value>
+                <fullName>Sample</fullName>
+                <default>false</default>
+                <label>Sample</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>CA Return Only Order</controllingFieldValue>
+            <controllingFieldValue>CA Return and Credit Order</controllingFieldValue>
+            <controllingFieldValue>CA Sales Sample Order</controllingFieldValue>
+            <controllingFieldValue>CA Standard Sales Order</controllingFieldValue>
+            <controllingFieldValue>CA TX Subscription Order</controllingFieldValue>
+            <controllingFieldValue>CA Tech Replacement Order</controllingFieldValue>
+            <controllingFieldValue>DE STANDARD</controllingFieldValue>
+            <controllingFieldValue>CA STANDARD</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <valueName>Online Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA Return Only Order</controllingFieldValue>
+            <controllingFieldValue>CA Return and Credit Order</controllingFieldValue>
+            <controllingFieldValue>CA Sales Sample Order</controllingFieldValue>
+            <controllingFieldValue>CA Standard Sales Order</controllingFieldValue>
+            <controllingFieldValue>CA TX Subscription Order</controllingFieldValue>
+            <controllingFieldValue>CA Tech Replacement Order</controllingFieldValue>
+            <controllingFieldValue>CA STANDARD</controllingFieldValue>
+            <controllingFieldValue>GB STANDARD</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE STANDARD</controllingFieldValue>
+            <valueName>Cash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA Return Only Order</controllingFieldValue>
+            <controllingFieldValue>CA Return and Credit Order</controllingFieldValue>
+            <controllingFieldValue>CA Sales Sample Order</controllingFieldValue>
+            <controllingFieldValue>CA Standard Sales Order</controllingFieldValue>
+            <controllingFieldValue>CA TX Subscription Order</controllingFieldValue>
+            <controllingFieldValue>CA Tech Replacement Order</controllingFieldValue>
+            <controllingFieldValue>CA STANDARD</controllingFieldValue>
+            <controllingFieldValue>GB STANDARD</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE STANDARD</controllingFieldValue>
+            <valueName>Cash - Prepaid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA Return Only Order</controllingFieldValue>
+            <controllingFieldValue>CA Return and Credit Order</controllingFieldValue>
+            <controllingFieldValue>CA Sales Sample Order</controllingFieldValue>
+            <controllingFieldValue>CA Standard Sales Order</controllingFieldValue>
+            <controllingFieldValue>CA TX Subscription Order</controllingFieldValue>
+            <controllingFieldValue>CA Tech Replacement Order</controllingFieldValue>
+            <controllingFieldValue>CA STANDARD</controllingFieldValue>
+            <controllingFieldValue>GB STANDARD</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE STANDARD</controllingFieldValue>
+            <valueName>Funded - Single</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA Return Only Order</controllingFieldValue>
+            <controllingFieldValue>CA Return and Credit Order</controllingFieldValue>
+            <controllingFieldValue>CA Sales Sample Order</controllingFieldValue>
+            <controllingFieldValue>CA Standard Sales Order</controllingFieldValue>
+            <controllingFieldValue>CA TX Subscription Order</controllingFieldValue>
+            <controllingFieldValue>CA Tech Replacement Order</controllingFieldValue>
+            <controllingFieldValue>CA STANDARD</controllingFieldValue>
+            <controllingFieldValue>GB STANDARD</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE STANDARD</controllingFieldValue>
+            <valueName>Funded - Multiple</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA Return Only Order</controllingFieldValue>
+            <controllingFieldValue>CA Return and Credit Order</controllingFieldValue>
+            <controllingFieldValue>CA Sales Sample Order</controllingFieldValue>
+            <controllingFieldValue>CA Standard Sales Order</controllingFieldValue>
+            <controllingFieldValue>CA TX Subscription Order</controllingFieldValue>
+            <controllingFieldValue>CA Tech Replacement Order</controllingFieldValue>
+            <controllingFieldValue>CA STANDARD</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Sample</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

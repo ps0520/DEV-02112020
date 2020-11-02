@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tracking_URL__c</fullName>
+    <description>Line Item Tracking URL</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Shipping_Provider__c, &apos;canadaPost&apos;), &apos;http://www.canadapost.ca/cpotools/apps/track/personal/findByTrackNumber?trackingNumber=&apos;+ Tracking_Number__c+&apos;&amp;LOCALE=en&apos;, IF(ISPICKVAL(Shipping_Provider__c, &apos;purolator&apos;), &apos;https://www.purolator.com/purolator/ship-track/tracking-summary.page?pin=&apos;+Tracking_Number__c, IF(ISPICKVAL(Shipping_Provider__c, &apos;fedex&apos;), &apos;http://www.fedex.com/Tracking?tracknumbers=&apos;+Tracking_Number__c, 
+IF(AND(BEGINS(TEXT(Order.Type), &apos;GB&apos;),NOT(ISBLANK( Tracking_Number__c ))), &apos;https://www.dpdlocal.co.uk/apps/tracking/?reference=&apos;+ LEFT(Tracking_Number__c,10),
+&apos;&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tracking URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

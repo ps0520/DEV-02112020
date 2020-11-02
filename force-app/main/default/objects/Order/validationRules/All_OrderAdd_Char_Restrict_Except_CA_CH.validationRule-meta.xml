@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_OrderAdd_Char_Restrict_Except_CA_CH</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT( $Profile.Name = &quot;System Administrator&quot;),
+NOT(  $User.Alias = &quot;autoproc&quot;),
+NOT(OR( BEGINS(RecordType.DeveloperName, &apos;CA_&apos;) ,BEGINS(RecordType.DeveloperName, &apos;CH_&apos;) )),
+ISPICKVAL(Priorvalue(Status), &quot;Draft&quot;),
+ISCHANGED(Status) ,
+OR(
+LEN(Customer_Ship_To_Address__r.Address_Line_1__c) &gt; 35,
+LEN( Customer_Ship_To_Address__r.Address_Line_2__c ) &gt; 35
+)
+)</errorConditionFormula>
+    <errorMessage>Shipping Address line 1 &amp; 2 should not be more than 35 characters in length. Please select a different address or modify the address.</errorMessage>
+</ValidationRule>

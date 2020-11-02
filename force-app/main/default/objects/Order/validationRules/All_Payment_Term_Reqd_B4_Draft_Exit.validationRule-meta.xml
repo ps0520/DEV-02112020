@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Payment_Term_Reqd_B4_Draft_Exit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT(BEGINS(RecordType.DeveloperName, &apos;CA_&apos;)),
+ISPICKVAL(Payment_Terms__c, &apos;None&apos;), ISCHANGED( Status ) ,
+PRIORVALUE(Status) = &apos;DRAFT&apos;, TEXT(Status) != &apos;DRAFT&apos;, TEXT(Status) != &apos;CANCELLED&apos;)</errorConditionFormula>
+    <errorMessage>Please choose Payment Terms before advancing.</errorMessage>
+</ValidationRule>

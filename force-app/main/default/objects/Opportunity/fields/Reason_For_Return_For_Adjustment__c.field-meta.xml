@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Return_For_Adjustment__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason For Return For Adjustment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Beantragung zu früh</fullName>
+                <default>false</default>
+                <label>Beantragung zu früh</label>
+            </value>
+            <value>
+                <fullName>Beantragung zu spät</fullName>
+                <default>false</default>
+                <label>Beantragung zu spät</label>
+            </value>
+            <value>
+                <fullName>Doppelversorgung</fullName>
+                <default>false</default>
+                <label>Doppelversorgung</label>
+            </value>
+            <value>
+                <fullName>Formfehler</fullName>
+                <default>false</default>
+                <label>Formfehler</label>
+            </value>
+            <value>
+                <fullName>Formfehler Arzt-/Betriebsstättennummer existiert nicht</fullName>
+                <default>false</default>
+                <label>Formfehler Arzt-/Betriebsstättennummer existiert nicht</label>
+            </value>
+            <value>
+                <fullName>Formfehler Falsches Produkt</fullName>
+                <default>false</default>
+                <label>Formfehler Falsches Produkt</label>
+            </value>
+            <value>
+                <fullName>Formfehler LKZ falsch/fehlt</fullName>
+                <default>false</default>
+                <label>Formfehler LKZ falsch/fehlt</label>
+            </value>
+            <value>
+                <fullName>Formfehler Versichertennummer existiert nicht bei Kasse</fullName>
+                <default>false</default>
+                <label>Formfehler Versichertennummer existiert nicht bei Kasse</label>
+            </value>
+            <value>
+                <fullName>Formfehler Versorgungszeitraum fehlt/falsch</fullName>
+                <default>false</default>
+                <label>Formfehler Versorgungszeitraum fehlt/falsch</label>
+            </value>
+            <value>
+                <fullName>Gründe für Rückläufer</fullName>
+                <default>false</default>
+                <label>Gründe für Rückläufer</label>
+            </value>
+            <value>
+                <fullName>Neue Anforderungen der Kasse</fullName>
+                <default>false</default>
+                <label>Neue Anforderungen der Kasse</label>
+            </value>
+            <value>
+                <fullName>Sonstiges (Notiz erforderlich)</fullName>
+                <default>false</default>
+                <label>Sonstiges (Notiz erforderlich)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

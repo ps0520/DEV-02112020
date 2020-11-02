@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Cancelled_Reason_required</fullName>
+    <active>true</active>
+    <description>Cancelled Reason is required when a Lead is Cancelled</description>
+    <errorConditionFormula>AND(ISCHANGED( Status ) ,
+ ISPICKVAL(Status, &apos;Cancelled&apos;),
+ ISBLANK( Cancelled_Reasons__c )  )</errorConditionFormula>
+    <errorMessage>Cancelled Reason(s) required for Cancelled Leads.</errorMessage>
+</ValidationRule>

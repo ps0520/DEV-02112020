@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DailyRate_Swiss__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  CONTAINS( Product_Name__c, &apos;STK&apos;), UnitPrice/(Quantity * 90),
+  IF(CONTAINS( Product_Name__c, &apos;STT&apos;), UnitPrice/(Quantity * 90),
+    IF(CONTAINS( Product_Name__c, &apos;STS&apos;), UnitPrice/(Quantity * 30), 0.00
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DailyRate_Swiss</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

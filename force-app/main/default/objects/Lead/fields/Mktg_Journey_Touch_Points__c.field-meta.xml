@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mktg_Journey_Touch_Points__c</fullName>
+    <externalId>false</externalId>
+    <label>Mktg Journey Touch Points</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Registration Completed</fullName>
+                <default>false</default>
+                <label>Registration Completed</label>
+            </value>
+            <value>
+                <fullName>First Survey Completed</fullName>
+                <default>false</default>
+                <label>First Survey Completed</label>
+            </value>
+            <value>
+                <fullName>Joined Dexcom Family</fullName>
+                <default>false</default>
+                <label>Joined Dexcom Family</label>
+            </value>
+            <value>
+                <fullName>Second Sensor Required</fullName>
+                <default>false</default>
+                <label>Second Sensor Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

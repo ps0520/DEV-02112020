@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OK_Ind_Type__c</fullName>
+    <description>OneKey - Picklist Code = TYP</description>
+    <externalId>false</externalId>
+    <label>Ind. Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrator</fullName>
+                <default>false</default>
+                <label>Administrator</label>
+            </value>
+            <value>
+                <fullName>Res/Scientist</fullName>
+                <default>false</default>
+                <label>Res/Scientist</label>
+            </value>
+            <value>
+                <fullName>Counselor/SW</fullName>
+                <default>false</default>
+                <label>Counselor/SW</label>
+            </value>
+            <value>
+                <fullName>Dentist</fullName>
+                <default>false</default>
+                <label>Dentist</label>
+            </value>
+            <value>
+                <fullName>Dental Asst</fullName>
+                <default>false</default>
+                <label>Dental Asst</label>
+            </value>
+            <value>
+                <fullName>Nurse</fullName>
+                <default>false</default>
+                <label>Nurse</label>
+            </value>
+            <value>
+                <fullName>Phys. Therapist</fullName>
+                <default>false</default>
+                <label>Phys. Therapist</label>
+            </value>
+            <value>
+                <fullName>Lab Tech</fullName>
+                <default>false</default>
+                <label>Lab Tech</label>
+            </value>
+            <value>
+                <fullName>Physician</fullName>
+                <default>false</default>
+                <label>Physician</label>
+            </value>
+            <value>
+                <fullName>Medical Asst</fullName>
+                <default>false</default>
+                <label>Medical Asst</label>
+            </value>
+            <value>
+                <fullName>Optician</fullName>
+                <default>false</default>
+                <label>Optician</label>
+            </value>
+            <value>
+                <fullName>Optometrist</fullName>
+                <default>false</default>
+                <label>Optometrist</label>
+            </value>
+            <value>
+                <fullName>Pharmacist</fullName>
+                <default>false</default>
+                <label>Pharmacist</label>
+            </value>
+            <value>
+                <fullName>Den. Prosthetist</fullName>
+                <default>false</default>
+                <label>Den. Prosthetist</label>
+            </value>
+            <value>
+                <fullName>Pharm Tech</fullName>
+                <default>false</default>
+                <label>Pharm Tech</label>
+            </value>
+            <value>
+                <fullName>Pharm. Asst.Tech</fullName>
+                <default>false</default>
+                <label>Pharm. Asst.Tech</label>
+            </value>
+            <value>
+                <fullName>Allied Health Pr</fullName>
+                <default>false</default>
+                <label>Allied Health Pr</label>
+            </value>
+            <value>
+                <fullName>Midwife</fullName>
+                <default>false</default>
+                <label>Midwife</label>
+            </value>
+            <value>
+                <fullName>Tech</fullName>
+                <default>false</default>
+                <label>Tech</label>
+            </value>
+            <value>
+                <fullName>Veterinarian</fullName>
+                <default>false</default>
+                <label>Veterinarian</label>
+            </value>
+            <value>
+                <fullName>Veterinary Asst</fullName>
+                <default>false</default>
+                <label>Veterinary Asst</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

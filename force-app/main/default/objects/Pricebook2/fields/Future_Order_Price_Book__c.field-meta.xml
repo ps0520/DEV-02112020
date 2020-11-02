@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Future_Order_Price_Book__c</fullName>
+    <description>The name of the Price Book to be used for Future Order and to create SSIP Rules</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The name of the Price Book to be used for Future Order and to create SSIP Rules</inlineHelpText>
+    <label>Future Order Price Book</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

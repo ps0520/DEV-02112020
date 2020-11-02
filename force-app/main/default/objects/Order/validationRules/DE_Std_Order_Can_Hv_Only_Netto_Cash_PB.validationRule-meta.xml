@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Std_Order_Can_Hv_Only_Netto_Cash_PB</fullName>
+    <active>true</active>
+    <description>We can choose only the Netto Cash Pricebook for Standard order type</description>
+    <errorConditionFormula>AND(
+       
+	ISBLANK(OpportunityId),
+	ISPICKVAL(Type, &apos;DE STANDARD&apos;),
+	Price_Book__r.Name != &apos;DE Netto-Preis Cash&apos; 
+)</errorConditionFormula>
+    <errorMessage>You can choose only &apos;Netto-Preis Cash Pricebook&apos; for &apos;DE Standard&apos; Order type.</errorMessage>
+</ValidationRule>

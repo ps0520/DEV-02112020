@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_If_Cash_Pay_Changed</fullName>
+    <active>true</active>
+    <description>Cash Pay cannot be changed past &apos;Cost Estimate&apos; stage.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Probability &gt; 0.40,
+ ISCHANGED(Cash_Pay__c)
+)</errorConditionFormula>
+    <errorMessage>&apos;Cash Pay&apos; cannot be altered past &apos;Cost Estimate&apos; stage.</errorMessage>
+</ValidationRule>

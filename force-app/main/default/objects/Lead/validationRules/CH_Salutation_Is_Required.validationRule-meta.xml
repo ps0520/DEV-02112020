@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CH_Salutation_Is_Required</fullName>
+    <active>true</active>
+    <description>Salutation is required.</description>
+    <errorConditionFormula>AND( 
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name = &quot;Data Integrator&quot;),
+NOT($User.Alias = &quot;autoproc&quot;),
+BEGINS(RecordType.DeveloperName, &apos;CH_Person_Lead&apos;), 
+ISPICKVAL( Salutation ,&quot;&quot;),
+ IsConverted 
+)</errorConditionFormula>
+    <errorMessage>Salutation is required before converting the Lead.</errorMessage>
+</ValidationRule>

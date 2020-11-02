@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Training_Letter_Fields_Selectio</fullName>
+    <active>false</active>
+    <description>For DE Opportunity, the Training Letter fields should not be selected unless the Opportunity is at the Training Letter stage.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ NOT(PRIORVALUE(Probability) &gt;= 0.60),
+ Probability &lt; 0.60,
+ IsClosed = False,
+ OR(
+  Training_Confirmation_Received__c  = TRUE,
+  Training_Letter_Sent__c  = TRUE
+ )
+)</errorConditionFormula>
+    <errorMessage>&apos;Training Letter&apos; fields selection can be performed only when the Opportunity has passed &apos;Cost Estimate&apos; stage.</errorMessage>
+</ValidationRule>

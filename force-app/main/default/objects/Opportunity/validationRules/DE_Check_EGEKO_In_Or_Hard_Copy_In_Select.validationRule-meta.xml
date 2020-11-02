@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_EGEKO_In_Or_Hard_Copy_In_Select</fullName>
+    <active>true</active>
+    <description>Check if either EGEKO In or Hard Copy In is checked before the Opportunity can be moved from &apos;Cost Estimate&apos; stage.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Probability &gt; 0.40,
+ EGEKO_In__c  = FALSE,
+ Hard_Copy_In__c  = FALSE
+)</errorConditionFormula>
+    <errorMessage>&apos;EGEKO In&apos; or &apos;Hard Copy In&apos; should be selected before moving from &apos;Cost Estimate&apos; stage.</errorMessage>
+</ValidationRule>

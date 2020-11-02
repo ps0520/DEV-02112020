@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Do_Not_Allow_To_Change_OpptyLineItem</fullName>
+    <active>true</active>
+    <description>Do not allow to change opportunity products after Oppty is closed</description>
+    <errorConditionFormula>AND (
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ NOT(ISNEW()),
+ Probability &gt; 0.60,
+ ISCHANGED( Count_Of_Opportunity_Products__c )
+)</errorConditionFormula>
+    <errorMessage>Opportunity products cannot be altered past Cost Estimate stage.</errorMessage>
+</ValidationRule>

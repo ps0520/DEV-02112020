@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Case_Complaint_Compact</fullName>
+    <fields>AccountId</fields>
+    <fields>Problem_Code_And_Summary__c</fields>
+    <fields>Severity_Level__c</fields>
+    <fields>Product_Line__c</fields>
+    <label>DE Case Complaint Compact</label>
+</CompactLayout>

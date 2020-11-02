@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Chk_If_All_Sub_Fields_Are_Filled_In</fullName>
+    <active>true</active>
+    <description>Rule checks if the subscription fields are filled in properly</description>
+    <errorConditionFormula>OR(
+	AND(NOT(ISBLANK(Repeat_Quantity__c)), ISBLANK(Repeat_After_In_Days__c)),
+	AND(NOT(ISBLANK(Repeat_After_In_Days__c)), ISBLANK(Repeat_Quantity__c))
+)</errorConditionFormula>
+    <errorMessage>&apos;Repeat Quantity&apos; and &apos;Repeat Frequency (In Days)&apos; are required.</errorMessage>
+</ValidationRule>

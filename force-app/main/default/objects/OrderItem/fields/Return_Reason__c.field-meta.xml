@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Return Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Customer did not order the item</fullName>
+                <default>false</default>
+                <label>Customer did not order the item</label>
+            </value>
+            <value>
+                <fullName>Customer did not receive the item</fullName>
+                <default>false</default>
+                <label>Customer did not receive the item</label>
+            </value>
+            <value>
+                <fullName>Customer no longer need the item</fullName>
+                <default>false</default>
+                <label>Customer no longer need the item</label>
+            </value>
+            <value>
+                <fullName>Customer ordered the wrong item</fullName>
+                <default>false</default>
+                <label>Customer ordered the wrong item</label>
+            </value>
+            <value>
+                <fullName>Delivery Unsuccessful</fullName>
+                <default>false</default>
+                <label>Delivery Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>Discontinuation</fullName>
+                <default>false</default>
+                <label>Discontinuation</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error</fullName>
+                <default>false</default>
+                <label>Internal Processing Error</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error Compilation</fullName>
+                <default>false</default>
+                <label>Internal Processing Error Compilation</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error G4/G5/G6</fullName>
+                <default>false</default>
+                <label>Internal Processing Error G4/G5/G6</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error mg/mmol</fullName>
+                <default>false</default>
+                <label>Internal Processing Error mg/mmol</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error Quantity</fullName>
+                <default>false</default>
+                <label>Internal Processing Error Quantity</label>
+            </value>
+            <value>
+                <fullName>Lack Regulation</fullName>
+                <default>false</default>
+                <label>Lack Regulation</label>
+            </value>
+            <value>
+                <fullName>Other (Note Required)</fullName>
+                <default>false</default>
+                <label>Other (Note Required)</label>
+            </value>
+            <value>
+                <fullName>Price change</fullName>
+                <default>false</default>
+                <label>Price change</label>
+            </value>
+            <value>
+                <fullName>QA Complaint</fullName>
+                <default>false</default>
+                <label>QA Complaint</label>
+            </value>
+            <value>
+                <fullName>Quantity change</fullName>
+                <default>false</default>
+                <label>Quantity change</label>
+            </value>
+            <value>
+                <fullName>Reason code not provided</fullName>
+                <default>false</default>
+                <label>Reason code not provided</label>
+            </value>
+            <value>
+                <fullName>Rejection After Approval</fullName>
+                <default>false</default>
+                <label>Rejection After Approval</label>
+            </value>
+            <value>
+                <fullName>Resignation Private</fullName>
+                <default>false</default>
+                <label>Resignation Private</label>
+            </value>
+            <value>
+                <fullName>Service Error Supplier</fullName>
+                <default>false</default>
+                <label>Service Error Supplier</label>
+            </value>
+            <value>
+                <fullName>The item does not work properly</fullName>
+                <default>false</default>
+                <label>The item does not work properly</label>
+            </value>
+            <value>
+                <fullName>The item is damaged</fullName>
+                <default>false</default>
+                <label>The item is damaged</label>
+            </value>
+            <value>
+                <fullName>The item is missing parts</fullName>
+                <default>false</default>
+                <label>The item is missing parts</label>
+            </value>
+            <value>
+                <fullName>The item was delivered late</fullName>
+                <default>false</default>
+                <label>The item was delivered late</label>
+            </value>
+            <value>
+                <fullName>Wrong Address</fullName>
+                <default>false</default>
+                <label>Wrong Address</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

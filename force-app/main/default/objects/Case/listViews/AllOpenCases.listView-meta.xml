@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllOpenCases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Problem_Code_And_Summary__c</columns>
+    <columns>Inquiry_Code_and_Summary__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Integration_Executed__c</columns>
+    <columns>Integration_Executed_Date_Time__c</columns>
+    <columns>Weight__c</columns>
+    <columns>Product_Line__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Open Cases</label>
+    <language>en_US</language>
+</ListView>

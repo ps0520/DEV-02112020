@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cant_Select_Inactive_Ship_To_Address</fullName>
+    <active>true</active>
+    <description>Inactive address cannot be selected as Shipping or billing address</description>
+    <errorConditionFormula>AND( 
+	$Profile.Name &lt;&gt; &apos;Data Integrator&apos;,
+	OR( 
+	AND( 
+	NOT(ISBLANK(Customer_Bill_To_Address__c)) , 
+	Customer_Bill_To_Address__r.Inactive__c = true 
+	), 
+	AND( 
+	NOT(ISBLANK(Customer_Ship_To_Address__c)) , 
+	Customer_Ship_To_Address__r.Inactive__c = true 
+	), 
+	AND( 
+	NOT(ISBLANK(Payor_Bill_To_Address__c)) , 
+	Payor_Bill_To_Address__r.Inactive__c = true 
+	) 
+	),
+	ISCHANGED(Status),	
+	NOT( ISPICKVAL(Status, &apos;Canceled&apos;) ), 
+	OR(ISPICKVAL(Status, &apos;Shipping Hold&apos;), ISPICKVAL(Status, &apos;Activated&apos;))
+)</errorConditionFormula>
+    <errorMessage>Customer Ship To, Customer Bill To and Payor Bill To Address cannot be Inactive.</errorMessage>
+</ValidationRule>

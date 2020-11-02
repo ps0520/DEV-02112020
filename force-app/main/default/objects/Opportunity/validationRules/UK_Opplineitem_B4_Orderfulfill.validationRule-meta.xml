@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_Opplineitem_B4_Orderfulfill</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(BEGINS(RecordType.DeveloperName, &apos;GB_&apos;),BEGINS(RecordType.DeveloperName, &apos;IE_&apos;)),
+(Count_Of_Opportunity_Products__c == 0),
+OR(ISPICKVAL(StageName, &apos;Order Fulfillment&apos;), ISPICKVAL(StageName, &apos;Closed&apos;))
+)</errorConditionFormula>
+    <errorMessage>Before moving to this stage, please add products.</errorMessage>
+</ValidationRule>

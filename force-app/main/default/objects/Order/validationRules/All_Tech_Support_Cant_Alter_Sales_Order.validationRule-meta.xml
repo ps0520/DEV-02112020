@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Tech_Support_Cant_Alter_Sales_Order</fullName>
+    <active>true</active>
+    <description>Tech support team cannot alter the sales order</description>
+    <errorConditionFormula>AND(
+$Profile.Name = &quot;EU Technical Support User&quot;,
+NOT(CONTAINS(TEXT(Type), &apos;TECH&apos;)),
+OR(ISCHANGED(Status), ISCHANGED(Invoice_Status__c), ISCHANGED(AccountId), ISCHANGED(EffectiveDate))  
+)</errorConditionFormula>
+    <errorMessage>You cannot perform this action. Please contact admin.</errorMessage>
+</ValidationRule>

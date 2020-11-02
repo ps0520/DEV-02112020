@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSIP_Payor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Payor for this SSIP Rule based Orders</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Payor to be associated to the Order. If the Order is Funded, the Payor associated to the Fund will be chose when Order is created.</inlineHelpText>
+    <label>Payor</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>contains</operation>
+            <value>Payor</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>SSIP Rule (SSIP Payor)</relationshipLabel>
+    <relationshipName>SSIP_Rule_Payor</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Advice_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(UnitPrice &gt; 0 &amp;&amp; (BEGINS (PricebookEntry.Product2.Name, &apos;STT&apos;) || PricebookEntry.Product2.Name = &apos;G6-SEN-XMER-LUMPSUM2&apos;) &amp;&amp; NOT(ISBLANK(Order.Opportunity.Xmer_Medical_Advice_Number_Exception__c)),
+(MID( TEXT(Order.Opportunity.Xmer_Medical_Advice_Number_Exception__c) , 1, 2) &amp; &apos;.&apos; &amp; 
+MID( TEXT(Order.Opportunity.Xmer_Medical_Advice_Number_Exception__c) , 3, 2) &amp; &apos;.&apos; &amp; 
+MID( TEXT(Order.Opportunity.Xmer_Medical_Advice_Number_Exception__c) , 5, 2) &amp; &apos;.&apos; &amp; 
+MID( TEXT(Order.Opportunity.Xmer_Medical_Advice_Number_Exception__c) , 7, 4)), 
+PricebookEntry.Medical_Advice_Number__c)</formula>
+    <label>Medical Advice Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

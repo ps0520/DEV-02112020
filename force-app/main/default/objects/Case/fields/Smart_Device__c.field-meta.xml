@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Smart_Device__c</fullName>
+    <externalId>false</externalId>
+    <label>Smart Device</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>iPhone 7 Plus</fullName>
+                <default>false</default>
+                <label>iPhone 7 Plus</label>
+            </value>
+            <value>
+                <fullName>iPhone 7</fullName>
+                <default>false</default>
+                <label>iPhone 7</label>
+            </value>
+            <value>
+                <fullName>iPhone SE</fullName>
+                <default>false</default>
+                <label>iPhone SE</label>
+            </value>
+            <value>
+                <fullName>iPhone 6S</fullName>
+                <default>false</default>
+                <label>iPhone 6S</label>
+            </value>
+            <value>
+                <fullName>iPhone 6S Plus</fullName>
+                <default>false</default>
+                <label>iPhone 6S Plus</label>
+            </value>
+            <value>
+                <fullName>iPhone 6 Plus</fullName>
+                <default>false</default>
+                <label>iPhone 6 Plus</label>
+            </value>
+            <value>
+                <fullName>iPhone 6</fullName>
+                <default>false</default>
+                <label>iPhone 6</label>
+            </value>
+            <value>
+                <fullName>iPhone 5S</fullName>
+                <default>false</default>
+                <label>iPhone 5S</label>
+            </value>
+            <value>
+                <fullName>iPhone 5C</fullName>
+                <default>false</default>
+                <label>iPhone 5C</label>
+            </value>
+            <value>
+                <fullName>iPhone 5</fullName>
+                <default>false</default>
+                <label>iPhone 5</label>
+            </value>
+            <value>
+                <fullName>iPhone 4S</fullName>
+                <default>false</default>
+                <label>iPhone 4S</label>
+            </value>
+            <value>
+                <fullName>iPhone</fullName>
+                <default>false</default>
+                <label>iPhone</label>
+            </value>
+            <value>
+                <fullName>iPad Pro</fullName>
+                <default>false</default>
+                <label>iPad Pro</label>
+            </value>
+            <value>
+                <fullName>iPad 4</fullName>
+                <default>false</default>
+                <label>iPad 4</label>
+            </value>
+            <value>
+                <fullName>iPad 3</fullName>
+                <default>false</default>
+                <label>iPad 3</label>
+            </value>
+            <value>
+                <fullName>iPad 2</fullName>
+                <default>false</default>
+                <label>iPad 2</label>
+            </value>
+            <value>
+                <fullName>iPad Air 2</fullName>
+                <default>false</default>
+                <label>iPad Air 2</label>
+            </value>
+            <value>
+                <fullName>iPad Air</fullName>
+                <default>false</default>
+                <label>iPad Air</label>
+            </value>
+            <value>
+                <fullName>iPad Mini 4</fullName>
+                <default>false</default>
+                <label>iPad Mini 4</label>
+            </value>
+            <value>
+                <fullName>iPad Mini 3</fullName>
+                <default>false</default>
+                <label>iPad Mini 3</label>
+            </value>
+            <value>
+                <fullName>iPad Mini 2</fullName>
+                <default>false</default>
+                <label>iPad Mini 2</label>
+            </value>
+            <value>
+                <fullName>iPad Mini</fullName>
+                <default>false</default>
+                <label>iPad Mini</label>
+            </value>
+            <value>
+                <fullName>iPad</fullName>
+                <default>false</default>
+                <label>iPad</label>
+            </value>
+            <value>
+                <fullName>iPod Touch 6th Gen</fullName>
+                <default>false</default>
+                <label>iPod Touch 6th Gen</label>
+            </value>
+            <value>
+                <fullName>iPod Touch 5th Gen</fullName>
+                <default>false</default>
+                <label>iPod Touch 5th Gen</label>
+            </value>
+            <value>
+                <fullName>iPod Touch</fullName>
+                <default>false</default>
+                <label>iPod Touch</label>
+            </value>
+            <value>
+                <fullName>Android</fullName>
+                <default>false</default>
+                <label>Android</label>
+            </value>
+            <value>
+                <fullName>LG G6</fullName>
+                <default>false</default>
+                <label>LG G6</label>
+            </value>
+            <value>
+                <fullName>LG G5</fullName>
+                <default>false</default>
+                <label>LG G5</label>
+            </value>
+            <value>
+                <fullName>LG G4</fullName>
+                <default>false</default>
+                <label>LG G4</label>
+            </value>
+            <value>
+                <fullName>Nexus 6</fullName>
+                <default>false</default>
+                <label>Nexus 6</label>
+            </value>
+            <value>
+                <fullName>Samsung Galaxy S8 Plus</fullName>
+                <default>false</default>
+                <label>Samsung Galaxy S8 Plus</label>
+            </value>
+            <value>
+                <fullName>Samsung Galaxy S8</fullName>
+                <default>false</default>
+                <label>Samsung Galaxy S8</label>
+            </value>
+            <value>
+                <fullName>Samsung Galaxy S7 Edge</fullName>
+                <default>false</default>
+                <label>Samsung Galaxy S7 Edge</label>
+            </value>
+            <value>
+                <fullName>Samsung Galaxy S7 </fullName>
+                <default>false</default>
+                <label>Samsung Galaxy S7 </label>
+            </value>
+            <value>
+                <fullName>Samsung Galaxy S6 Edge</fullName>
+                <default>false</default>
+                <label>Samsung Galaxy S6 Edge</label>
+            </value>
+            <value>
+                <fullName>Samsung Galaxy S6</fullName>
+                <default>false</default>
+                <label>Samsung Galaxy S6</label>
+            </value>
+            <value>
+                <fullName>Samsung Galaxy S5</fullName>
+                <default>false</default>
+                <label>Samsung Galaxy S5</label>
+            </value>
+            <value>
+                <fullName>Google Pixel 2 XL</fullName>
+                <default>false</default>
+                <label>Google Pixel 2 XL</label>
+            </value>
+            <value>
+                <fullName>Google Pixel 2</fullName>
+                <default>false</default>
+                <label>Google Pixel 2</label>
+            </value>
+            <value>
+                <fullName>Google Pixel XL</fullName>
+                <default>false</default>
+                <label>Google Pixel XL</label>
+            </value>
+            <value>
+                <fullName>Google Pixel</fullName>
+                <default>false</default>
+                <label>Google Pixel</label>
+            </value>
+            <value>
+                <fullName>Sony Xperia Z3</fullName>
+                <default>false</default>
+                <label>Sony Xperia Z3</label>
+            </value>
+            <value>
+                <fullName>HTC One M8</fullName>
+                <default>false</default>
+                <label>HTC One M8</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unable/Unwilling</fullName>
+                <default>false</default>
+                <label>Unable/Unwilling</label>
+            </value>
+            <value>
+                <fullName>Unknown Smart Device</fullName>
+                <default>false</default>
+                <label>Unknown Smart Device</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

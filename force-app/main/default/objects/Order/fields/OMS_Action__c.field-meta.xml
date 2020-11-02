@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OMS_Action__c</fullName>
+    <externalId>false</externalId>
+    <label>OMS Action</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>placeInvoiceHold</fullName>
+                <default>false</default>
+                <label>placeInvoiceHold</label>
+            </value>
+            <value>
+                <fullName>releaseInvoiceHold</fullName>
+                <default>false</default>
+                <label>releaseInvoiceHold</label>
+            </value>
+            <value>
+                <fullName>chargeShippingAmount</fullName>
+                <default>false</default>
+                <label>chargeShippingAmount</label>
+            </value>
+            <value>
+                <fullName>applyRefund</fullName>
+                <default>false</default>
+                <label>applyRefund</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

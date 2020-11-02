@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inquiry_Code_and_Summary__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Inquiry Code and Summary</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Complaint_Code_and_Severity__c.Code_Type__c</field>
+            <operation>equals</operation>
+            <value>Inquiry</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Complaint_Code_and_Severity__c</referenceTo>
+    <relationshipLabel>Cases (Inquiry Code and Severity)</relationshipLabel>
+    <relationshipName>Cases_Inquiry</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

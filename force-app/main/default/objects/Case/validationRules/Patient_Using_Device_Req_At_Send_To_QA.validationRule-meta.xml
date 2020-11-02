@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patient_Using_Device_Req_At_Send_To_QA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL( Status , &apos;Send To QA&apos;) , 
+RecordType.DeveloperName = &apos;DE_Case_Complaint&apos;, 
+ISBLANK( TEXT(  Patient_Using_The_Device_At_Incident__c ) ) 
+
+)</errorConditionFormula>
+    <errorMessage>&quot;Patient Using Device At Incident?&quot; value required when status is &quot;Send To QA&quot;</errorMessage>
+</ValidationRule>

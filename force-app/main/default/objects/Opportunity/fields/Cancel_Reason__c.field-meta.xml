@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancel_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Cancel Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Ablehnung</fullName>
+                <default>false</default>
+                <label>Ablehnung</label>
+            </value>
+            <value>
+                <fullName>Angebot nicht angenommen (PKV)</fullName>
+                <default>false</default>
+                <label>Angebot nicht angenommen (PKV)</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Duplicate Opportunity</fullName>
+                <default>false</default>
+                <label>Duplicate Opportunity</label>
+            </value>
+            <value>
+                <fullName>Incorrect Process (Note Required): Processing Error KK</fullName>
+                <default>false</default>
+                <label>Incorrect Process (Note Required): Processing Error KK</label>
+            </value>
+            <value>
+                <fullName>Integration issue</fullName>
+                <default>false</default>
+                <label>Integration issue</label>
+            </value>
+            <value>
+                <fullName>KK Application denied</fullName>
+                <default>false</default>
+                <label>KK Application denied</label>
+            </value>
+            <value>
+                <fullName>Missing Patient Contact Info</fullName>
+                <default>false</default>
+                <label>Missing Patient Contact Info</label>
+            </value>
+            <value>
+                <fullName>Mobil Device Incompatible</fullName>
+                <default>false</default>
+                <label>Mobil Device Incompatible</label>
+            </value>
+            <value>
+                <fullName>Non responsive</fullName>
+                <default>false</default>
+                <label>Non responsive</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Operation Faulty (Note Required): Processing Error Dexcom</fullName>
+                <default>false</default>
+                <label>Operation Faulty (Note Required): Processing Error Dexcom</label>
+            </value>
+            <value>
+                <fullName>Operation Incorrect (Note Required): System Change</fullName>
+                <default>false</default>
+                <label>Operation Incorrect (Note Required): System Change</label>
+            </value>
+            <value>
+                <fullName>Opp Created Only for Quote</fullName>
+                <default>false</default>
+                <label>Opp Created Only for Quote</label>
+            </value>
+            <value>
+                <fullName>Opportunity Created in Error</fullName>
+                <default>false</default>
+                <label>Opportunity Created in Error</label>
+            </value>
+            <value>
+                <fullName>Other (Note Required)</fullName>
+                <default>false</default>
+                <label>Other (Note Required)</label>
+            </value>
+            <value>
+                <fullName>Prescription Foreign Product</fullName>
+                <default>false</default>
+                <label>Prescription Foreign Product</label>
+            </value>
+            <value>
+                <fullName>Prescription Issued Incorrectly</fullName>
+                <default>false</default>
+                <label>Prescription Issued Incorrectly</label>
+            </value>
+            <value>
+                <fullName>Prescription Not Necessary (long-term VZ)</fullName>
+                <default>false</default>
+                <label>Prescription Not Necessary (long-term VZ)</label>
+            </value>
+            <value>
+                <fullName>Prescription too Early</fullName>
+                <default>false</default>
+                <label>Prescription too Early</label>
+            </value>
+            <value>
+                <fullName>Pricing – Cash Price too High</fullName>
+                <default>false</default>
+                <label>Pricing – Cash Price too High</label>
+            </value>
+            <value>
+                <fullName>Produkt nicht mehr benötigt</fullName>
+                <default>false</default>
+                <label>Produkt nicht mehr benötigt</label>
+            </value>
+            <value>
+                <fullName>Resides Outside Country</fullName>
+                <default>false</default>
+                <label>Resides Outside Country</label>
+            </value>
+            <value>
+                <fullName>Sonstige (Notiz erforderlich)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sonstige (Notiz erforderlich)</label>
+            </value>
+            <value>
+                <fullName>Vorgang doppelt</fullName>
+                <default>false</default>
+                <label>Vorgang doppelt</label>
+            </value>
+            <value>
+                <fullName>Vorgang fehlerhaft - Bearbeitungsfehler</fullName>
+                <default>false</default>
+                <label>Vorgang fehlerhaft - Bearbeitungsfehler</label>
+            </value>
+            <value>
+                <fullName>Vorgang fehlerhaft - Systemänderung</fullName>
+                <default>false</default>
+                <label>Vorgang fehlerhaft - Systemänderung</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

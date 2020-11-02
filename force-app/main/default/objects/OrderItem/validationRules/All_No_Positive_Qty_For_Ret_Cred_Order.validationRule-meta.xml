@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_No_Positive_Qty_For_Ret_Cred_Order</fullName>
+    <active>true</active>
+    <description>Rule to check if no positive qty can be entered for Return and Credit order type.</description>
+    <errorConditionFormula>AND( 
+CONTAINS(TEXT(Order.Type), &apos;RET&apos;),
+NOT(CONTAINS(TEXT(Order.Type), &apos;TECH&apos;)),
+Quantity &gt;= 0
+)</errorConditionFormula>
+    <errorMessage>Quantity should be a negative number.</errorMessage>
+</ValidationRule>

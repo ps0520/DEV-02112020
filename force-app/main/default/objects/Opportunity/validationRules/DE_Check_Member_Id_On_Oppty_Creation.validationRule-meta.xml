@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Member_Id_On_Oppty_Creation</fullName>
+    <active>true</active>
+    <description>Check if Member Id exist on the account before an Opportunity can be created</description>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+ISNEW(),
+ISBLANK(Account.Benefit_Member_Id__c) 
+)</errorConditionFormula>
+    <errorMessage>Please enter Member ID on Account before creating an Opportunity.</errorMessage>
+</ValidationRule>

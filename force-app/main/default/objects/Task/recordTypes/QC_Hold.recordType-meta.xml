@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QC_Hold</fullName>
+    <active>true</active>
+    <label>QC Hold</label>
+    <picklistValues>
+        <picklist>Call_Direction__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Reason__c</picklist>
+        <values>
+            <fullName>Ablehnung Krankenkasse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adressänderung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allgemeiner Ablauf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 1 DEXCOM Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 1 Produkte allgemein</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 1 Service Lieferant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 2 DEXCOM Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 2 Produkte allgemein</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 2 Service Lieferant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 3 DEXCOM Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 3 Produkte allgemein</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beschwerde Stufe 3 Service Lieferant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Briefe von DEXCOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FollowUp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kassenrückfragen Kostenvoranschlag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kassenrückfragen Sonstige</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kassenrückfragen Versorgungszeitraum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lieferung%2C Lieferumfang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketingaktionen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produktfragen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rechnung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retoure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonstige %28Notiz erforderlich%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technischer Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Versorgung allgemein</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PCS_Reason_Code__c</picklist>
+        <values>
+            <fullName>Accuracy and Calibration training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Education for Retention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auth Code Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clarity Full Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contraindications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Training- Getting Started Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 to G6 Feature Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intro to Dexcom Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Care outreach%2C left voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receiver%2F phone set up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ref to other department%2C non- education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer to CS%2C non-education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer to TS%2C non-education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensor Insertion%2C transmitter %26 Starting session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skin prep %26 adhesive tape training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stop sensor training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System component training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology and apps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training on treatment decisions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred to PCS%2C education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred to PCS%2C non-education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value of CGM and what to expect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water resistance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Discussed__c</picklist>
+        <values>
+            <fullName>Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Android App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clarity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dexcom Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overlay Patches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Share %2F Follow App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iOS App</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Waiting on someone else</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Data Migration Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further Clarification Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO%2FPatient ID Incorrect%2FMissing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAT Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dextracker Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EGEKO Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QC Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voicemail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Shipping_Method_Cant_Change_To_Null</fullName>
+    <active>true</active>
+    <description>When Shipping Method is modified it cannot be set to null</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Shipping_Method__c ),
+ISBLANK(Text(Shipping_Method__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Shipping_Method__c</errorDisplayField>
+    <errorMessage>Shipping Method cannot be removed.</errorMessage>
+</ValidationRule>

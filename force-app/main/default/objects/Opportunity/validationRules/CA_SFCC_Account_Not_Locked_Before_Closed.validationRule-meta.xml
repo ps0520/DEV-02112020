@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_SFCC_Account_Not_Locked_Before_Closed</fullName>
+    <active>true</active>
+    <description>For Canada, Coverage Should be confirmed and checked before Closing the Opportunity.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;, 
+ISPICKVAL(StageName, &apos;Closed - Complete&apos;), 
+ Account.SFCC_Login_Enabled__c)</errorConditionFormula>
+    <errorMessage>Login Account is Locked. Get it unlocked before Closing the Opportunity.</errorMessage>
+</ValidationRule>

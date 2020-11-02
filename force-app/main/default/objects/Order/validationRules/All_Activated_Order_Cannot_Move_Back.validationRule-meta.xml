@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Activated_Order_Cannot_Move_Back</fullName>
+    <active>true</active>
+    <description>If the Order is already activated, it cannot be moved back.</description>
+    <errorConditionFormula>AND(
+    NOT($Profile.Name = &quot;System Administrator&quot;),
+    ISCHANGED(Status),
+    OR(ISPICKVAL(Status, &quot;Activated&quot;), ISPICKVAL(Status, &quot;Draft&quot;), ISPICKVAL(Status, &quot;Shipping Hold&quot;)),
+    NOT(ISPICKVAL(PRIORVALUE(Status),&quot;Draft&quot;)),
+    NOT(ISPICKVAL(PRIORVALUE(Status),&quot;Shipping Hold&quot;)),
+    NOT(ISPICKVAL(PRIORVALUE(Status),&quot;Activated&quot;))
+)</errorConditionFormula>
+    <errorMessage>Order is already activated, you cannot perform this operation.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Addresses_Should_Exist_To_Activate</fullName>
+    <active>true</active>
+    <description>In order to activate an Order either Customer Bill to or Payor Bill to and Customer ship to address are required.</description>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($User.Alias = &quot;autoproc&quot;),
+ISCHANGED(Status),
+OR(ISPICKVAL(Status,&apos;Activated&apos;), ISPICKVAL(Status,&apos;Shipping Hold&apos;)),
+OR(
+ISBLANK( Customer_Ship_To_Address__c ),
+AND(ISBLANK( Customer_Bill_To_Address__c ), ISBLANK( Payor_Bill_To_Address__c ))
+)
+)</errorConditionFormula>
+    <errorMessage>Please make sure Billing and Shipping address are attached to the Order before activation..</errorMessage>
+</ValidationRule>

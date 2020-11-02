@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_If_Training_Channel_Is_Entered</fullName>
+    <active>true</active>
+    <description>Training Channel is required when training confirmation is checked.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Probability &gt; 0.40,
+ Training_Letter_Sent__c = TRUE,
+ Training_Confirmation_Received__c = TRUE,
+ ISBLANK(TEXT(Training_Confirmation_Channel__c))
+)</errorConditionFormula>
+    <errorMessage>Please select the &apos;Training Confirmation Channel&apos;.</errorMessage>
+</ValidationRule>

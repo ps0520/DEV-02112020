@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ablehnung Krankenkasse</fullName>
+                <default>false</default>
+                <label>Ablehnung Krankenkasse</label>
+            </value>
+            <value>
+                <fullName>Adressänderung</fullName>
+                <default>false</default>
+                <label>Adressänderung</label>
+            </value>
+            <value>
+                <fullName>Allgemeiner Ablauf</fullName>
+                <default>false</default>
+                <label>Allgemeiner Ablauf</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 1 DEXCOM Service</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 1 DEXCOM Service</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 1 Produkte allgemein</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 1 Produkte allgemein</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 1 Service Lieferant</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 1 Service Lieferant</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 2 DEXCOM Service</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 2 DEXCOM Service</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 2 Produkte allgemein</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 2 Produkte allgemein</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 2 Service Lieferant</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 2 Service Lieferant</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 3 DEXCOM Service</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 3 DEXCOM Service</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 3 Produkte allgemein</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 3 Produkte allgemein</label>
+            </value>
+            <value>
+                <fullName>Beschwerde Stufe 3 Service Lieferant</fullName>
+                <default>false</default>
+                <label>Beschwerde Stufe 3 Service Lieferant</label>
+            </value>
+            <value>
+                <fullName>Briefe von DEXCOM</fullName>
+                <default>false</default>
+                <label>Briefe von DEXCOM</label>
+            </value>
+            <value>
+                <fullName>FollowUp</fullName>
+                <default>false</default>
+                <label>FollowUp</label>
+            </value>
+            <value>
+                <fullName>G6</fullName>
+                <default>false</default>
+                <label>G6</label>
+            </value>
+            <value>
+                <fullName>Kassenrückfragen Kostenvoranschlag</fullName>
+                <default>false</default>
+                <label>Kassenrückfragen Kostenvoranschlag</label>
+            </value>
+            <value>
+                <fullName>Kassenrückfragen Sonstige</fullName>
+                <default>false</default>
+                <label>Kassenrückfragen Sonstige</label>
+            </value>
+            <value>
+                <fullName>Kassenrückfragen Versorgungszeitraum</fullName>
+                <default>false</default>
+                <label>Kassenrückfragen Versorgungszeitraum</label>
+            </value>
+            <value>
+                <fullName>Lieferung, Lieferumfang</fullName>
+                <default>false</default>
+                <label>Lieferung, Lieferumfang</label>
+            </value>
+            <value>
+                <fullName>Marketingaktionen</fullName>
+                <default>false</default>
+                <label>Marketingaktionen</label>
+            </value>
+            <value>
+                <fullName>Produktfragen</fullName>
+                <default>false</default>
+                <label>Produktfragen</label>
+            </value>
+            <value>
+                <fullName>Rechnung</fullName>
+                <default>false</default>
+                <label>Rechnung</label>
+            </value>
+            <value>
+                <fullName>Retoure</fullName>
+                <default>false</default>
+                <label>Retoure</label>
+            </value>
+            <value>
+                <fullName>Sonstige (Notiz erforderlich)</fullName>
+                <default>false</default>
+                <label>Sonstige (Notiz erforderlich)</label>
+            </value>
+            <value>
+                <fullName>Technischer Support</fullName>
+                <default>false</default>
+                <label>Technischer Support</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Versorgung allgemein</fullName>
+                <default>false</default>
+                <label>Versorgung allgemein</label>
+            </value>
+            <value>
+                <fullName>Data protection</fullName>
+                <default>false</default>
+                <label>Data protection</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

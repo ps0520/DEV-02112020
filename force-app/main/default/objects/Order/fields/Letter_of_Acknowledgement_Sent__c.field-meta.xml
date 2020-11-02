@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Letter_of_Acknowledgement_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Jagan 12/10/2017 - Added this field to track if Letter of acknowledgement was sent.</description>
+    <externalId>false</externalId>
+    <label>Letter of Acknowledgement Sent</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

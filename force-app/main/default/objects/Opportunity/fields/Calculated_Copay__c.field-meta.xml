@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calculated_Copay__c</fullName>
+    <description>If both coverage and copy exist, copay takes precedence</description>
+    <externalId>false</externalId>
+    <formula>IF (
+	NOT(ISBLANK(Benefit__r.Co_Pay__c)) &amp;&amp;  Benefit__r.Co_Pay__c &gt; 0,
+	Benefit__r.Co_Pay__c,
+	IF (
+		NOT(ISBLANK(Benefit__r.Coverage__c)) &amp;&amp;  Benefit__r.Coverage__c &gt; 0,
+		(1-Benefit__r.Coverage__c)*Amount, 0
+	)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Calculated Copay</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

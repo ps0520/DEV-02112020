@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Hard_Copy_In_Field_Selection_Or</fullName>
+    <active>true</active>
+    <description>Check if Hard Copy In can be selected only after either EGEKO Out or Hard Copy Out has been selected</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Probability &gt; 0.20,
+ EGEKO_Out__c  = FALSE,
+ Hard_Copy_Out__c = FALSE,
+ Hard_Copy_In__c  = TRUE,
+ EGEKO_In__c  = FALSE
+)</errorConditionFormula>
+    <errorMessage>&apos;Hard Copy In&apos; cannot be selected unless &apos;EGEKO Out&apos; or &apos;Hard Copy Out&apos; is selected.</errorMessage>
+</ValidationRule>

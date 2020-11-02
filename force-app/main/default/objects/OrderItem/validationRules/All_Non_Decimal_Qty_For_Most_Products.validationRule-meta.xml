@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Non_Decimal_Qty_For_Most_Products</fullName>
+    <active>false</active>
+    <description>Do not allow fat fingering of regular products to be in decimals.</description>
+    <errorConditionFormula>AND
+( Quantity != ROUND(Quantity,0),
+  NOT(OR(BEGINS( PricebookEntry.Product2.Name, &apos;DEX-SHIP&apos;),
+         BEGINS(PricebookEntry.Product2.Name, &apos;DEX-MKT&apos;)))
+)</errorConditionFormula>
+    <errorMessage>Decimal Quantities not permitted for that product.</errorMessage>
+</ValidationRule>

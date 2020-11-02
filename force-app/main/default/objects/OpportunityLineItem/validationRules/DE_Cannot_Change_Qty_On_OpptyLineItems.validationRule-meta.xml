@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Cannot_Change_Qty_On_OpptyLineItems</fullName>
+    <active>true</active>
+    <description>Cannot have more than 1 quantity on Opportunity line items, which are Medical Advice Numbered product. This is required for Germany.</description>
+    <errorConditionFormula>AND ( 
+Opportunity.RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+ Is_Medical_Advice_Numbered_Product__c = TRUE,
+ Quantity &gt; 1
+)</errorConditionFormula>
+    <errorMessage>Quantity cannot be greater than 1.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_Pricebook_Selection</fullName>
+    <active>false</active>
+    <description>Only correspnding country pricebook can be chosen</description>
+    <errorConditionFormula>OR(
+AND(
+NOT(ISBLANK(Price_Book__c)),
+MID(Text(Type), 1, 2) = &apos;GB&apos;,
+MID(Price_Book__r.Name, 1, 2) != &apos;UK&apos;,
+MID(Price_Book__r.Name, 1, 2) != &apos;GB&apos;
+),
+AND(
+NOT(ISBLANK(Price_Book__c)),
+MID(Text(Type), 1, 2) = &apos;IE&apos;,
+MID(Price_Book__r.Name, 1, 2) != &apos;IE&apos;
+)
+)</errorConditionFormula>
+    <errorMessage>Please select a valid Pricebook.</errorMessage>
+</ValidationRule>

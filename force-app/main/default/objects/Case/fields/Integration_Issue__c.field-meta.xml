@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Issue__c</fullName>
+    <description>True if Integration Executed Date/Time is earlier than Case Close Date/Time</description>
+    <externalId>false</externalId>
+    <formula>IF((ClosedDate &gt;  Integration_Executed_Date_Time__c), true,false)</formula>
+    <label>Integration Issue?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>International_Distributors</fullName>
+    <fields>OrderNumber</fields>
+    <fields>PoNumber</fields>
+    <fields>EffectiveDate</fields>
+    <fields>Status</fields>
+    <fields>Price_Book__c</fields>
+    <fields>TotalAmount</fields>
+    <label>International Distributors</label>
+</CompactLayout>

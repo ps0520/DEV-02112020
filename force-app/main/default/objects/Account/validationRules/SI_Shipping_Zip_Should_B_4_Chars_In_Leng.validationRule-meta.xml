@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SI_Shipping_Zip_Should_B_4_Chars_In_Leng</fullName>
+    <active>true</active>
+    <description>Rule to check if the Shipping postal code is more or less than 4 chars</description>
+    <errorConditionFormula>AND(    
+ 
+	NOT(ISBLANK(ShippingPostalCode)),
+	TEXT(Country__c) = &apos;Slovenia&apos;, 
+	OR (LEN(ShippingPostalCode) &gt; 4, LEN(ShippingPostalCode) &lt; 4)  
+)</errorConditionFormula>
+    <errorMessage>Shipping postal code should be 4 chars in length.</errorMessage>
+</ValidationRule>

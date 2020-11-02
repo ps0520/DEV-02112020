@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>German_Invoice_Description__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(BEGINS( Product_Name__c, &apos;STT-&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;Versorgung pro Artikel 90 Tage a 2.40 CHF&apos;, 
+IF(BEGINS( Product_Name__c, &apos;STK-&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;&apos;, 
+IF(BEGINS( Product_Name__c, &apos;STS-&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;Versorgung pro Artikel 30 Tage a 9.07 CHF&apos;, 
+IF(CONTAINS(Product_Name__c, &apos;MTSTKG6RNT&apos;), &apos;Empfänger, Versorgung pro Artikel &apos; &amp; &apos;&amp;#13;&apos; &amp; &apos;90 Tage a 1.27 CHF&apos;, 
+IF(CONTAINS( Product_Name__c, &apos;MTSTSG6DESC2&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;Preisdifferenz vorzeitige Kündigung&apos;,
+IF(CONTAINS( Product_Name__c, &apos;MTSTTG6DESC2&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;Preisdifferenz vorzeitige Kündigung&apos;,
+PricebookEntry.Product2.Integration_Description__c 
+))))))</formula>
+    <label>German Invoice Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

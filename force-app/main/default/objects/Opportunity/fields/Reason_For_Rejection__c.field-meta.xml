@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Rejection__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason For Rejection</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ABLEHNUNGSGRÜNDE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ABLEHNUNGSGRÜNDE</label>
+            </value>
+            <value>
+                <fullName>Anderer Leistungserbringer</fullName>
+                <default>false</default>
+                <label>Anderer Leistungserbringer</label>
+            </value>
+            <value>
+                <fullName>Doppelversorgung</fullName>
+                <default>false</default>
+                <label>Doppelversorgung</label>
+            </value>
+            <value>
+                <fullName>Empfängertasche / Zubehör</fullName>
+                <default>false</default>
+                <label>Empfängertasche / Zubehör</label>
+            </value>
+            <value>
+                <fullName>Ersatzkomponente (Defekt/Verlust/keine Garantie)</fullName>
+                <default>false</default>
+                <label>Ersatzkomponente (Defekt/Verlust/keine Garantie)</label>
+            </value>
+            <value>
+                <fullName>Fehlende Indikation</fullName>
+                <default>false</default>
+                <label>Fehlende Indikation</label>
+            </value>
+            <value>
+                <fullName>Formfehler</fullName>
+                <default>false</default>
+                <label>Formfehler</label>
+            </value>
+            <value>
+                <fullName>Formfehler: Falsches Produkt</fullName>
+                <default>false</default>
+                <label>Formfehler: Falsches Produkt</label>
+            </value>
+            <value>
+                <fullName>Formfehler: Versichertennummer existiert nicht</fullName>
+                <default>false</default>
+                <label>Formfehler: Versichertennummer existiert nicht</label>
+            </value>
+            <value>
+                <fullName>Formfehler: Versorgungszeitraum fehlt/falsch</fullName>
+                <default>false</default>
+                <label>Formfehler: Versorgungszeitraum fehlt/falsch</label>
+            </value>
+            <value>
+                <fullName>Indikation nicht mehr gegeben</fullName>
+                <default>false</default>
+                <label>Indikation nicht mehr gegeben</label>
+            </value>
+            <value>
+                <fullName>Kassenwechsel</fullName>
+                <default>false</default>
+                <label>Kassenwechsel</label>
+            </value>
+            <value>
+                <fullName>MDK Prüfung</fullName>
+                <default>false</default>
+                <label>MDK Prüfung</label>
+            </value>
+            <value>
+                <fullName>MDK Prüfung dauert an</fullName>
+                <default>false</default>
+                <label>MDK Prüfung dauert an</label>
+            </value>
+            <value>
+                <fullName>MDK-Prüfung negativ: Fehlende Indikation</fullName>
+                <default>false</default>
+                <label>MDK-Prüfung negativ: Fehlende Indikation</label>
+            </value>
+            <value>
+                <fullName>MDK-Prüfung negativ: Fehlende Mitwirkungspflicht Patient</fullName>
+                <default>false</default>
+                <label>MDK-Prüfung negativ: Fehlende Mitwirkungspflicht Patient</label>
+            </value>
+            <value>
+                <fullName>MDK-Prüfung negativ: Gutachten fehlt</fullName>
+                <default>false</default>
+                <label>MDK-Prüfung negativ: Gutachten fehlt</label>
+            </value>
+            <value>
+                <fullName>Mehrbedarf</fullName>
+                <default>false</default>
+                <label>Mehrbedarf</label>
+            </value>
+            <value>
+                <fullName>Mitwirkungspflicht des Versicherten nicht erfolgt</fullName>
+                <default>false</default>
+                <label>Mitwirkungspflicht des Versicherten nicht erfolgt</label>
+            </value>
+            <value>
+                <fullName>Neue Anforderungen der Kasse</fullName>
+                <default>false</default>
+                <label>Neue Anforderungen der Kasse</label>
+            </value>
+            <value>
+                <fullName>ohne Begründung</fullName>
+                <default>false</default>
+                <label>ohne Begründung</label>
+            </value>
+            <value>
+                <fullName>Preise</fullName>
+                <default>false</default>
+                <label>Preise</label>
+            </value>
+            <value>
+                <fullName>Sonstige (Notiz erforderlich)</fullName>
+                <default>false</default>
+                <label>Sonstige (Notiz erforderlich)</label>
+            </value>
+            <value>
+                <fullName>Systemwechsel G4 oder G5</fullName>
+                <default>false</default>
+                <label>Systemwechsel G4 oder G5</label>
+            </value>
+            <value>
+                <fullName>Systemwechsel Upgrade G6</fullName>
+                <default>false</default>
+                <label>Systemwechsel Upgrade G6</label>
+            </value>
+            <value>
+                <fullName>Therapieänderung</fullName>
+                <default>false</default>
+                <label>Therapieänderung</label>
+            </value>
+            <value>
+                <fullName>Unterlagen fehlen</fullName>
+                <default>false</default>
+                <label>Unterlagen fehlen</label>
+            </value>
+            <value>
+                <fullName>Versorgungswunsch zurückgenommen</fullName>
+                <default>false</default>
+                <label>Versorgungswunsch zurückgenommen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

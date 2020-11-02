@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Chk_On_Return_Reason_By_User_Group</fullName>
+    <active>true</active>
+    <description>Inside Sales cannot select QA Compliant for return reason</description>
+    <errorConditionFormula>OR (
+	AND( 
+	TEXT(Return_Reason__c ) = &apos;QA Complaint&apos;, 
+	NOT(OR( 
+	$Profile.Name = &quot;System Administrator&quot;, 
+	$Profile.Name = &quot;Data Integrator&quot;, 
+	$Profile.Name = &quot;EU Technical Support User&quot;,
+        $User.Alias = &quot;autoproc&quot;)) 
+	),
+	AND(
+		NOT(ISBLANK(TEXT(Return_Reason__c))), 
+		NOT(ISPICKVAL(Return_Reason__c, &apos;QA Complaint&apos;)), 
+		$Profile.Name = &quot;EU Technical Support User&quot;
+	)
+)</errorConditionFormula>
+    <errorMessage>You cannot select this Return Reason.</errorMessage>
+</ValidationRule>

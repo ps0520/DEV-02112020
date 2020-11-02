@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Provider__c</fullName>
+    <externalId>false</externalId>
+    <label>Shipping Provider</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>dhl</fullName>
+                <default>false</default>
+                <label>DHL</label>
+            </value>
+            <value>
+                <fullName>fedex</fullName>
+                <default>false</default>
+                <label>FedEx</label>
+            </value>
+            <value>
+                <fullName>purolator</fullName>
+                <default>false</default>
+                <label>Purolator</label>
+            </value>
+            <value>
+                <fullName>canadaPost</fullName>
+                <default>false</default>
+                <label>Canada Post</label>
+            </value>
+            <value>
+                <fullName>dpd</fullName>
+                <default>false</default>
+                <label>DPD</label>
+            </value>
+            <value>
+                <fullName>dpdLocal</fullName>
+                <default>false</default>
+                <label>DPD Local</label>
+            </value>
+            <value>
+                <fullName>any</fullName>
+                <default>false</default>
+                <label>Any</label>
+            </value>
+            <value>
+                <fullName>dhlExpress</fullName>
+                <default>false</default>
+                <label>DHL Express</label>
+            </value>
+            <value>
+                <fullName>dhlParcel</fullName>
+                <default>false</default>
+                <label>DHL Parcel</label>
+            </value>
+            <value>
+                <fullName>swissPost</fullName>
+                <default>false</default>
+                <label>Swiss Post</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Training_Confirmation_Before_Cl</fullName>
+    <active>true</active>
+    <description>Check if Training Confirmation Received is checked before the Opportunity can be moved from Training Letter stage. This rule is not applicable for Reorders.</description>
+    <errorConditionFormula>AND (
+	RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+	NOT($Profile.Name = &quot;System Administrator&quot;),
+        Cash_Pay__c = FALSE, 
+	OR (Probability &gt; 0.95,
+	AND(
+	OR(BEGINS(TEXT(PRIORVALUE(Doc_Collection_Status__c)), &apos;Pending&apos;), ISBLANK(TEXT(PRIORVALUE(Doc_Collection_Status__c)))),
+	NOT(BEGINS(TEXT(Doc_Collection_Status__c), &apos;Pending&apos;))
+	)),
+	Text(Type) = &apos;New&apos;,
+	Training_Confirmation_Received__c  = FALSE
+)</errorConditionFormula>
+    <errorMessage>&apos;Training Confirmation Received&apos; should be selected before closing the Opportunity.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Customer_Docs_Collection_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Docs Collection Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not yet started</fullName>
+                <default>true</default>
+                <label>Not yet started</label>
+            </value>
+            <value>
+                <fullName>Some Docs Sent</fullName>
+                <default>false</default>
+                <label>Some Docs Sent</label>
+            </value>
+            <value>
+                <fullName>All Docs Sent</fullName>
+                <default>false</default>
+                <label>All Docs Sent</label>
+            </value>
+            <value>
+                <fullName>Some Docs Received</fullName>
+                <default>false</default>
+                <label>Some Docs Received</label>
+            </value>
+            <value>
+                <fullName>Pending Doc Collection on other Opportunity</fullName>
+                <default>false</default>
+                <label>Pending Doc Collection on other Opportunity</label>
+            </value>
+            <value>
+                <fullName>All Docs Received</fullName>
+                <default>false</default>
+                <label>All Docs Received</label>
+            </value>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+            <value>
+                <fullName>On Hold - Doctor Appointment</fullName>
+                <default>false</default>
+                <label>On Hold - Doctor Appointment</label>
+            </value>
+            <value>
+                <fullName>On Hold - HI Approval Pending</fullName>
+                <default>false</default>
+                <label>On Hold - HI Approval Pending</label>
+            </value>
+            <value>
+                <fullName>On Hold - Holiday</fullName>
+                <default>false</default>
+                <label>On Hold - Holiday</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+                <label>Not Started</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

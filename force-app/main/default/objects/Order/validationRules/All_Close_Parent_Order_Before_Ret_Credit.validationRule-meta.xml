@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Close_Parent_Order_Before_Ret_Credit</fullName>
+    <active>true</active>
+    <description>Parent Order should be closed before Return and Credit</description>
+    <errorConditionFormula>AND(  
+CONTAINS(TEXT(Type), &apos;RET&apos;),
+NOT(CONTAINS(TEXT(Type), &apos;TECH&apos;)),
+NOT(ISBLANK(Parent_Order__c)),
+NOT(ISPICKVAL(Parent_Order__r.Status, &apos;Closed&apos;)) 
+)</errorConditionFormula>
+    <errorMessage>Parent Order needs to be closed before entering Return and Credit Order.</errorMessage>
+</ValidationRule>

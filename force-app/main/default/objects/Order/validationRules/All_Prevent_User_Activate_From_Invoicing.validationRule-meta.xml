@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Prevent_User_Activate_From_Invoicing</fullName>
+    <active>true</active>
+    <description>User who did the QC and Activated the Order cannot create invoice,</description>
+    <errorConditionFormula>AND( 
+                ISCHANGED(Invoice_Status__c), 
+                ISPICKVAL( Invoice_Status__c , &quot;Invoice Requested&quot;),
+                ActivatedBy.Username = $User.Username 
+)</errorConditionFormula>
+    <errorMessage>You cannot create Invoice for this order.</errorMessage>
+</ValidationRule>

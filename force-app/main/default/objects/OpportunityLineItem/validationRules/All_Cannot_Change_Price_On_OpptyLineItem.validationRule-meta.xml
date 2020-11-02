@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cannot_Change_Price_On_OpptyLineItem</fullName>
+    <active>false</active>
+    <description>Cannot change the unit price value on the Opportunity line items</description>
+    <errorConditionFormula>AND( 
+OR( 
+ISNEW(), 
+ISCHANGED(UnitPrice)), 
+Discount__c != 0,
+NOT(AND(ISNEW(),Opportunity.Pricebook2.IsSubscription__c))
+)</errorConditionFormula>
+    <errorMessage>&apos;Sales Price&apos; cannot be altered.</errorMessage>
+</ValidationRule>

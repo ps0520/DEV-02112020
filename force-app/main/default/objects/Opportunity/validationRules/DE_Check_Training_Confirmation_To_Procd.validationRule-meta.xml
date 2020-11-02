@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Training_Confirmation_To_Procd</fullName>
+    <active>true</active>
+    <description>Training letter should be sent out before we move to the Order Fulfillment stage</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Probability &gt; 0.60,
+ Text(Type) = &apos;New&apos;,
+ Cash_Pay__c = FALSE, 
+ Training_Letter_Sent__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>&apos;Training Letter Sent&apos; should be checked before moving from &apos;Training Letter&apos; stage.</errorMessage>
+</ValidationRule>

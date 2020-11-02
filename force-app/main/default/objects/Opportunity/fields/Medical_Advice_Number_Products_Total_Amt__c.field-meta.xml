@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Advice_Number_Products_Total_Amt__c</fullName>
+    <description>Rolls up the total price amount of the products, which have the flag Is_Medical_Advice_Numbered_Product__c set</description>
+    <externalId>false</externalId>
+    <label>Medical Advice Number Products Total Amt</label>
+    <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.UnitPrice</field>
+        <operation>greaterThan</operation>
+        <value>1</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

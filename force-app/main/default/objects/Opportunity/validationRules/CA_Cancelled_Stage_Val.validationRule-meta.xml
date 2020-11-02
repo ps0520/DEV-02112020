@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Cancelled_Stage_Val</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+ISCHANGED(StageName),
+ISPICKVAL(StageName, &apos;Cancelled&apos;),
+ISPICKVAL(CA_Cancelled_Reason__c, &apos;&apos;)
+)</errorConditionFormula>
+    <errorMessage>Please select any Cancelled Reason.</errorMessage>
+</ValidationRule>

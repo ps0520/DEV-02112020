@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Rejection__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>NS-1189 All Markets- Invoice Rejection/Invoice Rejection Reasons on Order Level</description>
+    <externalId>false</externalId>
+    <label>Invoice Rejection</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

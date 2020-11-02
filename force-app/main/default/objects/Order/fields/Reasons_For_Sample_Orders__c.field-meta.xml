@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_For_Sample_Orders__c</fullName>
+    <description>This is a dependent picklist of Order Type. Required for DE SAMPLE orders</description>
+    <externalId>false</externalId>
+    <label>Reasons For Sample Orders</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>$G6 Transition</fullName>
+                <default>false</default>
+                <label>$G6 Transition</label>
+            </value>
+            <value>
+                <fullName>48/52</fullName>
+                <default>false</default>
+                <label>48/52</label>
+            </value>
+            <value>
+                <fullName>Field Service Equipment</fullName>
+                <default>false</default>
+                <label>Field Service Equipment</label>
+            </value>
+            <value>
+                <fullName>Goodwill</fullName>
+                <default>false</default>
+                <label>Goodwill</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error: Compilation</fullName>
+                <default>false</default>
+                <label>Internal Processing Error: Compilation</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error: G4 / G5 / G6</fullName>
+                <default>false</default>
+                <label>Internal Processing Error: G4 / G5 / G6</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error: mg / mmol</fullName>
+                <default>false</default>
+                <label>Internal Processing Error: mg / mmol</label>
+            </value>
+            <value>
+                <fullName>Internal Processing Error: Quantity</fullName>
+                <default>false</default>
+                <label>Internal Processing Error: Quantity</label>
+            </value>
+            <value>
+                <fullName>Margin</fullName>
+                <default>false</default>
+                <label>Margin</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Office Stock</fullName>
+                <default>false</default>
+                <label>Office Stock</label>
+            </value>
+            <value>
+                <fullName>Other (Note Required)</fullName>
+                <default>false</default>
+                <label>Other (Note Required)</label>
+            </value>
+            <value>
+                <fullName>Rental Systems</fullName>
+                <default>false</default>
+                <label>Rental Systems</label>
+            </value>
+            <value>
+                <fullName>Ship Correction</fullName>
+                <default>false</default>
+                <label>Ship Correction</label>
+            </value>
+            <value>
+                <fullName>TM Stock</fullName>
+                <default>false</default>
+                <label>TM Stock</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CH SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>AT SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>$G6 Transition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <valueName>48/52</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CH SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>AT SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Field Service Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Goodwill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <valueName>Internal Processing Error: Compilation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <valueName>Internal Processing Error: G4 / G5 / G6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <valueName>Internal Processing Error: mg / mmol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <valueName>Internal Processing Error: Quantity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CH SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>AT SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Margin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CH SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>AT SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Office Stock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CH SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>AT SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Other (Note Required)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CH SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>DE SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>AT SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Rental Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>Ship Correction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIST SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>GB SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>CA SALES SAMPLE</controllingFieldValue>
+            <controllingFieldValue>IE SALES SAMPLE</controllingFieldValue>
+            <valueName>TM Stock</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

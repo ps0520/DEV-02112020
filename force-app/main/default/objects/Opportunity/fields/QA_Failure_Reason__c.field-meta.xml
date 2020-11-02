@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QA_Failure_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>QA Failure Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bundle</fullName>
+                <default>false</default>
+                <label>Bundle</label>
+            </value>
+            <value>
+                <fullName>Doppellieferung</fullName>
+                <default>false</default>
+                <label>Doppellieferung</label>
+            </value>
+            <value>
+                <fullName>Empfangsbestätigung fehlt</fullName>
+                <default>false</default>
+                <label>Empfangsbestätigung fehlt</label>
+            </value>
+            <value>
+                <fullName>falsche Preise</fullName>
+                <default>false</default>
+                <label>falsche Preise</label>
+            </value>
+            <value>
+                <fullName>falsche Zuzahlung</fullName>
+                <default>false</default>
+                <label>falsche Zuzahlung</label>
+            </value>
+            <value>
+                <fullName>fehlende Zuzahlung</fullName>
+                <default>false</default>
+                <label>fehlende Zuzahlung</label>
+            </value>
+            <value>
+                <fullName>GKK fehlt</fullName>
+                <default>false</default>
+                <label>GKK fehlt</label>
+            </value>
+            <value>
+                <fullName>O-VO fehlt</fullName>
+                <default>false</default>
+                <label>O-VO fehlt</label>
+            </value>
+            <value>
+                <fullName>TechEW fehlt</fullName>
+                <default>false</default>
+                <label>TechEW fehlt</label>
+            </value>
+            <value>
+                <fullName>Versandkosten statt Zuzahlung</fullName>
+                <default>false</default>
+                <label>Versandkosten statt Zuzahlung</label>
+            </value>
+            <value>
+                <fullName>Sonstige (Notiz erforderlich)</fullName>
+                <default>false</default>
+                <label>Sonstige (Notiz erforderlich)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

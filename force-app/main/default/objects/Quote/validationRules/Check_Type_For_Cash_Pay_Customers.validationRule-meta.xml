@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Type_For_Cash_Pay_Customers</fullName>
+    <active>false</active>
+    <description>Rule to check if type &apos;Cost Estimate&apos; cannot be chosen for Cash Pay customers.</description>
+    <errorConditionFormula>AND (
+	Opportunity.RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+	Opportunity.Cash_Pay__c  = TRUE,
+	TEXT(Type__c) = &apos;Cost Estimate&apos;
+)</errorConditionFormula>
+    <errorMessage>&apos;Cost Estimate&apos; type cannot be chosen for a Cash Pay customer.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Validate_PriceBook_Chosen</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(
+OR(
+ISBLANK(Pricebook2.Price_List_Target__c),
+INCLUDES(Pricebook2.Price_List_Target__c , &apos;ALL&apos;),
+AND(CONTAINS(Account.RecordType.Name,&apos;Consumer&apos;),INCLUDES(Pricebook2.Price_List_Target__c , &apos;Consumer&apos;)) 
+)
+)</errorConditionFormula>
+    <errorMessage>Chosen price book is not applicable to this type of Account.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cant_Chose_Ret_Cred_From_Action_Menu</fullName>
+    <active>true</active>
+    <description>Return and Credit order type cannot be chosen when Parent Order is blank.</description>
+    <errorConditionFormula>AND( 
+CONTAINS(TEXT(Type), &apos;RET&apos;),
+NOT(CONTAINS(TEXT(Type), &apos;TECH&apos;)),
+ISBLANK(Parent_Order__c),
+NOT(OR( 
+$Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;Data Integrator&quot;)) 
+)</errorConditionFormula>
+    <errorMessage>This Order Type cannot be chosen. Please go the original order record and perform this action.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_If_Oppty_Can_Be_Closed</fullName>
+    <active>true</active>
+    <description>Rule to check if Opportunity can be closed based on the Document Collection Status value.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ NOT(PRIORVALUE( IsClosed )) = True,
+ IsClosed = TRUE,
+ BEGINS(TEXT(Doc_Collection_Status__c), &apos;Pending&apos;),
+ NOT(CONTAINS(TEXT(StageName), &apos;Cancel&apos;))
+)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed as Doc Collection Status is not completed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Cannot_Be_Chg_Past_Cost_Est_Stage</fullName>
+    <active>false</active>
+    <description>Opportunity type cannnot be altered past Cos Estimate stage. Exception is admins can change if needed.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ NOT($Profile.Name = &quot;DE Salesforce Admin&quot;),
+ Probability &gt; 0.40,
+ ISCHANGED(Type)
+)</errorConditionFormula>
+    <errorMessage>&apos;Type&apos; cannot be changed.</errorMessage>
+</ValidationRule>

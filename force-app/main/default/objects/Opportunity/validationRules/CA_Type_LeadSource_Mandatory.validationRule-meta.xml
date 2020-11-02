@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Type_LeadSource_Mandatory</fullName>
+    <active>false</active>
+    <description>Type and Lead Soure fields are mandatory for CA Opps</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+OR( ISBLANK(TEXT( Type )),
+    ISBLANK(TEXT( LeadSource ))
+  ),
+ NOT(AND( ISPICKVAL(StageName,&apos;Cancelled&apos;),   ISPICKVAL(StageName,&apos;Canceled&apos;))) 
+)</errorConditionFormula>
+    <errorMessage>Please select Lead Source and Type to proceed further.</errorMessage>
+</ValidationRule>

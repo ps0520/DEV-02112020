@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repeat_End_Date__c</fullName>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This will determine the when the schedule need to be end dated.</inlineHelpText>
+    <label>Repeat End Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Swiss_Orders_for_Invoice_in_German</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.TYPE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>Invoice_Number__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Preferred_Language__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDER.SHIPPING_COUNTRY_CODE</field>
+        <operation>equals</operation>
+        <value>CH</value>
+    </filters>
+    <filters>
+        <field>Invoice_Number__c</field>
+        <operation>greaterThan</operation>
+        <value>411007608</value>
+    </filters>
+    <filters>
+        <field>ORDERS.TYPE</field>
+        <operation>equals</operation>
+        <value>CH STANDARD</value>
+    </filters>
+    <filters>
+        <field>Preferred_Language__c</field>
+        <operation>equals</operation>
+        <value>de_CH</value>
+    </filters>
+    <filters>
+        <field>ORDERS.ORDER_NUMBER</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>Swiss Orders for Invoice in German</label>
+    <sharedTo>
+        <group>CH_Inside_Sales</group>
+        <role>CH_Inside_Sales</role>
+    </sharedTo>
+</ListView>

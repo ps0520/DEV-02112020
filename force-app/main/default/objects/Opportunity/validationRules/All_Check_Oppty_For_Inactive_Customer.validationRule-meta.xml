@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Check_Oppty_For_Inactive_Customer</fullName>
+    <active>true</active>
+    <description>Do not let users to create Opportunity for Inactive customers.</description>
+    <errorConditionFormula>AND (
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ ISNEW(),
+ Account.Inactive__c = TRUE
+)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be created for Inactive customer.</errorMessage>
+</ValidationRule>

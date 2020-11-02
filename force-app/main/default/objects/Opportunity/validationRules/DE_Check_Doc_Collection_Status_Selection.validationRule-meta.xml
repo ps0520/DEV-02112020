@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Doc_Collection_Status_Selection</fullName>
+    <active>true</active>
+    <description>For DE Opportunity, Doc Collection Status cannot be selected unless the Opportunity is at the Order Fulfillment stage.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ NOT(PRIORVALUE( IsClosed )) = True,
+ IsClosed = False,
+ Probability &lt; 0.60,
+ NOT(ISBLANK(TEXT(Doc_Collection_Status__c)))
+)</errorConditionFormula>
+    <errorMessage>&apos;Doc Collection Status&apos; can be selected only when the Opportunity has passed &apos;Cost Estimate&apos; stage.</errorMessage>
+</ValidationRule>

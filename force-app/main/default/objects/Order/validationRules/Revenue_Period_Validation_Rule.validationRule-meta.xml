@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue_Period_Validation_Rule</fullName>
+    <active>false</active>
+    <description>It should be MM/YYYY format.</description>
+    <errorConditionFormula>AND(
+NOT( ISBLANK( Revenue_Period__c )),
+NOT( REGEX(Revenue_Period__c , &apos;^[01][0-9]/20[0-9][0-9]$&apos;))
+)</errorConditionFormula>
+    <errorMessage>Revenue Period should be in format MM/YYYY.</errorMessage>
+</ValidationRule>

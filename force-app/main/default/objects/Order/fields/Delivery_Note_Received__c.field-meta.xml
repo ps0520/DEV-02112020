@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Note_Received__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Jagan 12/10/2017 - Added this field to track if Delivery note was received on Order.</description>
+    <externalId>false</externalId>
+    <label>Delivery Note Received</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

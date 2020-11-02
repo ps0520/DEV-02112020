@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Case_when_Status_is_Send_To_QA</fullName>
+    <active>true</active>
+    <description>Case will be locked when status is changing to Send To QA</description>
+    <errorConditionFormula>AND( 
+IsClosed = true, 
+$Profile.Name != &quot;System Administrator&quot;,
+! ISCHANGED( Integration_Executed__c ), 
+! ISCHANGED( Integration_Executed_Date_Time__c ) 
+)</errorConditionFormula>
+    <errorMessage>Case is Locked. You cannot edit the case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <description>Stores the product line for device</description>
+    <externalId>false</externalId>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>STK-GL-005 Dexcom G4 Receiver Kit MG/DL German-Arabic</fullName>
+                <default>false</default>
+                <label>STK-GL-005 Dexcom G4 Receiver Kit MG/DL German-Arabic</label>
+            </value>
+            <value>
+                <fullName>STK-GL-108 Dexcom G4 Platinum Receiver Kit-German mmol/L</fullName>
+                <default>false</default>
+                <label>STK-GL-108 Dexcom G4 Platinum Receiver Kit-German mmol/L</label>
+            </value>
+            <value>
+                <fullName>STK-GF-108 German mmol/L, G5 Mobile Receiver Kit</fullName>
+                <default>false</default>
+                <label>STK-GF-108 German mmol/L, G5 Mobile Receiver Kit</label>
+            </value>
+            <value>
+                <fullName>STK-GF-109 mmol/L, G5 Mobile Receiver Kit</fullName>
+                <default>false</default>
+                <label>STK-GF-109 mmol/L, G5 Mobile Receiver Kit</label>
+            </value>
+            <value>
+                <fullName>STK-GF-109 English mmol/L, G5 Mobile Receiver Kit</fullName>
+                <default>false</default>
+                <label>STK-GF-109 English mmol/L, G5 Mobile Receiver Kit</label>
+            </value>
+            <value>
+                <fullName>STK-GL-010 Dexcom G4 Platinum Receiver Kit-German mg/dl</fullName>
+                <default>false</default>
+                <label>STK-GL-010 Dexcom G4 Platinum Receiver Kit-German mg/dl</label>
+            </value>
+            <value>
+                <fullName>STK-GF-010 German mg/dL, G5 Mobile Receiver Kit</fullName>
+                <default>false</default>
+                <label>STK-GF-010 German mg/dL, G5 Mobile Receiver Kit</label>
+            </value>
+            <value>
+                <fullName>STK-GF-013 mg/dL, G5 Mobile Receiver Kit</fullName>
+                <default>false</default>
+                <label>STK-GF-013 mg/dL, G5 Mobile Receiver Kit</label>
+            </value>
+            <value>
+                <fullName>STR-GL-004 Dexcom G4 Platinum Replacement Receiver mg/dl</fullName>
+                <default>false</default>
+                <label>STR-GL-004 Dexcom G4 Platinum Replacement Receiver mg/dl</label>
+            </value>
+            <value>
+                <fullName>STR-GL-102 Dexcom G4 Platinum Replacement Receiver Kit- mmol/L</fullName>
+                <default>false</default>
+                <label>STR-GL-102 Dexcom G4 Platinum Replacement Receiver Kit- mmol/L</label>
+            </value>
+            <value>
+                <fullName>STR-GF-004 G5 OUS mg/dL Replacement Receiver Kit</fullName>
+                <default>false</default>
+                <label>STR-GF-004 G5 OUS mg/dL Replacement Receiver Kit</label>
+            </value>
+            <value>
+                <fullName>STR-GF-102 OUS MMOL/L G5 OUS Replacement Receiver kit</fullName>
+                <default>false</default>
+                <label>STR-GF-102 OUS MMOL/L G5 OUS Replacement Receiver kit</label>
+            </value>
+            <value>
+                <fullName>STR-GS-004 G6 OUS Replacement Receiver Kit mg/dL</fullName>
+                <default>false</default>
+                <label>STR-GS-004 G6 OUS Replacement Receiver Kit mg/dL</label>
+            </value>
+            <value>
+                <fullName>STR-GS-102 G6 OUS Replacement Receiver Kit mmol/L</fullName>
+                <default>false</default>
+                <label>STR-GS-102 G6 OUS Replacement Receiver Kit mmol/L</label>
+            </value>
+            <value>
+                <fullName>STK-GS-013 G6 OUS Receiver Kit mg/dL</fullName>
+                <default>false</default>
+                <label>STK-GS-013 G6 OUS Receiver Kit mg/dL</label>
+            </value>
+            <value>
+                <fullName>STK-GS-109 G6 OUS Receiver Kit mmol/L</fullName>
+                <default>false</default>
+                <label>STK-GS-109 G6 OUS Receiver Kit mmol/L</label>
+            </value>
+            <value>
+                <fullName>STS-GF-004 OUS G5 Mobile/G4 PLATINUM - Sensor Kit</fullName>
+                <default>false</default>
+                <label>STS-GF-004 OUS G5 Mobile/G4 PLATINUM - Sensor Kit</label>
+            </value>
+            <value>
+                <fullName>STS-GF-001 OUS G5 Mobile/G4 PLATINUM, Sensor Kit-1 Pack</fullName>
+                <default>false</default>
+                <label>STS-GF-001 OUS G5 Mobile/G4 PLATINUM, Sensor Kit-1 Pack</label>
+            </value>
+            <value>
+                <fullName>STS-GF-004 OUS G5 Mobile/G4 PLATINUM, Sensor Kit-4 Pack</fullName>
+                <default>false</default>
+                <label>STS-GF-004 OUS G5 Mobile/G4 PLATINUM, Sensor Kit-4 Pack</label>
+            </value>
+            <value>
+                <fullName>STS-GL-005 Dexcom G4 Platinum Sensor-1 Pack</fullName>
+                <default>false</default>
+                <label>STS-GL-005 Dexcom G4 Platinum Sensor-1 Pack</label>
+            </value>
+            <value>
+                <fullName>STS-GL-006 Dexcom G4 PLATINUM Sensor - OUS 4 Pack</fullName>
+                <default>false</default>
+                <label>STS-GL-006 Dexcom G4 PLATINUM Sensor - OUS 4 Pack</label>
+            </value>
+            <value>
+                <fullName>STS-GF-001 OUS G5 Mobile/G4 PLATINUM, -Sensor</fullName>
+                <default>false</default>
+                <label>STS-GF-001 OUS G5 Mobile/G4 PLATINUM, -Sensor</label>
+            </value>
+            <value>
+                <fullName>STS-GS-002 G6 OUS Sensor Kit 1-pack</fullName>
+                <default>false</default>
+                <label>STS-GS-002 G6 OUS Sensor Kit 1-pack</label>
+            </value>
+            <value>
+                <fullName>STS-GS-003 G6 OUS Sensor Kit 3-pack</fullName>
+                <default>false</default>
+                <label>STS-GS-003 G6 OUS Sensor Kit 3-pack</label>
+            </value>
+            <value>
+                <fullName>STT-GL-004 Dexcom G4 PLATINUM Transmitter Kit-OUS</fullName>
+                <default>false</default>
+                <label>STT-GL-004 Dexcom G4 PLATINUM Transmitter Kit-OUS</label>
+            </value>
+            <value>
+                <fullName>STT-GF-004 Dexcom G5 Platinum Transmitter</fullName>
+                <default>false</default>
+                <label>STT-GF-004 Dexcom G5 Platinum Transmitter</label>
+            </value>
+            <value>
+                <fullName>STT-GS-003 G6 OUS Transmitter Kit</fullName>
+                <default>false</default>
+                <label>STT-GS-003 G6 OUS Transmitter Kit</label>
+            </value>
+            <value>
+                <fullName>SW-350-0011 - Clarity App (Web-based &amp; iOS)</fullName>
+                <default>false</default>
+                <label>SW-350-0011 - Clarity App (Web-based &amp; iOS)</label>
+            </value>
+            <value>
+                <fullName>SW10841 G5 OUS Mobile iOS CGM App (mg/dL)</fullName>
+                <default>false</default>
+                <label>SW10841 G5 OUS Mobile iOS CGM App (mg/dL)</label>
+            </value>
+            <value>
+                <fullName>SW10842 G5 OUS Mobile iOS CGM App (mmol/L)</fullName>
+                <default>false</default>
+                <label>SW10842 G5 OUS Mobile iOS CGM App (mmol/L)</label>
+            </value>
+            <value>
+                <fullName>SW10846 OUS Dexcom Follow App for iOS (mg/dL)</fullName>
+                <default>false</default>
+                <label>SW10846 OUS Dexcom Follow App for iOS (mg/dL)</label>
+            </value>
+            <value>
+                <fullName>SW10847 OUS Dexcom Follow App for iOS (mmol/L)</fullName>
+                <default>false</default>
+                <label>SW10847 OUS Dexcom Follow App for iOS (mmol/L)</label>
+            </value>
+            <value>
+                <fullName>SW10920 OUS Dexcom Follow App for Android (mg/dL)</fullName>
+                <default>false</default>
+                <label>SW10920 OUS Dexcom Follow App for Android (mg/dL)</label>
+            </value>
+            <value>
+                <fullName>SW10930 OUS Dexcom Follow App for Android (mmol/L)</fullName>
+                <default>false</default>
+                <label>SW10930 OUS Dexcom Follow App for Android (mmol/L)</label>
+            </value>
+            <value>
+                <fullName>SW11170 G5 OUS Mobile Android App mg/dL</fullName>
+                <default>false</default>
+                <label>SW11170 G5 OUS Mobile Android App mg/dL</label>
+            </value>
+            <value>
+                <fullName>SW11170 - G5 Mobile App OUS (Android, mg/dL)</fullName>
+                <default>false</default>
+                <label>SW11170 - G5 Mobile App OUS (Android, mg/dL)</label>
+            </value>
+            <value>
+                <fullName>SW11171 - G5 Mobile App OUS (Android, mmol/L)</fullName>
+                <default>false</default>
+                <label>SW11171 - G5 Mobile App OUS (Android, mmol/L)</label>
+            </value>
+            <value>
+                <fullName>SW10497 - Follow App (iOS)</fullName>
+                <default>false</default>
+                <label>SW10497 - Follow App (iOS)</label>
+            </value>
+            <value>
+                <fullName>SW10611 - G5 Mobile App (iOS)</fullName>
+                <default>false</default>
+                <label>SW10611 - G5 Mobile App (iOS)</label>
+            </value>
+            <value>
+                <fullName>SW11585 G6 OUS IOS CGM mg/dL App</fullName>
+                <default>false</default>
+                <label>SW11585 G6 OUS IOS CGM mg/dL App</label>
+            </value>
+            <value>
+                <fullName>SW11586 G6 OUS IOS CGM mmol App</fullName>
+                <default>false</default>
+                <label>SW11586 G6 OUS IOS CGM mmol App</label>
+            </value>
+            <value>
+                <fullName>SW11587 G6 OUS Android CGM mg/dL App</fullName>
+                <default>false</default>
+                <label>SW11587 G6 OUS Android CGM mg/dL App</label>
+            </value>
+            <value>
+                <fullName>SW11588 G6 OUS Android CGM mmol App</fullName>
+                <default>false</default>
+                <label>SW11588 G6 OUS Android CGM mmol App</label>
+            </value>
+            <value>
+                <fullName>MT20655 USB A to USB Micro B, 3FT, 24AWG Power Wires</fullName>
+                <default>false</default>
+                <label>MT20655 USB A to USB Micro B, 3FT, 24AWG Power Wires</label>
+            </value>
+            <value>
+                <fullName>MT21190 Bundle, Dexcom Studio</fullName>
+                <default>false</default>
+                <label>MT21190 Bundle, Dexcom Studio</label>
+            </value>
+            <value>
+                <fullName>MT21255 USB Power Supply (Charger) with USB-A Receptacle, 5V 1A, US Connector</fullName>
+                <default>false</default>
+                <label>MT21255 USB Power Supply (Charger) with USB-A Receptacle, 5V 1A, US Connector</label>
+            </value>
+            <value>
+                <fullName>MT21294 Global Receiver Carrying Case</fullName>
+                <default>false</default>
+                <label>MT21294 Global Receiver Carrying Case</label>
+            </value>
+            <value>
+                <fullName>MT21307 Pairing/Warranty Insert, Dexcom G4 Transmitter OUS</fullName>
+                <default>false</default>
+                <label>MT21307 Pairing/Warranty Insert, Dexcom G4 Transmitter OUS</label>
+            </value>
+            <value>
+                <fullName>MT21561 AC Power Adapter for International use</fullName>
+                <default>false</default>
+                <label>MT21561 AC Power Adapter for International use</label>
+            </value>
+            <value>
+                <fullName>MT22018 Tutorial Disc, Dexcom G4 Platinum System OUS</fullName>
+                <default>false</default>
+                <label>MT22018 Tutorial Disc, Dexcom G4 Platinum System OUS</label>
+            </value>
+            <value>
+                <fullName>MT22124 IFU Bundle, Dexcom G4 Platinum System OUS German mg/dL</fullName>
+                <default>false</default>
+                <label>MT22124 IFU Bundle, Dexcom G4 Platinum System OUS German mg/dL</label>
+            </value>
+            <value>
+                <fullName>MT22098 IFU Bundle, Dexcom G4 PLATINUM System OUS German mmol/L</fullName>
+                <default>false</default>
+                <label>MT22098 IFU Bundle, Dexcom G4 PLATINUM System OUS German mmol/L</label>
+            </value>
+            <value>
+                <fullName>MT23205 Getting Started Tutorial G5 USB</fullName>
+                <default>false</default>
+                <label>MT23205 Getting Started Tutorial G5 USB</label>
+            </value>
+            <value>
+                <fullName>MT23417 IFU Bundle, Dexcom G5 Mobile CGM System OUS German mg/dL</fullName>
+                <default>false</default>
+                <label>MT23417 IFU Bundle, Dexcom G5 Mobile CGM System OUS German mg/dL</label>
+            </value>
+            <value>
+                <fullName>MT23420 IFU Bundle, Dexcom G5 Mobile CGM System OUS German mmol/L</fullName>
+                <default>false</default>
+                <label>MT23420 IFU Bundle, Dexcom G5 Mobile CGM System OUS German mmol/L</label>
+            </value>
+            <value>
+                <fullName>MT23390 IFU Bundle, Dexcom G5 Mobile CGM System OUS French mmol/L</fullName>
+                <default>false</default>
+                <label>MT23390 IFU Bundle, Dexcom G5 Mobile CGM System OUS French mmol/L</label>
+            </value>
+            <value>
+                <fullName>MT23402 IFU Bundle, Dexcom G5 Mobile CGM System OUS Italian mmol/L</fullName>
+                <default>false</default>
+                <label>MT23402 IFU Bundle, Dexcom G5 Mobile CGM System OUS Italian mmol/L</label>
+            </value>
+            <value>
+                <fullName>MT23518 User Manual, Share Follow OUS German</fullName>
+                <default>false</default>
+                <label>MT23518 User Manual, Share Follow OUS German</label>
+            </value>
+            <value>
+                <fullName>NA - Product Not Applicable</fullName>
+                <default>false</default>
+                <label>NA - Product Not Applicable</label>
+            </value>
+            <value>
+                <fullName>MT25313	IFU Bundle, G6, OUS, German, mg/dL</fullName>
+                <default>false</default>
+                <label>MT25313	IFU Bundle, G6, OUS, German, mg/dL</label>
+            </value>
+            <value>
+                <fullName>MT25314	IFU Bundle, G6, OUS, DE, mmol/L</fullName>
+                <default>false</default>
+                <label>MT25314	IFU Bundle, G6, OUS, DE, mmol/L</label>
+            </value>
+            <value>
+                <fullName>MT22754	SCOUT, PROTECTIVE CASE</fullName>
+                <default>false</default>
+                <label>MT22754	SCOUT, PROTECTIVE CASE</label>
+            </value>
+            <value>
+                <fullName>MT22754-BLU	SCOUT CASE, BLUE</fullName>
+                <default>false</default>
+                <label>MT22754-BLU	SCOUT CASE, BLUE</label>
+            </value>
+            <value>
+                <fullName>MT22754-PNK SCOUT CASE, PINK</fullName>
+                <default>false</default>
+                <label>MT22754-PNK SCOUT CASE, PINK</label>
+            </value>
+            <value>
+                <fullName>MT25128	OUS Overpatch (9834), 10-Pack</fullName>
+                <default>false</default>
+                <label>MT25128	OUS Overpatch (9834), 10-Pack</label>
+            </value>
+            <value>
+                <fullName>MT25123	Dexcom Receiver (Touchscreen)- Seal shield 4 Pack Bundle</fullName>
+                <default>false</default>
+                <label>MT25123	Dexcom Receiver (Touchscreen)- Seal shield 4 Pack Bundle</label>
+            </value>
+            <value>
+                <fullName>MT23681 USB Charger for Scout receiver</fullName>
+                <default>false</default>
+                <label>MT23681 USB Charger for Scout receiver</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

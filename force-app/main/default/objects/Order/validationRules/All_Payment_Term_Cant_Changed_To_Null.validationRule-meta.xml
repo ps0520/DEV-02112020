@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Payment_Term_Cant_Changed_To_Null</fullName>
+    <active>true</active>
+    <description>When Payment Term is modified it cannot be set to null</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Payment_Terms__c),
+ISBLANK(Text(Payment_Terms__c))
+)</errorConditionFormula>
+    <errorDisplayField>Payment_Terms__c</errorDisplayField>
+    <errorMessage>Payment Term cannot be removed.</errorMessage>
+</ValidationRule>

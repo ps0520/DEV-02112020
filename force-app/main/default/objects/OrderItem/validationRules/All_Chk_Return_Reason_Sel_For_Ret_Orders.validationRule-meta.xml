@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Chk_Return_Reason_Sel_For_Ret_Orders</fullName>
+    <active>false</active>
+    <description>Jagan 06/25/2017 - Created this rule to check the Return Reason for return goods.</description>
+    <errorConditionFormula>AND (
+		Quantity &lt; 0,
+		ISBLANK(TEXT( Return_Reason__c ))
+	)</errorConditionFormula>
+    <errorDisplayField>Return_Reason__c</errorDisplayField>
+    <errorMessage>Please select &apos;Return Reason&apos;.</errorMessage>
+</ValidationRule>

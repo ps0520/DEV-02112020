@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Cancellation_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Order Cancellation Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compatibility - Mobile Device</fullName>
+                <default>false</default>
+                <label>Compatibility - Mobile Device</label>
+            </value>
+            <value>
+                <fullName>Compatibility - Other</fullName>
+                <default>false</default>
+                <label>Compatibility - Other</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Cancelled in Fusion</fullName>
+                <default>false</default>
+                <label>Cancelled in Fusion</label>
+            </value>
+            <value>
+                <fullName>Duplicate Account</fullName>
+                <default>false</default>
+                <label>Duplicate Account</label>
+            </value>
+            <value>
+                <fullName>Duplicate Opportunity</fullName>
+                <default>false</default>
+                <label>Duplicate Opportunity</label>
+            </value>
+            <value>
+                <fullName>Invalid Contact Info</fullName>
+                <default>false</default>
+                <label>Invalid Contact Info</label>
+            </value>
+            <value>
+                <fullName>Non-responsive</fullName>
+                <default>false</default>
+                <label>Non-responsive</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Not Ready</fullName>
+                <default>false</default>
+                <label>Not Ready</label>
+            </value>
+            <value>
+                <fullName>Not Type 1</fullName>
+                <default>false</default>
+                <label>Not Type 1</label>
+            </value>
+            <value>
+                <fullName>Opportunity Created in Error</fullName>
+                <default>false</default>
+                <label>Opportunity Created in Error</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pricing - Cash Price Too High</fullName>
+                <default>false</default>
+                <label>Pricing - Cash Price Too High</label>
+            </value>
+            <value>
+                <fullName>Pricing - Competition</fullName>
+                <default>false</default>
+                <label>Pricing - Competition</label>
+            </value>
+            <value>
+                <fullName>Pricing - No INS Coverage</fullName>
+                <default>false</default>
+                <label>Pricing - No INS Coverage</label>
+            </value>
+            <value>
+                <fullName>Pricing - OOP Too High</fullName>
+                <default>false</default>
+                <label>Pricing - OOP Too High</label>
+            </value>
+            <value>
+                <fullName>Product Design or Features</fullName>
+                <default>false</default>
+                <label>Product Design or Features</label>
+            </value>
+            <value>
+                <fullName>Resides Outside Country</fullName>
+                <default>false</default>
+                <label>Resides Outside Country</label>
+            </value>
+            <value>
+                <fullName>Request From ISR</fullName>
+                <default>false</default>
+                <label>Request From ISR</label>
+            </value>
+            <value>
+                <fullName>Request From Tech Support</fullName>
+                <default>false</default>
+                <label>Request From Tech Support</label>
+            </value>
+            <value>
+                <fullName>Missing Docs - Unable to Invoice</fullName>
+                <default>false</default>
+                <label>Missing Docs - Unable to Invoice</label>
+            </value>
+            <value>
+                <fullName>Order Entry Error</fullName>
+                <default>false</default>
+                <label>Order Entry Error</label>
+            </value>
+            <value>
+                <fullName>Order Duplicated</fullName>
+                <default>false</default>
+                <label>Order Duplicated</label>
+            </value>
+            <value>
+                <fullName>No Longer Required</fullName>
+                <default>false</default>
+                <label>No Longer Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

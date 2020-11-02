@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sample_Join__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To track whether a patient has joined the Sample Program.</description>
+    <externalId>false</externalId>
+    <label>Sample Join</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

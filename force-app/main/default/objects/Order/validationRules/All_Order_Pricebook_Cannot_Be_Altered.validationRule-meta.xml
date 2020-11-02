@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Order_Pricebook_Cannot_Be_Altered</fullName>
+    <active>true</active>
+    <description>Jagan 06/25/2017 - Order Pricebook cannot be altered once it has products associated to it.</description>
+    <errorConditionFormula>AND(
+
+	ISCHANGED(Price_Book__c),
+	Count_of_Order_Line_Items__c &gt; 0
+)</errorConditionFormula>
+    <errorDisplayField>Price_Book__c</errorDisplayField>
+    <errorMessage>Pricebook cannot be changed as there are products tied to this Order.</errorMessage>
+</ValidationRule>

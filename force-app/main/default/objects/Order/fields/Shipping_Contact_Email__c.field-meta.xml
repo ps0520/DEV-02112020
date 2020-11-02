@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Contact_Email__c</fullName>
+    <description>Formula Logic for correct Shipping contact Email.</description>
+    <externalId>false</externalId>
+    <formula>IF( AND(NOT( Account.IsPersonAccount ), NOT(BEGINS(TEXT(Type), &apos;DE&apos;))),  Account.Organzation_Email__c, 
+
+IF( AND(Schedule__c = 1,ISPICKVAL(Opportunity.Type, &apos;Reorder&apos;), NOT(ISBLANK( Account.PersonContact.Email)) ) , Account.PersonContact.Email, 
+IF( AND(Schedule__c = 1,ISPICKVAL(Opportunity.Type, &apos;Reorder&apos;), ISBLANK( Account.PersonContact.Email) ) , &apos;de@dexcom.com&apos;, 
+IF( AND(Schedule__c = 1,NOT(ISPICKVAL(Opportunity.Type, &apos;Reorder&apos;)),NOT(ISBLANK( Account.Trainer_del__r.Email )) ) , Account.Trainer_del__r.Email , 
+IF( AND(Schedule__c = 1,NOT(ISPICKVAL(Opportunity.Type, &apos;Reorder&apos;)),ISBLANK( Account.Trainer_del__r.Email ) ) , &apos;de@dexcom.com&apos;, 
+IF( AND(Schedule__c &lt;&gt; 1, NOT(ISBLANK( Account.PersonContact.Email)) ) , Account.PersonContact.Email, 
+IF( AND(Schedule__c &lt;&gt; 1, ISBLANK( Account.PersonContact.Email) ) , &apos;de@dexcom.com&apos;, 
+&apos;&apos; 
+)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Shipping Contact Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

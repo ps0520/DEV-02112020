@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>People who can create and edit CA Payors</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CA Payor Access</label>
+    <recordTypeVisibilities>
+        <recordType>Account.CA_Payor</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

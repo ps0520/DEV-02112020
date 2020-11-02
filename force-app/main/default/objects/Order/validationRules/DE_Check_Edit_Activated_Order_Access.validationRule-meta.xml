@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Edit_Activated_Order_Access</fullName>
+    <active>true</active>
+    <description>Document Admin and CSR have capability to alter only certain fields on the Activated Orders.</description>
+    <errorConditionFormula>AND(
+        BEGINS(RecordType.DeveloperName, &apos;DE_&apos;),
+	$Permission.DE_Update_Activated_Order_For_Documents, 
+	NOT(ISPICKVAL(Status, &apos;Draft&apos;)),
+	OR(
+		ISCHANGED(Parent_Order__c),
+		ISCHANGED(Type),
+		ISCHANGED(Order_Sub_Type__c),
+		ISCHANGED(Shipping_Method__c),
+		ISCHANGED(Customer_Bill_To_Address__c),
+		ISCHANGED(Customer_Ship_To_Address__c),
+		ISCHANGED(Payor_Bill_To_Address__c),
+		ISCHANGED(QA_Failure_Reason__c),
+		ISCHANGED(Approved__c)
+	)
+)</errorConditionFormula>
+    <errorMessage>You cannot perform this operation. Please contact the admin.</errorMessage>
+</ValidationRule>

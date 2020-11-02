@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Account_Fund_Check_On_Funded_Order</fullName>
+    <active>true</active>
+    <description>Rule to check if the Account has Fund association before a funded order can be activated</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Status),
+OR(ISPICKVAL(Status, &quot;Shipping Hold&quot;), ISPICKVAL(Status, &quot;Activated&quot;)),
+NOT(ISBLANK(Fund__c)),
+ISBLANK( Account.Fund__c )
+)</errorConditionFormula>
+    <errorMessage>Please associate a Fund to the customer account before the Order can be moved to next stage.</errorMessage>
+</ValidationRule>

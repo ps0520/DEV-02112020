@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Tech_Support_Cant_Alter_Sales_Order</fullName>
+    <active>true</active>
+    <description>Tech support users cannot alter any fields on the Sales Order Products.</description>
+    <errorConditionFormula>AND(
+        BEGINS(Order.RecordType.DeveloperName, &apos;DE_&apos;), 
+	$Profile.Name = &quot;EU Technical Support User&quot;,
+	NOT(CONTAINS(TEXT(Order.Type), &apos;TECH&apos;)),
+	OR(ISCHANGED(Quantity), ISCHANGED(UnitPrice), ISCHANGED(Medical_Advice_Feature__c), ISCHANGED(Return_Reason__c), ISCHANGED(Description))
+)</errorConditionFormula>
+    <errorMessage>You cannot perform this operation. Please contact admin.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Benefit__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Benefit records tied to the Account, which Opportunity is tied to.</description>
+    <externalId>false</externalId>
+    <label>Benefit</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>Benefit__c.Account__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Benefit__c</referenceTo>
+    <relationshipLabel>Opportunities Benefit</relationshipLabel>
+    <relationshipName>Opportunities_Benefit</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

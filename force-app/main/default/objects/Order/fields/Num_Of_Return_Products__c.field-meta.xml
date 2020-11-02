@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Num_Of_Return_Products__c</fullName>
+    <description>Field counts the number of return products and will do a check for DE TECH RETURN order type. For this order type we need atleast one Return Product.</description>
+    <externalId>false</externalId>
+    <label>Num Of Return Products</label>
+    <summaryFilterItems>
+        <field>OrderItem.Is_Return_Item__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

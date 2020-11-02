@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Tax Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fusion</fullName>
+                <default>false</default>
+                <label>Fusion</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>ecom</fullName>
+                <default>false</default>
+                <label>ecom</label>
+            </value>
+            <value>
+                <fullName>crm</fullName>
+                <default>false</default>
+                <label>crm</label>
+            </value>
+            <value>
+                <fullName>oms</fullName>
+                <default>false</default>
+                <label>oms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

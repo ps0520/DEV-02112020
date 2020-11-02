@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Train_Dt_Cannot_Be_Less_Than_Ltr_Sent</fullName>
+    <active>true</active>
+    <description>Training date cannot be less than the training letter sent date.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT(ISBLANK(Training_Date__c)),
+ NOT(ISBLANK(Training_Letter_Sent_Date__c)),
+ Training_Letter_Sent_Date__c &gt; Training_Date__c
+)</errorConditionFormula>
+    <errorMessage>&apos;Training Date&apos; cannot be less than the &apos;Training Letter Sent Date&apos;.</errorMessage>
+</ValidationRule>

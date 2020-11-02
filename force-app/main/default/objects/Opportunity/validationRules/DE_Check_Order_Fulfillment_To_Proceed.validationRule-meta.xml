@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Order_Fulfillment_To_Proceed</fullName>
+    <active>true</active>
+    <description>For DE Opportunity, the Order Fulfillment fields should not be selected before moving to the the Closed- Complete stage.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Probability &gt; 0.80,
+ ISBLANK(TEXT(Doc_Collection_Status__c))
+)</errorConditionFormula>
+    <errorMessage>&apos;Doc Collection Status&apos; should be selected before moving to next stage.</errorMessage>
+</ValidationRule>

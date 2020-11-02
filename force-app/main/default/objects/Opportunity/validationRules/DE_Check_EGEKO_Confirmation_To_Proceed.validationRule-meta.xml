@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_EGEKO_Confirmation_To_Proceed</fullName>
+    <active>true</active>
+    <description>Check if EGEKO Confirmation is not blank before moving from Cost Estimate stage. This is applicable only when EGEKO Out is selected for non-cash pay customers.</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Cash_Pay__c = FALSE,
+ Probability &gt; 0.40,
+ EGEKO_Out__c  = TRUE,
+ EGEKO_In__c = TRUE,
+ ISBLANK(Benefit__r.EGEKO_Confirmation_Number__c) 
+)</errorConditionFormula>
+    <errorMessage>&apos;EGEKO Confirmation #&apos; should be entered before moving to next stage.</errorMessage>
+</ValidationRule>

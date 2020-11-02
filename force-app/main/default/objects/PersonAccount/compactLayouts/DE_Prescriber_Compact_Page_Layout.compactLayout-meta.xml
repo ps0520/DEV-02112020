@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Prescriber_Compact_Page_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Prescriber_Id__c</fields>
+    <fields>Medical_Facility__c</fields>
+    <fields>Prescriber_Operations_Site_Number__c</fields>
+    <fields>Phone</fields>
+    <fields>Dexcom_Decile__c</fields>
+    <fields>Dexcom_Tier__c</fields>
+    <fields>Certified_Trainer__c</fields>
+    <label>DE Prescriber Compact Page Layout</label>
+</CompactLayout>

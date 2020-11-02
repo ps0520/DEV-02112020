@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Closed_Stage_notallowedprevstage</fullName>
+    <active>true</active>
+    <description>You are not allowed to select previous stage.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+ISCHANGED(StageName),
+OR((ISPICKVAL(StageName, &apos;Cost Estimate&apos;)),
+(ISPICKVAL(StageName, &apos;New Opportunity&apos;)),
+(ISPICKVAL(StageName, &apos;Order Fulfillment&apos;)),
+(ISPICKVAL(StageName, &apos;Customer Doc Collection&apos;))),
+ISPICKVAL(PRIORVALUE(StageName), &apos;Closed - Complete&apos;)
+)</errorConditionFormula>
+    <errorMessage>You are not allowed to select previous stage.</errorMessage>
+</ValidationRule>

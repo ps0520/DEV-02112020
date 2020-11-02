@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Case_Retraction</fullName>
+    <active>true</active>
+    <businessProcess>DE Retraction Process</businessProcess>
+    <compactLayoutAssignment>DE_Case_Retraction_Compact_Layout</compactLayoutAssignment>
+    <description>Record type for Order Retraction Cases</description>
+    <label>DE Case Retraction</label>
+    <picklistValues>
+        <picklist>Correction_Reason_DXCM__c</picklist>
+        <values>
+            <fullName>Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Period %28Lump Sum%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Period %28Others%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Therapy Demolition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Correction_Reason_DZH__c</picklist>
+        <values>
+            <fullName>Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Period %28Lump Sum%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Period %28Others%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Therapy Demolition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Device_Status__c</picklist>
+        <values>
+            <fullName>Currently in use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer using</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Data_Download__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Date_Of_Event_Known__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Death_CGM_Related__c</picklist>
+        <values>
+            <fullName>No %28if no Death related questions will not be answered%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undetermined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Did_User_Patient_Get_Readings__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Provided</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Duration_Of_Signal_Loss__c</picklist>
+        <values>
+            <fullName>1 hour or less</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 hours or more</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater than 1 hour but less than 3 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Integration_Executed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Medical_Caregiver_Intervention__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>No_RGA_Explanation__c</picklist>
+        <values>
+            <fullName>Patient unavailable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Unavailable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved in Troubleshooting - PT decided to keep product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>DE Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEF Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voicemail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Paracetamol_Use__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Patient_Using_The_Device_At_Incident__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Line__c</picklist>
+        <values>
+            <fullName>MT20655 USB A to USB Micro B%2C 3FT%2C 24AWG Power Wires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT21190 Bundle%2C Dexcom Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT21255 USB Power Supply %28Charger%29 with USB-A Receptacle%2C 5V 1A%2C US Connector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT21294 Global Receiver Carrying Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT21307 Pairing%2FWarranty Insert%2C Dexcom G4 Transmitter OUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT21561 AC Power Adapter for International use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT22018 Tutorial Disc%2C Dexcom G4 Platinum System OUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT22098 IFU Bundle%2C Dexcom G4 PLATINUM System OUS German mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT22124 IFU Bundle%2C Dexcom G4 Platinum System OUS German mg%2FdL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT22754%09SCOUT%2C PROTECTIVE CASE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT22754-BLU%09SCOUT CASE%2C BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT22754-PNK SCOUT CASE%2C PINK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT23205 Getting Started Tutorial G5 USB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT23390 IFU Bundle%2C Dexcom G5 Mobile CGM System OUS French mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT23402 IFU Bundle%2C Dexcom G5 Mobile CGM System OUS Italian mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT23417 IFU Bundle%2C Dexcom G5 Mobile CGM System OUS German mg%2FdL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT23420 IFU Bundle%2C Dexcom G5 Mobile CGM System OUS German mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT23518 User Manual%2C Share Follow OUS German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT23681 USB Charger for Scout receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT25123%09Dexcom Receiver %28Touchscreen%29- Seal shield 4 Pack Bundle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT25128%09OUS Overpatch %289834%29%2C 10-Pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT25313%09IFU Bundle%2C G6%2C OUS%2C German%2C mg%2FdL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT25314%09IFU Bundle%2C G6%2C OUS%2C DE%2C mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA - Product Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GF-010 German mg%2FdL%2C G5 Mobile Receiver Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GF-013 mg%2FdL%2C G5 Mobile Receiver Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GF-108 German mmol%2FL%2C G5 Mobile Receiver Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GF-109 English mmol%2FL%2C G5 Mobile Receiver Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GF-109 mmol%2FL%2C G5 Mobile Receiver Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GL-005 Dexcom G4 Receiver Kit MG%2FDL German-Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GL-010 Dexcom G4 Platinum Receiver Kit-German mg%2Fdl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GL-108 Dexcom G4 Platinum Receiver Kit-German mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GS-013 G6 OUS Receiver Kit mg%2FdL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-GS-109 G6 OUS Receiver Kit mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STR-GF-004 G5 OUS mg%2FdL Replacement Receiver Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STR-GF-102 OUS MMOL%2FL G5 OUS Replacement Receiver kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STR-GL-004 Dexcom G4 Platinum Replacement Receiver mg%2Fdl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STR-GL-102 Dexcom G4 Platinum Replacement Receiver Kit- mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STR-GS-004 G6 OUS Replacement Receiver Kit mg%2FdL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STR-GS-102 G6 OUS Replacement Receiver Kit mmol%2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GF-001 OUS G5 Mobile%2FG4 PLATINUM%2C -Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GF-001 OUS G5 Mobile%2FG4 PLATINUM%2C Sensor Kit-1 Pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GF-004 OUS G5 Mobile%2FG4 PLATINUM - Sensor Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GF-004 OUS G5 Mobile%2FG4 PLATINUM%2C Sensor Kit-4 Pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GL-005 Dexcom G4 Platinum Sensor-1 Pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GL-006 Dexcom G4 PLATINUM Sensor - OUS 4 Pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GS-002 G6 OUS Sensor Kit 1-pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STS-GS-003 G6 OUS Sensor Kit 3-pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STT-GF-004 Dexcom G5 Platinum Transmitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STT-GL-004 Dexcom G4 PLATINUM Transmitter Kit-OUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STT-GS-003 G6 OUS Transmitter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW-350-0011 - Clarity App %28Web-based %26 iOS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10497 - Follow App %28iOS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10611 - G5 Mobile App %28iOS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10841 G5 OUS Mobile iOS CGM App %28mg%2FdL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10842 G5 OUS Mobile iOS CGM App %28mmol%2FL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10846 OUS Dexcom Follow App for iOS %28mg%2FdL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10847 OUS Dexcom Follow App for iOS %28mmol%2FL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10920 OUS Dexcom Follow App for Android %28mg%2FdL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10930 OUS Dexcom Follow App for Android %28mmol%2FL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW11170 - G5 Mobile App OUS %28Android%2C mg%2FdL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW11170 G5 OUS Mobile Android App mg%2FdL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW11171 - G5 Mobile App OUS %28Android%2C mmol%2FL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW11585 G6 OUS IOS CGM mg%2FdL App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW11586 G6 OUS IOS CGM mmol App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW11587 G6 OUS Android CGM mg%2FdL App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW11588 G6 OUS Android CGM mmol App</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Warranty__c</picklist>
+        <values>
+            <fullName>In Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OOW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undetermined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RGA_Created__c</picklist>
+        <values>
+            <fullName>NA %28Reference %23 and Explanation do not apply%29</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Receiver_SW_Rev__c</picklist>
+        <values>
+            <fullName>2%2E0%2E1%2E104</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0%2E1%2E158</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0%2E1%2E185</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0%2E1%2E192</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0%2E1%2E230</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0%2E1%2E231</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E0%2E1%2E026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E0%2E1%2E030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E0%2E1%2E030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E0%2E1%2E048</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E0%2E1%2E035</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Receiver_SW__c</picklist>
+        <values>
+            <fullName>NI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10050</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10324</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10325</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10505</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10542</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10557</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10586</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10617</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10751</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10829</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10830</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW10940</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relationship_To_Patient_User__c</picklist>
+        <values>
+            <fullName>Administrator%2FSupervisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caretaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dentist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurse Practitioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sibling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable%2FUnwilling to Answer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Retraction_Processing_Queue__c</picklist>
+        <values>
+            <fullName>Admin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_Requested__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sensor_Insertion_Site__c</picklist>
+        <values>
+            <fullName>Abdomen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %E2%80%93 See discussion%2Fresolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thigh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable %2F Unwilling to Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upper Buttocks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Severity_Level__c</picklist>
+        <values>
+            <fullName>Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life-Threatening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Severe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Smart_Device__c</picklist>
+        <values>
+            <fullName>Android</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Pixel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Pixel 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Pixel 2 XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Pixel XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HTC One M8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG G4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG G5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG G6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nexus 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung Galaxy S5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung Galaxy S6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung Galaxy S6 Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung Galaxy S7 Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung Galaxy S7%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung Galaxy S8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samsung Galaxy S8 Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sony Xperia Z3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable%2FUnwilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown Smart Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad Air 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad Mini</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad Mini 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad Mini 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad Mini 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 4S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 5C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 5S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 6 Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 6S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 6S Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone 7 Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPod Touch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPod Touch 5th Gen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPod Touch 6th Gen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transmitter_Sub_Component_Part_Number__c</picklist>
+        <values>
+            <fullName>G4 Transmitter Double Board%3A 9438-01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4 Transmitter Single Board%3A 9438-05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4 Transmitter%3A Model Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter 1%2E2 %28MT10103 Rev 009%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter 1%2E2 %28MT10103 Rev 010%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter 1%2E2 %28MT10103 Rev 011%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter 1%2E2 %28MT10103 Rev 012%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter 1%2E2 %28MT10103 Rev 013%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter 1%2E2 %28MT10103 Rev 014%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter Double Board%3A 9438-06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5 Transmitter%3A Model Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G6 Transmitter%3A 9445-02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G6 Transmitter%3A Model Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable %2F Unwilling to Answer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

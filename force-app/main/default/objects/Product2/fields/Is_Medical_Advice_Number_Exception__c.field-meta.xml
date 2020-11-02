@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Medical_Advice_Number_Exception__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag is used to tell if a Product has more than one Medical Advice Number associated to it.</description>
+    <externalId>false</externalId>
+    <label>Is Medical Advice Number Exception?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

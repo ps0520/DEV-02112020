@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_FirstName_Is_Required</fullName>
+    <active>true</active>
+    <description>First Name is required.</description>
+    <errorConditionFormula>AND(
+	NOT($Profile.Name = &quot;System Administrator&quot;),NOT($Profile.Name = &quot;Data Integrator&quot;), NOT($User.Alias = &quot;autoproc&quot;), 
+	OR(BEGINS(RecordType.DeveloperName, &apos;GB&apos;),BEGINS(RecordType.DeveloperName, &apos;IE&apos;)),
+	ISBLANK(FirstName )
+)</errorConditionFormula>
+    <errorMessage>First Name is required.</errorMessage>
+</ValidationRule>

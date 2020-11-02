@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Check_Cash_Order_Has_CC_Assoc</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT(CONTAINS(TEXT(Type), &apos;SAMPLE&apos;)),
+NOT(CONTAINS(TEXT(Type), &apos;TECH&apos;)),
+$User.Alias != &apos;autoproc&apos;,
+ISNEW(),
+Text(Payment_Terms__c) = &apos;net0&apos;,
+Account.Primary_Card_Last_4__c = 0
+)</errorConditionFormula>
+    <errorMessage>Account does not have valid Primary Credit Card on file.</errorMessage>
+</ValidationRule>

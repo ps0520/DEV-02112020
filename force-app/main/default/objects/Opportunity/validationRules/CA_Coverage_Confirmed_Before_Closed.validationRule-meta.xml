@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Coverage_Confirmed_Before_Closed</fullName>
+    <active>false</active>
+    <description>For Canada, Coverage Should be confirmed and checked before Closing the Opportunity.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;, 
+ISPICKVAL(StageName, &apos;Closed - Complete&apos;), 
+NOT( CA_Coverage_Confirmed__c ))</errorConditionFormula>
+    <errorMessage>Before Closing Opportunity, Coverage should be confirmed with Patient/Guardian.</errorMessage>
+</ValidationRule>

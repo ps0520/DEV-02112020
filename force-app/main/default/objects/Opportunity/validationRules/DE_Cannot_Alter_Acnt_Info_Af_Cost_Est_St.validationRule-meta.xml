@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Cannot_Alter_Acnt_Info_Af_Cost_Est_St</fullName>
+    <active>true</active>
+    <description>When Opportunity is after the Cost Estimate stage the Medical Facility, Prescriber, Benefit or Payor information cannot be changed</description>
+    <errorConditionFormula>AND ( 
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+Probability &gt; 0.40, 
+Cash_Pay__c = false, 
+NOT($Profile.Name = &quot;System Administrator&quot;),
+OR ( 
+ISCHANGED(Medical_Facility__c), 
+ISCHANGED(Prescriber__c), 
+ISCHANGED(Benefit__c), 
+ISCHANGED(Payor__c) 
+) 
+)</errorConditionFormula>
+    <errorMessage>You cannot change Account related information on Opportunity after Cost Estimate stage.</errorMessage>
+</ValidationRule>

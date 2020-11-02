@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>French_Invoice_Description__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS( Product_Name__c, &apos;STK-&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;&apos;, 
+IF(CONTAINS( Product_Name__c, &apos;STT-&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;Approvisionnement par article: 90 jours a 2.40 CHF&apos;, 
+IF(CONTAINS( Product_Name__c, &apos;STS-&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;Approvisionnement par article: 30 jours a 9.07 CHF&apos;, 
+IF(CONTAINS( Product_Name__c, &apos;MTSTKG6RNT&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;&amp;#13;&apos; + &apos;Recepteur Approvisionnement par article 90 jours a 1.37 CHF&apos;,
+IF(CONTAINS( Product_Name__c, &apos;MTSTSG6DESC2&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;La différence de prix relative à une résiliation prématurée&apos;,
+IF(CONTAINS( Product_Name__c, &apos;MTSTTG6DESC2&apos;), PricebookEntry.Product2.Integration_Description__c + &apos; REPLACETEXT &apos; + &apos;La différence de prix relative à une résiliation prématurée&apos;,
+PricebookEntry.Product2.Integration_Description__c 
+))))))</formula>
+    <label>French Invoice Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

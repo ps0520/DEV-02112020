@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse__c</fullName>
+    <externalId>false</externalId>
+    <label>Warehouse</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DESD</fullName>
+                <default>false</default>
+                <label>DESD-Health Link Netherlands</label>
+            </value>
+            <value>
+                <fullName>DEX</fullName>
+                <default>false</default>
+                <label>DEX-GODepots - Germany</label>
+            </value>
+            <value>
+                <fullName>SDX</fullName>
+                <default>false</default>
+                <label>SDX</label>
+            </value>
+            <value>
+                <fullName>HLNL</fullName>
+                <default>false</default>
+                <label>HLNL</label>
+            </value>
+            <value>
+                <fullName>HLCH</fullName>
+                <default>false</default>
+                <label>HLCH</label>
+            </value>
+            <value>
+                <fullName>HLUK</fullName>
+                <default>false</default>
+                <label>HLUK</label>
+            </value>
+            <value>
+                <fullName>SDDEXINTL</fullName>
+                <default>false</default>
+                <label>SDDEXINTL</label>
+            </value>
+            <value>
+                <fullName>CAX</fullName>
+                <default>false</default>
+                <label>CAX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

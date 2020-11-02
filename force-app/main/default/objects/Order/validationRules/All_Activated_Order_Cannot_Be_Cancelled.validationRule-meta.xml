@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Activated_Order_Cannot_Be_Cancelled</fullName>
+    <active>true</active>
+    <description>Once the order is activated, it cannot be cancelled from the user interface in Salesforce</description>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;System Administrator&quot;),NOT($User.Alias = &quot;autoproc&quot;),
+NOT($Permission.DE_Can_Cancel_Activated_Orders),
+ISCHANGED(Status),
+NOT(ISPICKVAL(PRIORVALUE(Status), &apos;Draft&apos;)),
+ISPICKVAL(Status, &apos;Cancelled&apos;)
+)</errorConditionFormula>
+    <errorMessage>Only Draft orders can be cancelled in Salesforce.</errorMessage>
+</ValidationRule>

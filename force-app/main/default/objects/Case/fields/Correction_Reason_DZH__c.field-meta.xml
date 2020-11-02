@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Correction_Reason_DZH__c</fullName>
+    <description>Used for Order Retraction Process</description>
+    <externalId>false</externalId>
+    <label>Correction Reason DZH</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Invoice Verification</fullName>
+                <default>false</default>
+                <label>Invoice Verification</label>
+            </value>
+            <value>
+                <fullName>Payor</fullName>
+                <default>false</default>
+                <label>Payor</label>
+            </value>
+            <value>
+                <fullName>Documents</fullName>
+                <default>false</default>
+                <label>Documents</label>
+            </value>
+            <value>
+                <fullName>Supply Period (Others)</fullName>
+                <default>false</default>
+                <label>Supply Period (Others)</label>
+            </value>
+            <value>
+                <fullName>Supply Period (Lump Sum)</fullName>
+                <default>false</default>
+                <label>Supply Period (Lump Sum)</label>
+            </value>
+            <value>
+                <fullName>Therapy Demolition</fullName>
+                <default>false</default>
+                <label>Therapy Demolition</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

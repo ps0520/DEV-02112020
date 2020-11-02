@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Method_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT( Shipping_Method__c),
+&quot;000001_CADS_D_3DS&quot;, &quot;FedEx Economy® (3-5 business days)&quot;,
+&quot;000001_CADS_P_PO&quot;, &quot;FedEx Priority Overnight® (1-2 business days)&quot;,
+&quot;000001_CADS_D_CX&quot;, &quot;Canada Post XpresspostTM (3-5 business days)&quot;,
+&quot;000001_CADS_P_CP&quot;, &quot;Canada Post PriorityTM (1-2 business days)&quot;,
+&quot;000001_CADS_D_P4&quot;, &quot;Purolator Ground (3-5 business days)&quot;,
+&quot;000001_CADS_P_P3&quot;, &quot;Purolator Express (1-2 business days)&quot;,
+TEXT(Shipping_Method__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Shipping Method Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

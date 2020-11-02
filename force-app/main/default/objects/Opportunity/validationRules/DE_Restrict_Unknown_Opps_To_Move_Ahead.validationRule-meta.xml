@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Restrict_Unknown_Opps_To_Move_Ahead</fullName>
+    <active>true</active>
+    <description>User should move Opps out of Unknown Type before move ahead in Path.</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+OR(ISPICKVAL(StageName, &quot;Cancelled&quot;), 
+ISPICKVAL(StageName, &quot;Cost Estimate&quot;) ),
+ISPICKVAL( Type , &quot;Unknown&quot;),
+NOT($Profile.Name = &apos;Data Integrator&apos;), 
+NOT($Profile.Name = &quot;System Administrator&quot;) 
+ )</errorConditionFormula>
+    <errorMessage>Cannot move ahead with opportunity type &quot;unknown&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Swiss_Orders_Invoiced_without_Language</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.TYPE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>Invoice_Number__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDERS.TYPE</field>
+        <operation>equals</operation>
+        <value>CH STANDARD</value>
+    </filters>
+    <filters>
+        <field>ORDERS.TOTAL_AMOUNT</field>
+        <operation>greaterThan</operation>
+        <value>CHF 0</value>
+    </filters>
+    <filters>
+        <field>Invoice_Number__c</field>
+        <operation>greaterThan</operation>
+        <value>411007608</value>
+    </filters>
+    <filters>
+        <field>Preferred_Language__c</field>
+        <operation>notContain</operation>
+        <value>ch</value>
+    </filters>
+    <label>Swiss Orders Invoiced without Language</label>
+    <sharedTo>
+        <role>CH_Inside_Sales</role>
+    </sharedTo>
+</ListView>

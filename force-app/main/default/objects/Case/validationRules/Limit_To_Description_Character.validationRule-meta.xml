@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_To_Description_Character</fullName>
+    <active>true</active>
+    <description>Description field should not accept more then 8000 characters.</description>
+    <errorConditionFormula>LEN(Description) &gt; 8000</errorConditionFormula>
+    <errorMessage>Description Field should not contain more then 8000 characters.</errorMessage>
+</ValidationRule>

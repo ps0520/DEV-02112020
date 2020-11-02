@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_VDEK_With_Split_Qty_and_Price</fullName>
+    <columns>PRODUCT.NAME</columns>
+    <columns>PRODUCT.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT.DEFAULT_PRICE</columns>
+    <columns>PRODUCT.ACTIVE</columns>
+    <columns>Split_Price__c</columns>
+    <columns>Split_Qty__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>DE VDEK With Split Qty and Price</label>
+    <language>en_US</language>
+    <queue>DE VDEK</queue>
+</ListView>

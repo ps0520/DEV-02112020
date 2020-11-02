@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Beneft_Needed_Before_Cost_Estimate_st</fullName>
+    <active>false</active>
+    <description>For Canada, before moving to the stage of Cost Estimate, Benefit provider, Med Fac and Prescriber info are needed.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;CA_Opportunity&apos;,
+OR(ISBLANK(Benefit__c), ISBLANK(Prescriber__c), ISBLANK(Medical_Facility__c)), 
+ISPICKVAL(StageName, &apos;Cost Estimate&apos;))</errorConditionFormula>
+    <errorMessage>Before moving to the stage of Cost Estimate, Benefit provider, Med Fac and Prescriber info are needed.</errorMessage>
+</ValidationRule>

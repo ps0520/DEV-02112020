@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AT_Trial_End_Date_Shd_B_GT_ST_Date</fullName>
+    <active>true</active>
+    <description>For Austria, Trial End Date should not be less than Trial Start Date.</description>
+    <errorConditionFormula>AND( On_30_Day_Trial__c ,
+Trial_Start_Date__c &gt; 
+Trial_End_Date__c )</errorConditionFormula>
+    <errorMessage>Trial End Date should not be earlier than Trial Start Date.</errorMessage>
+</ValidationRule>

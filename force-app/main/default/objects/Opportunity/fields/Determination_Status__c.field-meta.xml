@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Determination_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Determination Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Received</fullName>
+                <default>true</default>
+                <label>Not Received</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Received via Email</fullName>
+                <default>false</default>
+                <label>Received via Email</label>
+            </value>
+            <value>
+                <fullName>Received via Fax</fullName>
+                <default>false</default>
+                <label>Received via Fax</label>
+            </value>
+            <value>
+                <fullName>Received via Phone</fullName>
+                <default>false</default>
+                <label>Received via Phone</label>
+            </value>
+            <value>
+                <fullName>Received via Mail</fullName>
+                <default>false</default>
+                <label>Received via Mail</label>
+            </value>
+            <value>
+                <fullName>Received via Online account</fullName>
+                <default>false</default>
+                <label>Received via Online account</label>
+            </value>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

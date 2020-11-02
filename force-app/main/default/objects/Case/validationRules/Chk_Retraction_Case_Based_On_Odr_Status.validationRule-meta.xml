@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chk_Retraction_Case_Based_On_Odr_Status</fullName>
+    <active>true</active>
+    <description>If the Order is not closed then a Retraction case cannot be created</description>
+    <errorConditionFormula>AND(
+	RecordType.DeveloperName = &apos;DE_Case_Retraction&apos;,
+	OR(ISBLANK(Order__c),
+	TEXT(Order__r.Status) != &apos;Closed&apos;)
+)</errorConditionFormula>
+    <errorMessage>Retraction case cannot be created as the Order is not in Closed status.</errorMessage>
+</ValidationRule>

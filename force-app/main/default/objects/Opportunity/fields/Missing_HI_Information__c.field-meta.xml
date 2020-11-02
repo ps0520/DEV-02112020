@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_HI_Information__c</fullName>
+    <defaultValue>&apos;None&apos;</defaultValue>
+    <description>To easily identify if any Health Insurance Information is missing. Specially for UK &amp; IE.</description>
+    <externalId>false</externalId>
+    <label>Missing HI Information</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Purchase Order</fullName>
+                <default>false</default>
+                <label>Purchase Order</label>
+            </value>
+            <value>
+                <fullName>Funding approval letter</fullName>
+                <default>false</default>
+                <label>Funding approval letter</label>
+            </value>
+            <value>
+                <fullName>Set up form</fullName>
+                <default>false</default>
+                <label>Set up form</label>
+            </value>
+            <value>
+                <fullName>Patient Details – NHS number/patient identifier</fullName>
+                <default>false</default>
+                <label>Patient Details – NHS number/patient identifier</label>
+            </value>
+            <value>
+                <fullName>Initial delivery address</fullName>
+                <default>false</default>
+                <label>Initial delivery address</label>
+            </value>
+            <value>
+                <fullName>Incomplete address</fullName>
+                <default>false</default>
+                <label>Incomplete address</label>
+            </value>
+            <value>
+                <fullName>Billing Address Query</fullName>
+                <default>false</default>
+                <label>Billing Address Query</label>
+            </value>
+            <value>
+                <fullName>Outstanding Payments</fullName>
+                <default>false</default>
+                <label>Outstanding Payments</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

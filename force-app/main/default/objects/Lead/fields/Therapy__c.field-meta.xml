@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Therapy__c</fullName>
+    <externalId>false</externalId>
+    <label>Therapy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Typ 1+ ICT</fullName>
+                <default>false</default>
+                <label>Typ 1+ ICT</label>
+            </value>
+            <value>
+                <fullName>Typ 1+ Pump</fullName>
+                <default>false</default>
+                <label>Typ 1+ Pump</label>
+            </value>
+            <value>
+                <fullName>Typ 2+ ICT</fullName>
+                <default>false</default>
+                <label>Typ 2+ ICT</label>
+            </value>
+            <value>
+                <fullName>Typ 2+Pumpe</fullName>
+                <default>false</default>
+                <label>Typ 2+Pumpe</label>
+            </value>
+            <value>
+                <fullName>Typ 2 + non insulin injections</fullName>
+                <default>false</default>
+                <label>Typ 2 + non insulin injections</label>
+            </value>
+            <value>
+                <fullName>Other + Insulin</fullName>
+                <default>false</default>
+                <label>Other + Insulin</label>
+            </value>
+            <value>
+                <fullName>Other + non insulin injections</fullName>
+                <default>false</default>
+                <label>Other + non insulin injections</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Chk_Ret_Cred_Against_Standard_Order</fullName>
+    <active>true</active>
+    <description>Rule to check if the Return and Credit order</description>
+    <errorConditionFormula>AND( 
+CONTAINS(TEXT(Type), &apos;RETURN &amp; CREDIT&apos;), 
+NOT(OR(CONTAINS(TEXT(Parent_Order__r.Type), &apos;STANDARD&apos;), CONTAINS(TEXT(Parent_Order__r.Type), &apos;standard&apos;)))
+)</errorConditionFormula>
+    <errorMessage>Return and Credit Order can be created only against the Standard Order.</errorMessage>
+</ValidationRule>

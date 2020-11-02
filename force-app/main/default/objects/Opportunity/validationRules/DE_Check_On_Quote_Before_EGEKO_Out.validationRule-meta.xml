@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_On_Quote_Before_EGEKO_Out</fullName>
+    <active>true</active>
+    <description>Rule to check if approved quote exists before sending the information to EGEKO</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+				NOT($Profile.Name = &quot;Data Integrator&quot;),
+ Probability &gt; 0.20,
+ ISCHANGED(EGEKO_Out__c),
+ EGEKO_Out__c = TRUE,
+ Hard_Copy_Out__c = FALSE,
+ Count_of_Approved_Quotes__c = 0
+)</errorConditionFormula>
+    <errorMessage>Please check if a Quote is approved before sending to EGEKO.</errorMessage>
+</ValidationRule>

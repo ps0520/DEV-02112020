@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OK_Top_Level_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Top level account- IQVIA requirement</description>
+    <externalId>false</externalId>
+    <label>Top Level Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Activities</relationshipLabel>
+    <relationshipName>Activities</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

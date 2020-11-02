@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CH_Chk_Finance_Detail_Selection</fullName>
+    <active>true</active>
+    <description>Finance detail can be selected for an Order only on certain payment terms</description>
+    <errorConditionFormula>AND(
+AND(NOT($Profile.Name = &quot;System Administrator&quot;),NOT($User.Alias = &quot;autoproc&quot;)),
+BEGINS( RecordType.DeveloperName, &apos;CH&apos;),
+ISCHANGED(Finance_Detail__c),
+NOT(ISBLANK(Finance_Detail__c)),
+NOT(
+OR(
+ISPICKVAL(Payment_Terms__c, &apos;net0&apos;),
+ISPICKVAL(Payment_Terms__c, &apos;net-1&apos;)
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Finance_Detail__c</errorDisplayField>
+    <errorMessage>Finance Detail cannot be selected for this Payment term.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_Birth_Date_Before_Sending_To_EG</fullName>
+    <active>true</active>
+    <description>Birth Date is required before sending the cost estimate to EGEKO</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+				NOT($Profile.Name = &quot;Data Integrator&quot;),
+ Probability &gt; 0.20,
+ ISCHANGED(EGEKO_Out__c),
+ EGEKO_Out__c = TRUE,
+ Hard_Copy_Out__c = FALSE,
+ ISBLANK(Account.PersonBirthdate)
+)</errorConditionFormula>
+    <errorMessage>Birth Date is required before sending the cost estimate to EGEKO.</errorMessage>
+</ValidationRule>

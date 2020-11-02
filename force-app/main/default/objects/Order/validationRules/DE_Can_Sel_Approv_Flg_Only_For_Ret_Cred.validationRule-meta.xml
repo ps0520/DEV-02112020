@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Can_Sel_Approv_Flg_Only_For_Ret_Cred</fullName>
+    <active>true</active>
+    <description>Approved flag can be selected only for Return and Credit Order type</description>
+    <errorConditionFormula>AND( 
+        NOT(CONTAINS(TEXT(Type), &apos;DE RET&apos;)), 
+	Approved__c = TRUE, 
+	NOT(OR( 
+	$Profile.Name = &quot;System Administrator&quot;, 
+	$Profile.Name = &quot;Data Integrator&quot;)) 
+)</errorConditionFormula>
+    <errorMessage>&apos;Approved Flag&apos; can be selected only for Return &amp; Credit Order Types.</errorMessage>
+</ValidationRule>

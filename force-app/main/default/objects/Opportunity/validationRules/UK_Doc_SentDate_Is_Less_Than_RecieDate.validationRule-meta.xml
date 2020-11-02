@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_Doc_SentDate_Is_Less_Than_RecieDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(
+OR(BEGINS(RecordType.DeveloperName, &apos;GB_&apos;),BEGINS(RecordType.DeveloperName, &apos;IE_&apos;)),
+OR(ISPICKVAL(CA_Customer_Docs_Collection_Status__c, &apos;All Docs Sent&apos;), ISPICKVAL( CA_Customer_Docs_Collection_Status__c, &apos;All Docs Received&apos;)),
+NOT(ISBLANK(Customer_Docs_Received_Date__c)),
+NOT(ISBLANK(Customer_Docs_Sent_Date__c)),
+Customer_Docs_Sent_Date__c &gt; Customer_Docs_Received_Date__c
+)</errorConditionFormula>
+    <errorMessage>&apos;Customer Docs Sent Date&apos; should be less than &apos;Customer Docs Received Date&apos;</errorMessage>
+</ValidationRule>

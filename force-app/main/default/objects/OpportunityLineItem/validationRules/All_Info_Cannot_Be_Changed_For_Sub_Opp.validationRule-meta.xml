@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Info_Cannot_Be_Changed_For_Sub_Opp</fullName>
+    <active>false</active>
+    <description>Opportunity line information cannot be changed for a Subscription Opp</description>
+    <errorConditionFormula>AND (
+	NOT(OR(
+		 $Profile.Name = &quot;System Administrator&quot;,
+		 $Profile.Name = &quot;Data Integrator&quot;,
+		 $User.Alias = &quot;autoproc&quot;
+		 )),
+	Opportunity.Pricebook2.IsSubscription__c,
+	OR(
+	ISCHANGED(Quantity),
+	ISCHANGED(Repeat_After_In_Days__c ),
+	ISCHANGED(Repeat_Quantity__c),
+	ISCHANGED(Repeat_End_Date__c))
+)</errorConditionFormula>
+    <errorMessage>Opportunity Product details cannot be altered for a Subscription Pricebook Products.</errorMessage>
+</ValidationRule>

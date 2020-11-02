@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Prescriber_Compact_Layout</fullName>
+    <fields>Prescriber_Id__c</fields>
+    <fields>Medical_Facility__c</fields>
+    <fields>Phone</fields>
+    <fields>Fax</fields>
+    <fields>PersonEmail</fields>
+    <fields>Territory__c</fields>
+    <label>CA Prescriber Compact Layout</label>
+</CompactLayout>

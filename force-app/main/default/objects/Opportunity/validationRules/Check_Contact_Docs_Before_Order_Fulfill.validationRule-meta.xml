@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Contact_Docs_Before_Order_Fulfill</fullName>
+    <active>false</active>
+    <description>04/18/2019 - Altered this rule to satisfy the GDPR Compliance (CRMSF-4017)</description>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ Probability &gt; 0.20,
+ Contact_Doc_Received__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>&apos;Contact Doc Received&apos; should be selected before moving to next Stage.</errorMessage>
+</ValidationRule>

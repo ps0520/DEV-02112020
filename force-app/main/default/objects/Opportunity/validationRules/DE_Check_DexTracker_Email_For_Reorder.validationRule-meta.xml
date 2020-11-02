@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Check_DexTracker_Email_For_Reorder</fullName>
+    <active>true</active>
+    <description>For Reorder DexTracker email option should be selected</description>
+    <errorConditionFormula>AND(
+	ISNEW(),			
+	RecordType.DeveloperName = &apos;DE_Opportunity&apos;, 
+	NOT($Profile.Name = &quot;System Administrator&quot;), 
+	Text(Type) = &apos;Reorder&apos;, 
+	ISBLANK(Text(DexTracker_Email__c))
+)</errorConditionFormula>
+    <errorMessage>Please select a value for &apos;DexTracker Email&apos;.</errorMessage>
+</ValidationRule>

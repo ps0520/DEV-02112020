@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Cannot_Cancel_Oppty_Past_Train_Letter</fullName>
+    <active>true</active>
+    <description>Cannot cancel opportunity past order fulfillment stage</description>
+    <errorConditionFormula>AND (
+RecordType.DeveloperName = &apos;DE_Opportunity&apos;,
+NOT($Profile.Name = &quot;System Administrator&quot;),
+CONTAINS(TEXT(StageName), &apos;Cancel&apos;),
+PRIORVALUE(Probability) &gt; 0.60
+)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be cancelled past Training Letter stage.</errorMessage>
+</ValidationRule>

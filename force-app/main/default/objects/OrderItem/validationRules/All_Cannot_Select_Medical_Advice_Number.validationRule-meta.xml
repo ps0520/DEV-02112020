@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cannot_Select_Medical_Advice_Number</fullName>
+    <active>true</active>
+    <description>Jagan 09/26/2017 - Removed the constraint only for Cash orders.
+Jagan 06/25/2017 - Created this validation rule to not select Medical Advice Number when manually creating order from Account.</description>
+    <errorConditionFormula>AND (
+PricebookEntry.Product2.Is_Medical_Advice_Numbered_Product__c = TRUE  
+)</errorConditionFormula>
+    <errorMessage>Product with &apos;Medical Advice Number&apos; cannot be selected.</errorMessage>
+</ValidationRule>

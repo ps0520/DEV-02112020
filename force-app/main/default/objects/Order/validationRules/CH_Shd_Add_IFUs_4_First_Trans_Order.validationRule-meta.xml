@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CH_Shd_Add_IFUs_4_First_Trans_Order</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name = &quot;Data Integrator&quot;),
+NOT($User.Alias = &quot;autoproc&quot;),
+BEGINS( RecordType.DeveloperName, &apos;CH&apos;),
+ISNULL( Account.G6_Transmitter_Ship_Date__c ),
+Count_Of_G6_Transmitters__c &gt; 0,
+Count_of_IFU_Line_Items__c &lt; 1,
+ISPICKVAL(PRIORVALUE(Status),&apos;Draft&apos;),
+CONTAINS(TEXT(Type), &apos;STANDARD&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Please add IFUs as Order contains first G6 Transmitter.</errorMessage>
+</ValidationRule>

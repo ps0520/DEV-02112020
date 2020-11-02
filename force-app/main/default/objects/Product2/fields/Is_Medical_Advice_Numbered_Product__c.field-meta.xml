@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Medical_Advice_Numbered_Product__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check to confirm if the product is a Medical Advice Numbered product or not. Used for Germany.</description>
+    <externalId>false</externalId>
+    <label>Is Medical Advice Numbered Product?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

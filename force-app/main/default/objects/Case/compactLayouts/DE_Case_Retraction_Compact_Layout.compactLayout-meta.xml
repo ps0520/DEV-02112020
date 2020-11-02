@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Case_Retraction_Compact_Layout</fullName>
+    <fields>AccountId</fields>
+    <fields>CaseNumber</fields>
+    <fields>Order__c</fields>
+    <fields>Invoice_Number__c</fields>
+    <fields>Invoice_Date__c</fields>
+    <fields>Retraction_Processing_Queue__c</fields>
+    <fields>Status</fields>
+    <label>DE Case Retraction Compact Layout</label>
+</CompactLayout>
